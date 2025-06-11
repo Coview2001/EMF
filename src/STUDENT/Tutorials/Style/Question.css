@@ -1,0 +1,849 @@
+﻿head, body, form, html, table, tr, a, iframe, button, div {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   border-spacing: 0;
+   border-collapse: collapse;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+.CssiFrm {
+   width: 100%;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.CssPCSDiv {
+   background-color: white;
+   position: fixed;
+   width: 100%;
+   z-index: 400;
+   display: none;
+   width: 100%;
+   left: 0px;
+   bottom: 1px;
+   z-index: 400;
+}
+
+.CssClueDiv {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 400;
+    display: none;
+    width: 100%;
+    left: 0px;
+    bottom: 1px;
+    z-index: 400;
+}
+
+.read-only {
+   width: 100%;
+   height: 100%;
+   display: none;
+   position: absolute;
+   z-index: 300;
+   padding: 0;
+   margin: 0;
+   background-color: rgba(0,0,0,0.5);
+   cursor: default;
+   left: 0;
+   top: 0;
+}
+
+.solution {
+    background: rgba(122, 150, 223, 1);
+    background: -moz-linear-gradient(top, rgba(122, 150, 223, 1) 0%, rgba(122, 150, 223, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(122, 150, 223, 1)), color-stop(100%, rgba(122, 150, 223, 1)));
+    background: -webkit-linear-gradient(top, rgba(122, 150, 223, 1) 0%, rgba(122, 150, 223, 1) 100%);
+    background: -o-linear-gradient(top, rgba(122, 150, 223, 1) 0%, rgba(122, 150, 223, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(122, 150, 223, 1) 0%, rgba(122, 150, 223, 1) 100%);
+}
+
+.clue {
+    background: rgb(122, 150, 223);
+}
+
+.principle {
+   background-image: -ms-linear-gradient(top, #7a96df 0%,#7a96df 51%,#7a96df 100%);
+	background-image: -moz-linear-gradient(top, #7a96df 0%, #7a96df 51%, #7a96df 100%);
+	background-image: -o-linear-gradient(top, #7a96df 0%,#7a96df 51%, #7a96df 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #7a96df), color-stop(51, #7a96df), color-stop(100, #7a96df));
+	background-image: -webkit-linear-gradient(top, #7a96df 0%, #FF7C00 51%, #7a96df 100%);
+	background-image: linear-gradient(to bottom, #7a96df 0%, #7a96df 51%, #7a96df 100%);
+}
+
+#imgNext, #imgPrev {
+   display: none;
+}
+
+#tdQnTitle > p {
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+}
+
+.bodyStyle {
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.btnStyle {
+   width: 90px;
+   height: 50px;
+}
+
+.btnStyle2 {
+   width: 130px;
+   height: 50px;
+}
+
+.QnPanel {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='#d8e4f8', endcolorstr='#7a96df');
+   background-color: #7a96df;
+}
+
+.AnsOK {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='green', endcolorstr='green');
+   background-color: green;
+   width: 100%;
+}
+
+.AnsWrong1 {
+   background-color: Red;
+   width: 100%;
+}
+
+.AnsWrong2 {
+   background-color: Blue;
+   width: 100%;
+}
+
+.xAnsWrong1 {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='red', endcolorstr='red');
+   background-color: Red;
+}
+
+.xAnsWrong2 {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='blue', endcolorstr='blue');
+   background-color: Blue;
+}
+
+.QnPanelTitle {
+   font-family: Arial;
+   font-size: medium;
+   font-weight: bold;
+   color: white;
+   height: 25px;
+}
+
+.menuItem {
+   background-color: menu;
+   color: black;
+}
+
+.menuItemOn {
+   background-color: mintcream;
+   color: red;
+}
+
+.tooltip {
+   position: absolute;
+   width: 300px;
+   height: 100px;
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='lemonchiffon', endcolorstr='palegoldenrod');
+   background-color: palegoldenrod;
+   font-family: Arial;
+   font-size: small;
+   overflow: auto;
+}
+
+.tdQnMid {
+   width: 100%;
+   height: 585px;
+}
+
+.tdTestMid {
+   width: 100%;
+}
+
+.tdTutMid {
+   width: 100%;
+   height: 610px;
+}
+
+.TutNav {
+   width: 100%;
+   height: 55px;
+}
+
+.QnNav {
+   width: 100%;
+}
+
+.QnNavNEW {
+   width: 100%;
+   background-color: #20699B;
+   color: white;
+   font-family: Arial;
+   font-size: 10pt;
+}
+
+.trQnLoadMsg {
+   width: 100%;
+   text-align: center;
+   vertical-align: middle;
+   font-family: Arial;
+   font-size: small;
+}
+
+.trTutLoadMsg {
+   width: 100%;
+   text-align: center;
+   vertical-align: middle;
+   font-family: Arial;
+   font-size: small;
+}
+
+.HeadMsg {
+   background-color: #E4E4E4;
+   font-size: small;
+   font-weight: bold;
+   font-family: Arial;
+   color: cornflowerblue;
+   height: 20px;
+   width: 100%;
+   padding-left: 10px;
+   text-align: left;
+   vertical-align: middle;
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='whitesmoke', endcolorstr='lightgrey');
+}
+
+.LsnSelHeight {
+   height: 525px;
+}
+
+.tblSelNodeDetailsHead {
+   font-family: Arial;
+   font-size: small;
+   width: 100%;
+}
+
+.FrameSelNode {
+   font-family: Arial;
+   font-size: small;
+   width: 100%;
+}
+
+.Hdr {
+   background-image: url(../../Images/headerBg.gif);
+   background-repeat: repeat-x;
+}
+
+.row1 {
+   background-image: url(../../Images/rowBg.gif);
+   background-repeat: repeat-x;
+}
+
+.row2 {
+   background-image: none;
+}
+
+.CertFont {
+   color: Blue;
+   width: 100%;
+   font-size: 20pt;
+   font-family: Arial;
+   font-weight: bold;
+}
+
+.tdCert {
+   font-size: 14pt;
+   font-family: Arial;
+   font-weight: bold;
+}
+
+.tdCertRes {
+   font-family: Arial;
+   font-size: 14pt;
+   color: #cc0000;
+   font-weight: bold;
+}
+
+.tdLsnHead {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+}
+
+.tdLsnName {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   color: Blue;
+}
+
+.tdLbl {
+   font-family: Arial;
+   font-size: 16pt;
+   color: Blue;
+}
+
+.trDet {
+   font-family: Arial;
+   font-size: 10pt;
+   height: 20px;
+}
+
+.tdDet1 {
+   border-color: Black;
+   border-style: solid;
+   border-bottom-style: none;
+   border-width: 1px;
+   padding-left: 5px;
+}
+
+.tdDet2 {
+   border-color: Black;
+   border-style: solid;
+   border-bottom-style: none;
+   border-width: 1px;
+   border-left-style: none;
+   padding-left: 5px;
+}
+
+.tdRep1 {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   background-color: White;
+   border-left-style: none;
+   border-right-style: none;
+   height: 20px;
+   padding-left: 5px;
+   border-bottom-style: none;
+}
+
+.tdRep2 {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   background-color: White;
+   border-right-style: none;
+   height: 20px;
+   border-bottom-style: none;
+}
+
+.tdRep3 {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   background-color: White;
+   border-right-style: none;
+   height: 20px;
+   padding-left: 5px;
+   border-bottom-style: none;
+}
+
+.tdRepDesc {
+   font-family: Arial;
+   font-size: 12pt;
+   font-weight: bold;
+   color: #cc3366;
+}
+
+.tdRepCon {
+   font-family: Arial;
+   font-size: 10pt;
+}
+
+.tdHead {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   height: 20px;
+   color: White;
+   font-weight: bold;
+   border-bottom-style: none;
+   border-right-style: none;
+   border-top-style: none;
+   padding-left: 5px;
+}
+
+.tdDepLsnHead {
+   width: 100%;
+   color: blue;
+   font-size: small;
+   background-color: ButtonFace;
+   height: 30px;
+   vertical-align: middle;
+   text-align: center;
+}
+
+.btnTestNav {
+   font-family: Arial;
+   font-size: small;
+   height: 20px;
+}
+
+.tdTestHead {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='cornflowerblue', endcolorstr='midnightblue');
+   background-color: midnightblue;
+   font-family: Arial;
+   font-size: 14px;
+   font-weight: bold;
+   color: white;
+   height: 20px;
+}
+
+.tdTestTime {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='orange', endcolorstr='darkorange');
+   background-color: darkorange;
+   font-family: Arial;
+   font-size: 14px;
+   font-weight: bold;
+   color: blue;
+   height: 20px;
+}
+
+.tdHeadforProRep {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   font-weight: bold;
+   height: 20px;
+   border-bottom-style: none;
+   color: White;
+}
+
+.tdColforProRep {
+   font-family: Trebuchet MS;
+   font-size: 10pt;
+   background-color: White;
+   height: 20px;
+   border-bottom: solid 1px black;
+   border-left: solid 1px black;
+}
+
+.TvwNodeIconStyle {
+   background-color: Transparent;
+}
+
+.AllReportHead {
+   font-family: Arial;
+   font-size: 12pt;
+   vertical-align: middle;
+   color: navy;
+}
+
+.ASPanelTitle {
+   filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='#00ff00', endcolorstr='green');
+   background-color: green;
+   font-family: Arial;
+   font-size: medium;
+   font-weight: bold;
+   color: white;
+}
+
+.cssBtnNav {
+   position: absolute;
+   width: 150px;
+   height: 50px;
+}
+
+.cssBtnLsnNav {
+   width: 100px;
+   height: 50px;
+}
+
+.cssDivQnNo {
+   background-color: Red;
+   color: White;
+   font-weight: bold;
+   font-size: medium;
+   font-family: Arial;
+   text-align: center;
+   position: absolute;
+}
+
+.cssDivRedirect {
+   background-color: Blue;
+   color: White;
+   font-weight: normal;
+   font-size: small;
+   font-family: Arial;
+   text-align: center;
+   position: absolute;
+}
+
+.cssLoadMsgBG {
+   background-color: Gray;
+   text-align: center;
+   vertical-align: middle;
+   filter: progid:DXImageTransform.Microsoft.BasicImage(opacity=0);
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 0;
+}
+
+.cssDivQnMsg {
+   background-color: Transparent;
+   text-align: center;
+   vertical-align: middle;
+   filter: progid:DXImageTransform.Microsoft.BasicImage(opacity=0);
+   position: absolute;
+}
+
+.QuestionTableT{
+   width: 100%;
+}
+
+#tdQnTitle{
+   padding: 2px;
+   width: 100%;
+}
+
+.spanLessonNameT{
+   color: #333333;
+}
+
+.spanCurrentQuestionNoT{
+   color: #333333;
+}
+
+#spanWhiteBoardLinkT{
+   margin: 104px;
+}
+
+.WhiteBoardLinkT{
+   font-size: 11pt;
+   color: #333333;
+   display: none;
+   font-weight: bold;
+}
+
+.QnPanelT{
+   padding: 0px;
+   margin: 0px;
+}
+
+.QnPanel2T{
+   width: 100%;
+   padding: 0px;
+   margin: 0px;
+}
+
+.trQnOKT{
+   height: 50%;
+}
+
+#QnPanelIdT{
+   width: 2%;
+}
+
+#QnPanelId2T{
+   width: 13%;
+   text-align: center;
+}
+
+.imgbtnBackT{
+   cursor: pointer;
+}
+
+.imgbtnBack2T{
+   vertical-align: middle;
+}
+
+#QnPanelId3T{
+   width: 13%;
+   text-align: center;
+}
+
+.imgPrcT{
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+#QnPanelId4T{
+   width: 13%;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+}
+
+.imgClueT{
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+#QnPanelId5T{
+   width: 13%;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+}
+
+.imgSolnT{
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+#QnPanelId6T{
+   width: 13%;
+   text-align: center;
+}
+
+.imgbtnTutT{
+   cursor: pointer;
+}
+
+#imgbtnTut2T{
+   vertical-align: middle;
+}
+
+.imgOKT{
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+#QnPanelId7{
+   width: 2%;
+}
+
+.trQnNextT{
+   height: 50px;
+   display: none;
+}
+
+#tdBN1{
+   width: 2%;
+}
+
+#tdAnsMsg{
+   width: 39%;
+   text-align: center;
+   font-family: Arial;
+   font-size: large;
+   color: white;
+}
+
+#tdShowCA{
+   width: 39%;
+   vertical-align: middle;
+}
+
+#tdAnsSoln{
+   text-align: center;
+   width: 13%;
+}
+
+#imgSolnAfterAnswering{
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+#tdQnNext{
+   width: 31%;
+   text-align: right;
+}
+
+#imgNextQuestion{
+   cursor: pointer;
+   vertical-align: middle;
+}
+
+#imgbtnAllQuestionsCompleted2T{
+   cursor: pointer;
+   vertical-align: middle;
+   display: none;
+}
+
+#tdBN{
+   width: 2%;
+}
+
+#tdFrameQnT{
+   width: 100%;
+   padding: 0px;
+}
+
+#divFrameQn{
+   -webkit-overflow-scrolling: touch;
+   overflow: hidden;
+}
+
+#tdPCSTitle1{
+   color: white;
+   font-family: Arial;
+   font-size: 24px;
+   font-weight: bold;
+   background-repeat: repeat;
+   width: 100%;
+   vertical-align: middle;
+   cursor: default;
+   padding: 2px;
+   padding-left: 30px;
+   line-height: 50px;
+}
+
+#tdPCSTitle2{
+   background-repeat: repeat;
+   width: 100%;
+   vertical-align: middle;
+   text-align: right;
+   padding: 2px;
+   padding-right: 20px;
+}
+
+#imgPCClose{
+   width: 30px;
+   height: 30px;
+   background-size: cover;
+   margin-right: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+
+#divFramePCS{
+   -webkit-overflow-scrolling: touch;
+   overflow: hidden;
+}
+
+.iFrameSolutionT{
+   width: 100%;
+   height: auto;
+   border: none;
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+   display: none;
+}
+
+#tblNavPCS{
+   width: 100%;
+}
+
+#tdPCSBottom2{
+   height: 50px;
+   padding: 10px;
+   background-repeat: repeat;
+   vertical-align: middle;
+   text-align: right;
+   background-color: #f2f2f2;
+}
+
+#btnPCSPrevious{
+   font-weight: bold;
+   color: white;
+   font-size: 12pt;
+   border-style: none;
+   background-color: #333333;
+   cursor: pointer;
+}
+
+#btnPCSNext{
+   width: 100px;
+   height: 40px;
+   background-size: cover;
+   margin-right: 30px;
+   margin-top: 5px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   margin-bottom: 5px;
+}
+
+#btnPCSClose{
+   width: 100px;
+   height: 40px;
+   background-size: cover;
+   margin-right: 30px;
+   margin-top: 5px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   margin-bottom: 5px;
+}
+.tblTitleClueT{
+   width: 100%;
+   height: 50px;
+   background: #7a96df;
+}
+
+.tdClueTitle1T{
+   font-family: Arial;
+   width: 100%;
+   font-size: 15px;
+   font-weight: bold;
+   background-repeat: repeat;
+   line-height: 50px;
+   padding-left: 30px;
+   color: #ffffff;
+   text-align: start;
+}
+
+.tdClueTitle2T{
+   background-repeat: repeat;
+   width: 100%;
+   vertical-align: middle;
+   text-align: right;
+}
+
+.imgPCCloseT{
+   width: 30px;
+   height: 30px;
+   background-size: cover;
+   margin-right: 30px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+
+.divFrameClueT{
+   width: 100%;
+   border-bottom: solid 1px #e3e3e3;
+   background: #ffffff;
+}
+
+.iFrameClueT{
+   width: 100%;
+   border: none;
+   display: none;
+}
+
+.tblNavClueT{
+   width: 100%;
+   height: 50px;
+   background: #f2f2f2;
+}
+
+.tdClueBottom2T{
+   height: 30px;
+   background-repeat: repeat;
+   vertical-align: middle;
+   text-align: right;
+}
+
+#btnPCSCloseT{
+   width: 100px;
+   height: 40px;
+   background-size: cover;
+   margin-right: 30px;
+   margin-top: 5px;
+   background-position: center;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   margin-bottom: 5px;
+}
+
+#dialog-confirm{
+   display: none;
+}
+
+#spanAlertT{
+   float: left;
+   margin: 12px 12px 20px 0px;
+}

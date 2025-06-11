@@ -1,0 +1,165 @@
+﻿@charset "utf-8";
+html, body{
+	-webkit-overflow-scrolling:touch;
+}
+
+
+body{
+	margin:0 auto;
+	overflow-x:hidden;
+	font-family:'Open Sans', sans-serif;	
+}
+
+
+.section_div{
+	margin:0 auto;
+	height:auto;
+	width:80%;
+    display:block;
+	clear:both;
+	padding:0;
+	/* overflow:hidden; */
+}
+
+
+.bar_section{
+	margin:0 auto;	
+	padding:0;
+	height:100%;
+	overflow:hidden;
+}
+
+
+.section_title_nav{
+	height:40px;
+	background-color:#0d2346;
+}
+
+
+a.back-to-top{
+	display:none;
+	width:60px;
+	height:60px;
+	text-indent:-9999px;
+	position:fixed;
+	z-index:999;
+	right:20px;
+	bottom:20px;
+	background:#BB1F40 url("../Images/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	border-radius:30px;
+	-webkit-box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);
+	box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);	
+}
+
+
+a:hover.back-to-top{
+	background-color:#000;
+}
+
+
+a.back-to-bottom{
+	width:60px;
+	height:60px;
+	text-indent:-9999px;
+	position:fixed;
+	z-index:999;
+	left:20px;
+	bottom:20px;
+	background:#393 url("../Images/down-arrow.png") no-repeat center 43%;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	border-radius:30px;
+	-webkit-box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);
+	box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);	
+}
+
+
+a:hover.back-to-bottom{
+	background-color:#277527;
+}
+
+
+.section_title_bar{
+	height:80px;
+	background-color:#0d2346;
+}
+
+
+.sml_btn_txt{
+	font-size:12px;
+}
+
+
+@media screen and (max-width:1400px){
+.section_div{
+	width:90%;
+}
+
+
+.section_title_bar{
+	height:70px;
+}
+}
+
+
+@media screen and (max-width:1100px){
+.section_div{
+	width:93%;
+}
+
+
+.section_title_bar{
+	height:60px;
+}
+}
+
+
+@media screen and (max-width:800px){
+.section_title_bar{
+	height:40px;
+	background-color:#0d2346;
+}
+}
+
+
+.user_bannerT {
+	margin-top: "80px"; 
+	background-color: "#171717"
+}
+
+.trophy_club_currentT{
+	/* backgroundImage: `url(${trophy_club_0})`; */
+	/* background-Image: url(${trophy_club_0}); */
+}
+
+.trophy_club_legendT{
+	display: none;
+}
+
+/* .trophy-progress-barT {
+	width: calc(#{calculateProgress()}%);
+} */
+
+/* .ump_btnT{
+	display: hiddenPaths.includes(location.pathname) ? "none" : "block" 
+} */
+
+.ump_btnT.hidden {
+	display: none;
+}
+
+.user_strip_weekly_progress_bar_progressT{
+	width: 0px;
+}
+
+.user_strip_weekly_achievements_item user_strip_weekly_achievements_item_first{
+	display: block;
+}
+
+.user_strip_weekly_achievements_itemT{
+	display: block;
+}

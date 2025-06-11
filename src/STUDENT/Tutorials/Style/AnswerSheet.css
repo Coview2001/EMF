@@ -1,0 +1,676 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-y:hidden;
+}
+
+.bodyStyle {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btnStyle {
+    width: 90px;
+    height: 50px;
+}
+
+.btnStyle2 {
+    width: 130px;
+    height: 50px;
+}
+
+.QnPanel {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='#d8e4f8', endcolorstr='#7a96df');
+    background-color: #7a96df;
+}
+
+.AnsOK {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='green', endcolorstr='green');
+    background-color: green;
+    width: 100%;
+}
+
+.AnsWrong1 {
+    background-color: Red;
+    width: 100%;
+}
+
+.AnsWrong2 {
+    background-color: Blue;
+    width: 100%;
+}
+
+.xAnsWrong1 {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='red', endcolorstr='red');
+    background-color: Red;
+}
+
+.xAnsWrong2 {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='blue', endcolorstr='blue');
+    background-color: Blue;
+}
+
+.QnPanelTitle {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    height: 25px;
+}
+
+.menuItem {
+    background-color: menu;
+    color: black;
+}
+
+.menuItemOn {
+    background-color: mintcream;
+    color: red;
+}
+
+.tooltip {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='lemonchiffon', endcolorstr='palegoldenrod');
+    background-color: palegoldenrod;
+    font-family: Arial;
+    font-size: small;
+    overflow: auto;
+}
+
+.tdQnMid {
+    width: 100%;
+    height: 585px;
+}
+
+.tdTestMid {
+    width: 100%;
+}
+
+.tdTutMid {
+    width: 100%;
+    height: 610px;
+}
+
+.TutNav {
+    width: 100%;
+    height: 55px;
+}
+
+.QnNav {
+    width: 100%;
+}
+
+.QnNavNEW {
+    width: 100%;
+    background-color: #20699B;
+    color: white;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.trQnLoadMsg {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: small;
+}
+
+.trTutLoadMsg {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: small;
+}
+
+.HeadMsg {
+    background-color: #E4E4E4;
+    font-size: small;
+    font-weight: bold;
+    font-family: Arial;
+    color: cornflowerblue;
+    height: 20px;
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: middle;
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='whitesmoke', endcolorstr='lightgrey');
+}
+
+.LsnSelHeight {
+    height: 525px;
+}
+
+.tblSelNodeDetailsHead {
+    font-family: Arial;
+    font-size: small;
+    width: 100%;
+}
+
+.FrameSelNode {
+    font-family: Arial;
+    font-size: small;
+    width: 100%;
+}
+
+.Hdr {
+    /* background-image: url('../Image/headerBg.gif'); */
+    background-repeat: repeat-x;
+}
+
+.row1 {
+    /* background-image: url('../Image/rowBg.gif'); */
+    background-repeat: repeat-x;
+}
+
+.row2 {
+    background-image: none;
+}
+
+.CertFont {
+    color: Blue;
+    width: 100%;
+    font-size: 20pt;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.tdCert {
+    font-size: 14pt;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.tdCertRes {
+    font-family: Arial;
+    font-size: 14pt;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.tdLsnHead {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+}
+
+.tdLsnName {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    color: Blue;
+}
+
+.tdLbl {
+    font-family: Arial;
+    font-size: 16pt;
+    color: Blue;
+}
+
+.trDet {
+    font-family: Arial;
+    font-size: 10pt;
+    height: 20px;
+}
+
+.tdDet1 {
+    border-color: Black;
+    border-style: solid;
+    border-bottom-style: none;
+    border-width: 1px;
+    padding-left: 5px;
+}
+
+.tdDet2 {
+    border-color: Black;
+    border-style: solid;
+    border-bottom-style: none;
+    border-width: 1px;
+    border-left-style: none;
+    padding-left: 5px;
+}
+
+.tdRep1 {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    border-left-style: none;
+    border-right-style: none;
+    height: 20px;
+    padding-left: 5px;
+    border-bottom-style: none;
+}
+
+.tdRep2 {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    border-right-style: none;
+    height: 20px;
+    border-bottom-style: none;
+}
+
+.tdRep3 {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    border-right-style: none;
+    height: 20px;
+    padding-left: 5px;
+    border-bottom-style: none;
+}
+
+.tdRepDesc {
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #cc3366;
+}
+
+.tdRepCon {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.tdHead {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    height: 20px;
+    color: White;
+    font-weight: bold;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    padding-left: 5px;
+}
+
+.tdDepLsnHead {
+    width: 100%;
+    color: blue;
+    font-size: small;
+    background-color: ButtonFace;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btnTestNav {
+    font-family: Arial;
+    font-size: small;
+    height: 20px;
+}
+
+.tdTestHead {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='cornflowerblue', endcolorstr='midnightblue');
+    background-color: midnightblue;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    height: 20px;
+}
+
+.tdTestTime {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='orange', endcolorstr='darkorange');
+    background-color: darkorange;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+    height: 20px;
+}
+
+.tdHeadforProRep {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 20px;
+    border-bottom-style: none;
+    color: White;
+}
+
+.tdColforProRep {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    height: 20px;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+}
+
+.TvwNodeIconStyle {
+    background-color: Transparent;
+}
+
+.AllReportHead {
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: middle;
+    color: navy;
+}
+
+.ASPanelTitle {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='#00ff00', endcolorstr='green');
+    background-color: green;
+    font-family: Arial;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+.cssBtnNav {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+}
+
+.cssBtnLsnNav {
+    width: 100px;
+    height: 50px;
+}
+
+.cssDivQnNo {
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Arial;
+    text-align: center;
+    position: absolute;
+}
+
+.cssDivRedirect {
+    background-color: Blue;
+    color: White;
+    font-weight: normal;
+    font-size: small;
+    font-family: Arial;
+    text-align: center;
+    position: absolute;
+}
+
+.cssLoadMsgBG {
+    background-color: Gray;
+    text-align: center;
+    vertical-align: middle;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(opacity=0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.cssDivQnMsg {
+    background-color: Transparent;
+    text-align: center;
+    vertical-align: middle;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(opacity=0);
+    position: absolute;
+}
+
+
+
+head, body, form, html, table, tr, a, iframe, button, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.CssPCSDiv {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    display: none;
+    z-index: 400;
+}
+
+.CssTable {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+	background: rgba(241,231,103,1);
+	background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+	background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -o-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: -ms-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=0 );
+}
+
+.CssTableClose {
+    background-color: white;
+}
+
+.CssiFrm {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    background-color: white;
+    border-spacing: 0;
+    border: none;
+    overflow: auto;
+    border-collapse: collapse;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cssImgClose {
+    cursor: pointer;
+    margin-left: 20px;
+
+	 
+	padding:2%;
+}
+
+.csstdPCSClose {
+    width: 100%;
+    text-align: right;
+    padding: 8px;
+}
+
+.cssSpTitle {
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Arial;
+
+	color: black;
+	cursor: default;
+	padding: 3%;
+	width: 100%;
+}
+
+.auto-style1 {
+    width: 2%;
+}
+
+.auto-style2 {
+    width: 12%;
+}
+
+
+.divBackgroundT{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.29);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.trAnsHeadT{
+    padding: 0;
+    margin: 0;
+    background-color: #20699B;
+}
+
+.tdNavigationHolderT {
+    height: 70;
+    width: 100%;
+}
+
+.tdTop1T{
+    width: 8%;
+    height: 36px;
+    padding-left: 10px;
+    background-color: #20699B;
+}
+
+.tdTop2T{
+    width: 84px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    color: #1d6799;
+    font-size: 17px;
+    padding-top: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 11px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.tdTop3T{
+    width: 20%;
+    padding-left: 10px;
+    clip: react(auto auto auto auto);
+    background-color: #20699B;
+    color: white;
+    font-family: Arial;
+    font-size: 10px;
+}
+
+.tdTop4T{
+    width: 8%;
+    height: 36px;
+    background-color: #20699B;
+}
+
+.divSolutionButtonT{
+    width: 84px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    color: #1d6799;
+    font-size: 17px;
+    padding-top: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tdATestNavigationT{
+    width: 28%;
+    background-color: #20699B;
+}
+
+.btnATestPreviousQuestionT{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.divATestQuestionNoListT{
+    display: inline-block;
+    width: 20%;
+}
+
+.btnATestNextQuestionT{
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.tdTop5T{
+    background-color: #20699B;
+}
+
+.tdTop6T{
+    background-color: #20699B;
+}
+
+.imgQuestionStatusT{
+    width: 35px;
+    height: 32px;
+}
+
+.spanAnswerCommentT{
+    color: white;
+    font-family: Arial;
+    font-size: 10px;
+    background-color: #20699B;
+}
+
+.spanAnswerCommentT{
+    color: white;
+    font-family: Arial;
+    font-size: 10px;
+    background-color: #20699B;
+}
+
+.tdTop7T{
+    background-color: #20699B;
+}
+
+.trowT{
+    padding: 0px;
+    margin: 0px;
+}
+
+.tdQnT{
+    padding: 0px;
+    margin: 0px;
+}
+
+.divFrameT{
+    background-color: white;
+}
+
+.iFrameQnT{
+    width: 100%;
+}
+
+#divSolutionIFrameT{
+    z-index: 501;
+    top: 0px;
+}
+
+#CssTableT{
+    width: 85%;
+    text-align: center;
+    padding: 8px;    
+}
+
+#CssTable2T{
+    width: 15%;
+}
+
+#imgSolutionIFrameClose{
+    align-items: right;
+}

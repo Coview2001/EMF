@@ -1,0 +1,634 @@
+@charset "utf-8";
+/* trophy_club CSS Document */
+
+#trophy_club_container {
+	height: 80px;
+	width: 80px;
+	display: inline-block;
+	float: right;
+	margin-right: 0px;
+	margin-left: 15px;
+	padding: 0;
+}
+
+#trophy_club_section {
+	height: 55px;
+	width: 70px;
+	display: inline-block;
+	float: left;
+	margin: 15px 0 0 0;
+	padding: 0;
+	border-left: solid 1px #5d5d5d;
+}
+
+.trophy_club_section_title {
+	height: 12px;
+	width: 60px;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	color: #FFF;
+	float: right;
+	clear: both;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#trophy_club_current {
+	height: 40px;
+	width: 60px;
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 3px;
+	float: right;
+	clear: both;
+	background-image: url('../Image/trophy_club/trophy_club_10.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+#trophy_club_legend {
+	display: block;
+	position: absolute;
+	z-index: 9999991;
+	width: 320px;
+	background-color: #3d3d3d;
+	float: right;
+	margin-top: 65px;
+	right: 15%;
+	-moz-box-shadow: 5px 5px 5px rgba(23, 23, 23, 0.3);
+	-webkit-box-shadow: 5px 5px 5px rgba(23, 23, 23, 0.3);
+	box-shadow: 5px 5px 5px rgba(23, 23, 23, 0.3);
+	height: auto;
+	overflow: hidden;
+	transition: all .3s ease;
+}
+
+.trophy_club_legend_title {
+	display: block;
+	height: 20px;
+	width: 100%;
+	padding: 0;
+	margin: 30px auto;
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #FFF;
+	float: right;
+	clear: both;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#trophy_club_progress_container {
+	display: block;
+	height: 30px;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	float: right;
+	clear: both;
+	text-align: center;
+}
+
+.trophy_club_progress_trophy {
+	display: inline-block;
+	height: 30px;
+	width: 40px;
+	padding: 0;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#trophy_club_progress_trophy_current {
+	background-image: url('../Image/trophy_club/trophy_club_10.png');
+}
+
+#trophy_club_progress_trophy_next {
+	background-image: url('../Image/trophy_club/trophy_club_25.png');
+}
+
+#trophy_club_progress_bar_div {
+	display: inline-block;
+	height: 12px;
+	width: 180px;
+	padding: 0;
+	margin: 9px auto;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #8a8a8a;
+	vertical-align: top;
+}
+
+#trophy_club_progress_bar_div_progress {
+	display: block;
+	height: 100%;
+	width: 0%;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #17cc24;
+	float: left;
+}
+
+.trophy_club_legend_text {
+	display: block;
+	height: 15px;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 13px;
+	line-height: 13px;
+	color: #FFF;
+	float: right;
+	clear: both;
+	text-align: center;
+}
+
+.trophy_club_legend_spacing {
+	display: block;
+	height: 15px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20x;
+	border-bottom: solid 1px #6e6e6e;
+	clear: both;
+}
+
+#trophy_club_legend_spacing_table {
+	margin: 15px auto;
+	margin-bottom: 25px;
+	color: #FFF;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	#trophy_club_legend_spacing_table th {
+		font-size: 13px;
+		line-height: 13px;
+		font-weight: normal;
+	}
+
+	#trophy_club_legend_spacing_table th,
+	#trophy_club_legend_spacing_table td {
+		width: 33%;
+		text-align: left;
+		height: 50px;
+	}
+
+.tfr {
+	padding-left: 50px;
+}
+
+.tsr {
+	padding-left: 15px;
+}
+
+.legend_trophy_icon {
+	display: block;
+	height: 35px;
+	width: 45px;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	float: left;
+	margin-left: -5px;
+}
+
+#legend_trophy_icon_01 {
+	background-image: url('../Image/trophy_club/trophy_club_0.png');
+}
+
+#legend_trophy_icon_02 {
+	background-image: url('../Image/trophy_club/trophy_club_10.png');
+}
+
+#legend_trophy_icon_03 {
+	background-image: url('../Image/trophy_club/trophy_club_25.png');
+}
+
+#legend_trophy_icon_04 {
+	background-image: url('../Image/trophy_club/trophy_club_50.png');
+}
+
+#legend_trophy_icon_05 {
+	background-image: url('../Image/trophy_club/trophy_club_75.png');
+}
+
+#legend_trophy_icon_06 {
+	background-image: url('../Image/trophy_club/trophy_club_100.png');
+}
+
+#legend_trophy_icon_07 {
+	background-image: url('../Image/trophy_club/trophy_club_150.png');
+}
+
+#legend_trophy_icon_08 {
+	background-image: url('../Image/trophy_club/trophy_club_200.png');
+}
+
+#legend_trophy_icon_09 {
+	background-image: url('../Image/trophy_club/trophy_club_250.png');
+}
+
+#legend_trophy_icon_10 {
+	background-image: url('../Image/trophy_club/trophy_club_300.png');
+}
+
+#legend_trophy_icon_11 {
+	background-image: url('../Image/trophy_club/trophy_club_350.png');
+}
+
+#legend_trophy_icon_12 {
+	background-image: url('../Image/trophy_club/trophy_club_400.png');
+}
+
+.legend_trophy_row_selected {
+	background-color: #232323;
+}
+
+#trophy_legend_marker {
+	display: block;
+	height: 16px;
+	width: 10px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../Image/trophy_club/trophy_legend_marker.png');
+	position: absolute;
+	left: 27px;
+	margin-top: 9px;
+}
+
+#trophy_club_rank_up_overlay {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	z-index: 999999;
+	margin: 0 auto;
+	background-size: 70%;
+	background-repeat: repeat;
+}
+
+.trophy_club_rank_up_overlay_english {
+	background-image: url('../Image/english_subject_bg.png');
+}
+
+.trophy_club_rank_up_overlay_maths {
+	background-image: url('../Image/maths_subject_bg.png');
+}
+
+#trophy_club_rank_up_reward_div {
+	height: 400px;
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: -20px;
+}
+
+#trophy_club_rank_up_trophy {
+	height: 320px;
+	width: 400px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 35px;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	position: absolute;
+	background-size: contain;
+	background-image: url('../Image/trophy_club/trophy_club_large_10.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#trophy_club_rank_up_shadow {
+	height: 30px;
+	width: 290px;
+	display: block;
+	margin: 325px auto;
+	left: 0;
+	right: 0;
+	z-index: -6;
+	position: absolute;
+	background-image: url('../Image/trophy_shadow.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bonus_points_text {
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 55px;
+	color: #FC0;
+}
+
+.trophy_club_rank_up_container_title {
+	display: block;
+	width: 90%;
+	margin: 40px auto;
+	margin-bottom: 0;
+}
+
+
+	.trophy_club_rank_up_container_title p {
+		text-align: center;
+		line-height: 30px;
+		font-size: 20px;
+		color: #FFF;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		/** text-shadow:3px 1px 3px rgba(0, 0, 0, 0.4);	 **/
+	}
+
+#spnClub {
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.trophy_club_rank_up_button_box {
+	margin: 0 auto;
+	width: 70%;
+	height: 150px;
+	display: table;
+	padding: 0;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.trophy_club_rank_up_btn {
+	margin: 20px auto;
+	float: none;
+	height: 60px;
+}
+
+
+/** Media Queries **/
+
+@media screen and (max-width:1100px) {
+	#trophy_club_legend {
+		width: 300px;
+		margin-top: 65px;
+		right: 15%;
+	}
+
+	#trophy_club_progress_container {
+		height: 30px;
+	}
+
+	.trophy_club_progress_trophy {
+		height: 30px;
+		width: 40px;
+	}
+
+	#trophy_club_progress_bar_div {
+		height: 12px;
+		width: 180px;
+		padding: 0;
+		margin: 9px auto;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	#trophy_club_progress_bar_div_progress {
+		/** width:57px; **/
+	}
+
+	.trophy_club_legend_spacing {
+		height: 15px;
+		margin-bottom: 20x;
+	}
+
+	#trophy_club_legend_spacing_table {
+		margin: 15px auto;
+		margin-bottom: 20px;
+	}
+
+		#trophy_club_legend_spacing_table th {
+			font-size: 11px;
+			line-height: 11px;
+		}
+
+		#trophy_club_legend_spacing_table th,
+		#trophy_club_legend_spacing_table td {
+			width: 33%;
+			height: 40px;
+			font-size: 11px;
+			line-height: 11px;
+		}
+
+	.tfr {
+		padding-left: 50px;
+	}
+
+	.tsr {
+		padding-left: 15px;
+	}
+
+	.legend_trophy_icon {
+		height: 30px;
+		width: 40px;
+		margin-left: -6px;
+	}
+
+	#trophy_legend_marker {
+		height: 16px;
+		width: 10px;
+		left: 27px;
+		margin-top: 9px;
+	}
+
+	#trophy_club_rank_up_reward_div {
+		height: 250px;
+		width: 250px;
+		margin-bottom: 0;
+	}
+
+	#trophy_club_rank_up_trophy {
+		height: 200px;
+		width: 260px;
+		margin-top: 20px;
+	}
+
+	#trophy_club_rank_up_shadow {
+		width: 210px;
+		margin: 200px auto;
+	}
+
+	.trophy_club_rank_up_button_box {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	#trophy_club_container {
+		float: left;
+		margin-right: 15px;
+		margin-left: 0px;
+	}
+
+	#trophy_club_section {
+		border-left: none;
+		border-right: solid 1px #5d5d5d;
+		margin-top: 8px;
+	}
+
+	#trophy_club_legend {
+		margin-top: 82px;
+		left: 130px;
+	}
+}
+
+@media screen and (max-width:800px) {
+	#trophy_club_legend {
+		margin-top: 82px;
+		left: 118px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	#trophy_club_legend {
+		left: 120px;
+		width: 250px;
+		margin-top: 62px;
+	}
+
+	.trophy_club_legend_title {
+		height: 20px;
+		margin: 20px auto;
+		font-size: 15px;
+		font-weight: bold;
+		line-height: 20px;
+	}
+
+	.trophy_club_legend_text {
+		height: 15px;
+		margin-bottom: 10px;
+		font-size: 11px;
+		line-height: 11px;
+	}
+
+	#trophy_club_progress_bar_div {
+		width: 140px;
+	}
+}
+
+@media screen and (max-width:425px) {
+	.trophy_club_rank_up_container_title {
+		width: 90%;
+	}
+
+	#trophy_club_rank_up_reward_div {
+		height: 200px;
+		width: 200px;
+	}
+
+	#trophy_club_rank_up_trophy {
+		height: 150px;
+		width: 200px;
+		margin-top: 20px;
+	}
+
+	#trophy_club_rank_up_shadow {
+		width: 160px;
+		margin: 153px auto;
+	}
+
+	.trophy_club_rank_up_button_box {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:375px) {
+	#trophy_club_container {
+		height: 60px;
+		width: 60px;
+	}
+
+	#trophy_club_section {
+		margin-top: 0;
+		height: 60px;
+	}
+
+	#trophy_club_current {
+		height: 45px;
+		width: 60px;
+		margin-top: 4px;
+	}
+
+	#trophy_club_legend {
+		left: 82px;
+		width: 262px;
+		margin-top: 63px;
+	}
+
+	.trophy_club_legend_title {
+		margin-bottom: 10px;
+	}
+
+	.trophy_club_legend_text {
+		margin-bottom: 0px;
+	}
+
+	.trophy_club_legend_spacing {
+		margin-bottom: 10x;
+	}
+
+	#trophy_club_legend_spacing_table {
+		margin-bottom: 15px;
+	}
+
+		#trophy_club_legend_spacing_table th {
+			font-size: 10px;
+			line-height: 10px;
+		}
+
+		#trophy_club_legend_spacing_table th,
+		#trophy_club_legend_spacing_table td {
+			height: 30px;
+			font-size: 10px;
+			line-height: 10px;
+		}
+
+	.tfr {
+		padding-left: 50px;
+	}
+
+	.tsr {
+		padding-left: 15px;
+	}
+
+	.legend_trophy_icon {
+		height: 20px;
+		width: 40px;
+		margin-left: -6px;
+	}
+
+	#trophy_legend_marker {
+		height: 16px;
+		width: 10px;
+		left: 27px;
+		margin-top: 9px;
+	}
+}
+
+#trophy_club_legend {
+	display: none;
+}

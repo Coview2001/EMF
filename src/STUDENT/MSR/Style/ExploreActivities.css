@@ -1,0 +1,1355 @@
+﻿@charset "utf-8";
+html{
+	min-width:320px;
+}
+
+
+#main_top_container{
+	background-image:none;
+}
+
+
+.section_title_bar_contents{
+	background-color:#178ccc;
+}
+
+
+#bt_contents_math,
+#bt_contents_english,
+#bt_contents_physics,
+#bt_contents_chemistry,
+#bt_contents_biology{
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	padding:0;
+	background-position:right;
+}
+
+
+#bt_contents_math{
+	background-image:url('../Image/bar_titles_contents_math.png');
+}
+
+
+#bt_contents_english{
+	background-image:url('../Image/bar_titles_contents_english.png');
+}
+
+
+#bt_contents_physics{
+	background-image:url('../Image/bar_titles_contents_physics.png');
+}
+
+
+#bt_contents_chemistry{
+	background-image:url('../Image/bar_titles_contents_chemistry.png');
+}
+
+
+#bt_contents_biology{
+	background-image:url('../Image/bar_titles_contents_biology.png');
+}
+
+
+#contents_subjects{
+	height:45px;
+	width:100%;
+	display:block;
+	clear:both;
+	background-color:#178ccc;
+}
+
+
+.subject_btn{
+	height:100%;
+	width:19.84%;
+	margin-right:0.2%;
+	display:block;
+	float:left;
+	background-color:#0d2346;
+	cursor:pointer;
+}
+
+
+.subject_btn_last{
+	margin-right:0;
+}
+
+
+.subject_btn p{
+	line-height:45px;
+	padding:0;
+	margin:0;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:13px;	
+	color:#FFF;
+}
+
+
+.subject_btn_selected {
+	background-color:#178ccc;
+}
+
+
+.contents{
+	min-height:85vh;
+	min-width:320px;	
+	background-color:#FFF;
+}
+
+
+.contents:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+
+
+.grade_container{
+	width:100%;
+	margin:20px auto;
+	float:left;
+	padding:0;
+	display:block;
+	background-color:#FFF;
+}
+
+
+.grade_container_content{
+	width:100%;
+	display:block;
+}
+
+
+p{
+	padding:0;
+	margin:0;
+}
+
+
+.contents-btn-icon{
+	display:inline-block;
+	margin-right:5px;
+	margin-left:20px;
+	cursor:pointer;
+}
+
+
+.expand_box{
+	display:inline-table;
+	height:30px;
+	width:29px;
+	margin:0;
+	position:absolute;
+}
+
+
+.contents-collapse{
+	width:29px;
+	height:16px;
+	background:url("../Image/content_unit_toggle.png") no-repeat;
+	background-position:top;
+	margin-top:7px;
+}
+
+
+.contents-expand{
+	width:29px;
+	height:16px;
+	background:url("../Image/content_unit_toggle.png") no-repeat;
+	background-position:bottom;
+	margin-top:7px;	
+}
+
+
+.unit_box{
+	height:30px;
+	width:80%;
+	display:inline-table;
+	margin:0;
+	margin-left:60px;
+	padding:0;
+}
+
+
+.grade_container_content p.grade_container_title{
+	height:100%;
+	width:100%;
+	font-size:22px;
+	color:#082649;
+	font-weight:bold;
+	text-transform:uppercase;
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:left;
+}
+
+
+p.grade_container_curriculum{
+	font-size:14px;
+	color:#231F20;
+	margin-left:20px;
+	margin-bottom:10px;
+}
+
+
+.chapter_break{
+	height:15px;
+	width:100%;
+	display:block;
+}
+
+
+.unit_break{
+	height:25px;
+	width:100%;
+	display:block;
+}
+
+
+.chapter_title{
+	height:30px;
+	width:90%;
+	display:inline-table;
+	margin:0;	
+	padding:0;
+	margin-bottom:8px;
+	margin-left:20px;
+}
+
+
+.chapter_title p{
+	font-size:16px;
+	line-height:16px;
+	color:#0C8CC8;
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	height:100%;
+	width:100%;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+}
+
+
+.row_container{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+	display:block;
+	background-image:url('../Image/row_container_bg.png');
+	background-repeat:repeat-x repeat-y;
+}
+
+
+.row_container:after{
+	clear:both;
+	content:"";
+	display:block;
+}
+
+
+.activity{
+	width:25%;
+	height:40px;
+	display:inline-table;
+	float:left;
+	border:none;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+	position:relative;
+	cursor:pointer;
+}
+
+
+.sample{
+	cursor:pointer;
+}
+
+
+.try_me{
+	height:22px;
+	width:50px;
+	margin:9px 0 9px 20px;
+	display:inline-table;
+	background-image:url('../Image/try_me_arrow.png');
+	background-size:contain;
+	background-repeat:no-repeat;
+	float:left;
+	cursor:pointer;
+}
+
+
+.try_me p{
+	height:100%;
+	width:100%;
+	font-size:9px;
+	color:#FFF;
+	font-weight:bold;
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:left;
+}
+
+
+.last_score_percentage{
+	height:22px;
+	width:28px;
+	margin:10px 0 0 0;
+	display:inline-table;
+	float:left;
+	text-align:center;
+}
+
+
+.last_score_percentage p{
+	height:100%;
+	width:100%;
+	font-size:9px;
+	color:#58595B;
+	font-weight:bold;
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:left;
+	padding:0;
+	margin:0;
+	text-align:center;	
+}
+
+
+.activity_num{
+	height:40px;
+	width:30px;
+	float:left;
+	display:inline-table;
+	margin-left:20px;
+}
+
+
+.activity_num p{
+	height:100%;
+	width:100%;
+	font-size:11px;
+	color:#58595B;
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:left;
+}
+
+
+.activity_icon_lesson,
+.activity_icon_game,
+.activity_icon_test{
+	height:24px;
+	width:38px;
+	float:left;
+	display:block;
+	margin-top:12px;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+
+.activity_icon_lesson{
+	background-image:url('../Image/lessons_icon_lrg.png');
+}
+
+
+.activity_icon_game{
+	background-image:url('../Image/games_icon_lrg.png');
+}
+
+
+.activity_icon_test{
+	background-image:url('../Image/tests_icon_lrg.png');
+}
+
+
+.activity_name{
+	height:40px;
+	width:60%;
+	min-width:200px;
+	float:left;
+	display:inline-table;
+	margin-left:3px;
+}
+
+
+.activity_name p{
+	height:100%;
+	font-size:14px;
+	line-height:16px;
+	color:#3B3B3B;
+	font-weight:400;
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:left;
+}
+
+
+.activity_name p.try_me_link{
+	text-decoration:underline;
+	color:#F37521;
+}
+
+
+.grade-dropdown{
+	display:inline-block;
+	width:140px;
+	height:30px;
+	position:absolute;
+	margin:25px 0 0 60px;
+	padding:0 0 0 10px;
+	font-size:12px;
+	border:0;
+	box-sizing:border-box;
+	color:#535353;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+	background-color:#FFF;
+	background-image:url('../Image/contents-down.png');
+	background-position:right;
+	background-repeat:no-repeat;
+    background-position:right;	
+    -webkit-border-radius:0;
+    border-radius:0px;
+}
+
+.activities_grade_dropdownT{
+
+	font-size:11px;
+	width:340px;
+	float:left;
+	position:relative;
+	display:inline-block;
+	height:30px;
+	margin:10px 0 0 0px;
+	padding:0 0 0 10px;
+	border:0;
+	box-sizing:border-box;
+	color:#535353;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+	background-color:#FFF;
+	background-image:url('../Image/contents-down.png');
+	background-position:right;
+	background-repeat:no-repeat;
+    background-position:right;	
+    -webkit-border-radius:0;
+    border-radius:0px;
+}
+
+.search_activities_sml_btn{
+	display:table;
+	float:left;
+	min-width:200px;
+	height:30px;
+	margin:10px 0 0 320px;
+	margin-left:10px;
+	padding:0;
+	border:0;
+	color:#535353;
+	background-color:#f60;
+    border-radius:0px;
+	cursor:pointer;
+	-webkit-box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);
+	box-shadow:0px 2px 2px 2px rgba(0,0,0,0.15);	
+}
+
+
+.search_activities_sml_btn a{
+	text-decoration:none;
+	outline:none;
+	padding:0 15px 0 15px;
+	margin:0;
+	height:100%;	
+	width:100%;
+	font-size:12px;
+	color:#FFF;
+	display:table-cell; 
+	vertical-align:middle; 
+	text-align:center;
+	cursor:pointer;	
+}
+
+#achievements_btn {
+	height: 24px;
+	width: 90px;
+	background: #ff6600;
+	padding: 0;
+	transition: all 0.3s ease 0s;
+	position: absolute;
+	left: 250px;
+	margin-top: 17px;
+	cursor: pointer;
+	display: none;
+}
+
+
+#achievements_btn:hover{
+	background:#ff6600;
+}
+
+
+#achievements_btn a{
+	text-decoration:none;
+	outline:none;
+	padding:4px;
+	margin:0;
+	height:100%;
+	width:100%;
+	font-size:10px;
+	color:#FFF;
+	text-align:center;
+	display:table-cell; 
+	vertical-align:middle;
+}
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
+.css-select-children{
+	/* background:url('../Image/arrow.png'); */
+	background-repeat:no-repeat;
+	background-position:95% 50%;
+}
+
+
+select::-ms-expand{
+    display:none;
+}	
+
+
+@-moz-document url-prefix(){ 
+.css-select-children{
+	  /* background:url('../Image/arrow.png'); */
+	  background-repeat:no-repeat;
+	  background-position:95% 50%;
+}
+}
+}
+
+
+.mob-grade-dropdown{
+	display:none;
+}	
+
+
+.grade_container_blank{
+	background-color:#cacaca;
+}
+
+
+#contents_english,
+#contents_physics,
+#contents_chemistry,
+#contents_biology{
+	display:none;
+}
+
+
+#media_gap{
+	width:100%;
+	height:30px;
+	display:none;
+}
+
+
+.mobile_contents_subject_btn{
+	height:40px;
+	width:100%;
+	position:absolute;
+	z-index:60;
+	margin:0 auto;
+	padding:0;
+	display:none;
+}
+
+
+#mob_subject_menu_container{
+	width:100%;
+	height:0px;
+	z-index:50;
+    position:fixed;
+	top:80px;
+	display:none;
+	-webkit-box-shadow:0px 7px 21px 1px rgba(0,0,0,0.46);
+	-moz-box-shadow:0px 7px 21px 1px rgba(0,0,0,0.46);
+	box-shadow:0px 7px 21px 1px rgba(0,0,0,0.46);
+	overflow-y:hidden;
+    -moz-transition:height .5s;
+    -ms-transition:height .5s;
+    -o-transition:height .5s;
+    -webkit-transition:height .5s;
+    transition:height .5s;
+}
+
+
+#mob_subject_menu{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+	background-color:#E2E2E2;
+	display:block;
+	overflow-x:hidden;
+}
+
+
+.mob_subject_menu_row{
+	height:40px;
+	width:100%;
+	background-color:#FFF;
+	margin:0px;
+	margin-bottom:1px;
+	cursor:pointer;
+}
+
+
+.mob_subject_menu_row p{
+	padding:0;
+	margin:0;
+	width:95%;
+	text-align:left;
+	margin-left:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+	line-height:40px;
+}
+
+
+#mobile_subject_arrow{
+	height:40px;
+	width:40px;
+	display:block;
+	background-image:url('../Image/arrow_down.png');
+	background-size:auto;
+	background-repeat:no-repeat;
+	float:right;
+	right:8px;
+	position:absolute;
+	z-index:55;
+	display:none;
+}
+
+
+#bt_contents_math p.bar_title,
+#bt_contents_english p.bar_title,
+#bt_contents_physics p.bar_title,
+#bt_contents_chemistry p.bar_title,
+#bt_contents_biology p.bar_title{
+	display:none;
+}
+
+
+#mob-dropdown{
+	display:none;
+}
+
+
+p.try_sml{
+	display:none;
+}
+
+
+#back_to_contents_btn{
+	height:30px;
+	width:30px;
+	display:inline-table;
+	position:absolute;
+	margin:25px 0 0 15px;
+	background-color:#f37522;
+	cursor:pointer;
+}
+
+
+#back_to_contents_btn p{
+	height:100%;
+	width:100%;
+	font-size:16px;
+	color:#FFF;
+	font-weight:bold;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+
+#tool_bar{
+	height:50px;
+	width:100%;
+	display:block;
+	background-color:#333333;
+}
+
+
+@media screen and (max-width:1530px){
+.activity{
+	width:33%;
+}
+}
+
+
+@media screen and (max-width:1400px){
+.grade-dropdown{
+	margin-top:15px;
+}
+
+
+#back_to_contents_btn{
+	margin-top:15px;
+}
+}
+
+
+@media screen and (max-width:1382px){
+.activity-name{
+	max-width:65%;	
+}
+}
+
+
+
+@media screen and (max-width:1124px){
+.activity{
+	width:33%;
+}
+
+
+.try_me{
+	width:30px;
+	background-size:cover;
+	background-position:right;
+}
+
+
+.try_me p{
+	font-size:7px;
+	padding-left:5px;
+}
+
+
+.try_me_none{
+	width:30px;
+}
+
+
+p.try_lrg{
+	display:none;
+}
+
+
+p.try_sml{
+	display:table-cell;
+}
+
+
+.activity_name{
+	min-width:180px;	
+}
+
+
+.activity_name p{
+	font-size:12px;
+	line-height:14px;
+	padding-right:10px;
+}
+}
+@media screen and (max-width:1024px) {
+	#user_banner {
+		height: auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+
+	#user_strip_right_container {
+		height: 80px;
+		clear: both;
+		float: left;
+	}
+
+
+	#user_strip_left_container {
+		height: 50px;
+		float: left;
+		min-width: 500px;
+		display: block;
+		clear: both;
+		position: absolute;
+		margin-left: 165px;
+		margin-top: 30px;
+	}
+
+
+	#user_strip_weekly_progress_container {
+		height: 12px;
+		width: 100%;
+		float: left;
+		margin-top: 10px;
+		padding: 0;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: both;
+	}
+
+
+	#user_strip_weekly_progress_text {
+		height: 12px;
+		padding: 0;
+		margin-right: 5px;
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		float: left;
+		text-align: right;
+		display: inline-block;
+	}
+
+
+	#user_strip_weekly_achievements_container {
+		height: 18px;
+		width: 100%;
+		float: left;
+		margin-top: 3px;
+		padding: 0;
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: both;
+	}
+
+
+	#user_strip_weekly_achievements_text {
+		height: 18px;
+		padding: 0;
+		display: inline-block;
+		margin-right: 5px;
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 18px;
+		color: #FFF;
+		float: left;
+	}
+
+
+	#user_strip_weekly_progress_bar {
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		float: left;
+		background-color: #8a8a8a;
+		position: relative;
+	}
+
+
+	#user_strip_weekly_progress_bar_progress {
+		height: 100%;
+		display: block;
+		float: left;
+		background-color: #17cc24;
+	}
+
+
+	.user_strip_weekly_achievements_item {
+		height: 100%;
+		width: auto;
+		float: left;
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+
+	.trophy {
+		height: 18px;
+		width: 18px;
+		display: inline-block;
+		margin-right: 3px;
+		float: left;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
+	.avatar_container {
+		height: 80px;
+		width: 80px;
+		display: inline-block;
+		float: left;
+		margin-left: 0px;
+		margin-right: 0;
+		padding: 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
+	#my_points_container {
+		float: left;
+		display: block;
+	}
+
+
+	#my_points_text {
+		height: 12px;
+		width: auto;
+		float: left;
+		margin-left: 120px;
+		margin-top: 8px;
+		padding: 0;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: left;
+		position: absolute;
+	}
+
+
+	.my_points_amount {
+		height: 40px;
+		width: auto;
+		float: left;
+		margin-left: 200px;
+		margin-top: 8px;
+		padding: 0;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: right;
+	}
+
+
+	#ump_btn {
+		height: 24px;
+		width: 100px;
+		display: table;
+		background: #ff6600;
+		padding: 0;
+		transition: all 0.3s ease 0s;
+		margin-top: 2px;
+		position: absolute;
+		float: left;
+		margin-left: 165px;
+	}
+
+
+	.trophy {
+		height: 12px;
+		width: 12px;
+		margin-right: 3px;
+		margin-top: 3px;
+		float: left;
+	}
+}
+
+@media screen and (max-width:930px){
+.activity{
+	width:50%;
+}
+
+
+.activity_name{
+	min-width:240px;	
+}
+}
+
+
+@media screen and (max-width:800px){
+.grade-dropdown{
+	height:25px;
+	margin-top:5px;
+	padding-top:0;
+}
+
+
+#back_to_contents_btn{
+	margin-top:5px;
+	height:25px;
+}
+
+
+#media_gap{
+	display:block;
+}
+
+
+.section_title_bar_contents{
+	background-color:#178ccc;
+}
+
+
+#contents_subjects{
+	height:30px;
+}
+
+
+.subject_btn p{
+	line-height:30px;
+}
+
+
+.activity_name{
+	min-width:200px;	
+}
+}
+
+
+@media screen and (max-width:720px){
+#media_gap{
+	display:none;
+}
+
+
+.activity_name{
+	min-width:180px;	
+}
+	#user_banner {
+		padding-top: 10px;
+		margin-top: 50px;
+	}
+
+
+	#user_strip_left_container {
+		height: 50px;
+		float: left;
+		min-width: inherit;
+		display: block;
+		clear: both;
+		position: absolute;
+		margin-top: 30px;
+	}
+}
+
+
+@media screen and (max-width:650px){
+.grade_container_content p.grade_container_title{
+	font-size:16px;
+}
+
+
+p.grade_container_curriculum{
+	font-size:12px;
+}
+
+
+.chapter_title p{
+	font-size:13px;
+}
+
+
+.activity{
+	width:100%;
+}
+
+
+.activity_name{
+	width:74%;	
+	min-width:250px;	
+}
+}
+
+
+@media screen and (max-width:600px){
+#tool_bar{
+	height:auto;
+	padding-bottom:0;
+}
+	#user_banner {
+		height: 110px;
+	}
+
+
+	#user_strip_weekly_progress_bar {
+		width: 190px;
+		height: 10px;
+		position: absolute;
+		margin-top: 14px;
+	}
+
+
+	#user_strip_weekly_achievements_container {
+		height: 18px;
+		width: 100%;
+		float: left;
+		margin-top: 15px;
+		padding: 0;
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: both;
+	}
+
+
+	.user_strip_weekly_achievements_item_first {
+		clear: left;
+	}
+
+#tool_bar_container{
+	position:relative;
+}
+
+
+.activities_grade_dropdownT{
+	width:100%;
+	height:40px;
+}
+
+
+.search_activities_sml_btn{
+	display:table;
+	float:left;
+	min-width:100%;
+	height:40px;
+	margin:60px 0 10px 0;
+	margin-top:10px;
+}
+}
+
+
+@media screen and (max-width:540px){
+.contents{
+}
+	
+	
+.grade-dropdown{
+	display:none;
+}
+
+
+#back_to_contents_btn{
+	display:none;
+}
+
+	
+.grade_container{
+	width:100%;
+}
+
+
+#bt_contents_math,
+#bt_contents_english,
+#bt_contents_physics,
+#bt_contents_chemistry,
+#bt_contents_biology{
+	float:left;
+	margin-left:20px;
+	height:30px;
+	margin-top:5px;
+	position:relative;
+	background-image:none;
+	width:auto;	
+}
+
+
+#contents_subjects{
+	display:none;
+}
+
+
+.mobile_contents_subject_btn{
+	display:block;
+}
+
+
+#mobile_subject_arrow{
+	display:block;
+}
+
+
+.section_title_bar_contents{
+	z-index:50;
+    position:fixed;
+	top:40px;
+	display:block;
+	width:100%;
+}
+
+
+#bt_contents_math p.bar_title,
+#bt_contents_english p.bar_title,
+#bt_contents_physics p.bar_title,
+#bt_contents_chemistry p.bar_title,
+#bt_contents_biology p.bar_title{
+	font-family:"Arial Black", Gadget, sans-serif;
+	padding:0;
+	margin:0;
+	line-height:30px;
+	font-size:32px;
+	text-align:left;
+	display:inline-block;
+	text-transform:capitalize;
+	color:#FFF;
+}
+
+
+#mob-dropdown{
+	display:block;
+	clear:both;
+	width:100%;
+}
+		
+
+.mob-grade-dropdown{
+	display:inline-block;
+	width:100%;
+	height:40px;
+	position:fixed;
+	z-index:9;
+	margin:40px 0 0 0;
+	padding:0 0 0 20px;
+	font-size:14px;
+	text-align:justify;
+	box-sizing:border-box;
+	color:#535353;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+	background-color:#FFF;
+	background-image:url('../Image/contents-down.png');
+	background-position:97.5% 50%;
+	background-repeat:no-repeat;
+    -webkit-border-radius:0;
+    border-radius:0px;
+	outline:none;
+	border:0;
+	-webkit-box-shadow:0px 1px 1px 1px rgba(0,0,0,0.10);
+	-moz-box-shadow:0px 1px 1px 1px rgba(0,0,0,0.10);
+	box-shadow:0px 1px 1px 1px rgba(0,0,0,0.10);
+}
+
+
+.mob-grade-dropdown:focus{
+	outline:none;	
+}
+
+
+.grade_container_content{
+	padding-top:15px;
+}	
+}
+
+
+@media screen and (max-width:460px){
+
+.activities_grade_dropdownT{
+	font-size:10.5px;
+	padding-left:7px;
+}
+
+.grade_container_content p.grade_container_title{
+	font-size:14px;
+	line-height:15px;
+}
+
+
+
+.chapter_title p{
+	font-size:13px;
+	line-height:14px;
+}
+
+
+.activity_name{
+	width:60%;	
+	min-width:150px;	
+}
+}
+
+@media screen and (max-width:425px) {
+	#my_points_text {
+		margin-left: 90px;
+	}
+
+	.my_points_amount {
+		margin-left: 160px;
+	}
+}
+
+@media screen and (max-width:375px) {
+
+	#achievements_btn {
+		display: table;
+	}
+
+	#user_strip_weekly_achievements_container{
+	display:none;
+}
+	#my_points_text {
+		height: 12px;
+		width: auto;
+		float: left;
+		margin-left: 10px;
+		margin-top: 0px;
+		padding: 0;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: left;
+		position: absolute;
+	}
+
+
+	.my_points_amount {
+		height: 40px;
+		width: auto;
+		float: left;
+		margin-left: 85px;
+		margin-top: 0px;
+		padding: 0;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 12px;
+		color: #FFF;
+		clear: right;
+	}
+	#ump_btn {
+		margin-top: 15px;
+		position: absolute;
+		margin-left: 140px;
+	}
+
+
+	#user_strip_left_container {
+		width: 220px;
+		margin-top: 40px;
+		margin-left: 140px;
+	}
+	#user_strip_weekly_progress_bar {
+		width: 190px;
+	}
+}
+
+.trophy_club_legendT{
+display: none;
+}
+
+.user_strip_weekly_progress_bar_progressT{
+	width: 0px;
+}
+
+/* .activity_icon_lesson{
+    height: 24px;
+    width: 38px;
+    float: left;
+    display: block;
+    margin-top: 12px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */

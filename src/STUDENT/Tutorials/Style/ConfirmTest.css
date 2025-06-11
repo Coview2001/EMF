@@ -1,0 +1,74 @@
+.form1T{
+    margin: 0px;
+}
+
+.divButtonsT{
+    width: 100%;
+    background-color: #66CCFE;
+}
+
+.tblButtonsT{
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.tdButtonsT{
+    padding-left: 10px;
+}
+
+.imgbtnBackT{
+    cursor: pointer;
+}
+
+.tdButtons2T{
+    padding-bottom: 10px;
+}
+
+.imgbtnContinueT{
+    cursor: pointer;
+}
+
+.divImageT{
+    display: flex;
+    justify-content: center;
+}
+
+.divImage2T{
+    background-color: #E5E5E5 ;
+}
+
+.divImage3T{
+    height: 205px;
+}
+
+.divImage4T{
+    height: 510px;
+}
+
+.tblTestNameT{
+    padding: 5px;
+    font-family: Arial;
+    width: 100%;
+}
+
+.tdTestNameT{
+    width: 15%;
+}
+
+.tdTestName2T{
+    font-size: 22pt;
+    padding-bottom: 89px;
+    color: #535353;
+    text-align: center;
+}
+
+.trTestNameT{
+    display: none;
+}
+
+.tdTestName3T{
+    font-size: 14pt;
+    vertical-align: top;
+    font-family: Calibri;
+}

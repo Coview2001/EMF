@@ -1,0 +1,3954 @@
+﻿@charset "utf-8";
+body {
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #333333;
+}
+
+
+#bt_msr_my_profile {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    background-image: url('../Image/bar_titles_my_profile.png');
+}
+
+
+#msr_my_profile_title_bar {
+    margin-top: 40px;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#button_box {
+    width: 100%;
+    height: 150px;
+    display: table;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.general_btn {
+    height: 80px;
+    width: 99%;
+    display: inline-table;
+    border: none;
+    background-color: #F60;
+    padding: 0;
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+
+    .general_btn:hover {
+        background-color: #F60;
+        border: none;
+    }
+
+
+    .general_btn a, .general_btn p {
+        text-decoration: none;
+        outline: none;
+        padding: 0 15px 0 15px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFF;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+
+.two_btn {
+    width: 30%;
+}
+
+
+.two_btn_left {
+    margin-right: 25px;
+}
+
+
+.two_btn_lightbox {
+    width: 30%;
+}
+
+
+.title_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    line-height: 60px;
+    color: #FFF;
+    width: 80%;
+    display: block;
+    margin: 60px auto;
+    text-align: center;
+    text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+.ar_text_large_bold {
+    font-size: bold;
+    font-size: 25px;
+}
+
+
+.ar_text_large_blue {
+    color: #09F;
+}
+
+
+#user_banner {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #171717;
+    margin-top: 80px;
+}
+
+
+.subject_banner {
+    height: 80px;
+    width: 100%;
+    min-width: 300px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    clear: both;
+}
+
+.subject_arrow_left_container {
+    height: 100%;
+    width: auto;
+    inline-display: block;
+    float: left;
+    margin-left: 20px;
+}
+
+
+.subject_arrow_right_container {
+    height: 100%;
+    width: auto;
+    inline-display: block;
+    float: right;
+    margin-right: 20px;
+}
+
+
+.subject_arrow {
+    height: 40%;
+    width: 80px;
+    display: block;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+.subject_arrow_left {
+    float: left;
+    clear: left;
+    background-position: top left;
+    background-image: url('../Image/subject_arrow_left_light.png');
+}
+
+
+    .subject_arrow_left:hover {
+        background-image: url('../Image/subject_arrow_left.png');
+    }
+
+
+.subject_arrow_right {
+    float: right;
+    clear: right;
+    background-position: top right;
+    background-image: url('../Image/subject_arrow_right_light.png');
+}
+
+
+    .subject_arrow_right:hover {
+        background-image: url('../Image/subject_arrow_right.png');
+    }
+
+
+.subject_arrow_text {
+    height: 40%;
+    width: auto;
+    display: table;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+.subject_arrow_text_left {
+    float: left;
+    text-align: left;
+}
+
+
+.subject_arrow_text_right {
+    float: right;
+    text-align: right;
+}
+
+
+.subject_arrow_text span {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.subject_container {
+    width: 100%;
+    min-width: 300px;
+    min-height: 85vh;
+    display: block;
+    background-size: 70%;
+    background-repeat: repeat-x repeat-y;
+    position: relative;
+    overflow: auto;
+}
+
+.subject_container_right_bg_images {
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#user_strip_left_container {
+    height: 100%;
+    float: left;
+    min-width: 500px;
+    display: block;
+}
+
+
+#user_strip_right_container {
+    height: 100%;
+    float: right;
+    width: 450px;
+    display: block;
+}
+
+
+.avatar_container {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    margin-left: 15px;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#my_points_container {
+    float: right;
+    display: block;
+}
+
+
+#my_points_text {
+    height: 12px;
+    width: auto;
+    float: right;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    color: #FFF;
+    clear: left;
+}
+
+
+.my_points_amount {
+    height: 40px;
+    width: auto;
+    float: right;
+    margin-left: 15px;
+    margin-top: 2px;
+    padding: 0;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #FFF;
+    clear: right;
+}
+
+
+#view_all_games_btn,
+#ump_btn {
+    height: 24px;
+    width: 100px;
+    display: none;
+    background: #ff6600;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    float: right;
+    margin-top: 40px;
+}
+
+
+#view_all_games_btn {
+    margin-left: 10px;
+    float: left;
+}
+
+
+#view_all_games_btn,
+#ump_btn:hover {
+    background: #ff6600;
+}
+
+
+    #view_all_games_btn a,
+    #ump_btn a {
+        text-decoration: none;
+        outline: none;
+        padding: 0px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+        color: #FFF;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+
+#achievements_btn {
+    height: 24px;
+    width: 90px;
+    background: #ff6600;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    position: absolute;
+    left: 250px;
+    margin-top: 17px;
+    cursor: pointer;
+    display: none;
+}
+
+
+    #achievements_btn:hover {
+        background: #ff6600;
+    }
+
+
+    #achievements_btn a {
+        text-decoration: none;
+        outline: none;
+        padding: 4px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+        color: #FFF;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+
+#user_strip_weekly_progress_container {
+    height: 12px;
+    width: 100%;
+    float: left;
+    margin-top: 22px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    color: #FFF;
+}
+
+
+#user_strip_weekly_progress_text {
+    height: 12px;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    color: #FFF;
+    float: left;
+    display: inline-block;
+}
+
+
+#user_strip_weekly_achievements_container {
+    height: 18px;
+    width: 100%;
+    float: left;
+    margin-top: 8px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    color: #FFF;
+    clear: both;
+}
+
+
+#user_strip_weekly_achievements_text {
+    height: 18px;
+    padding: 0;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #FFF;
+    float: left;
+}
+
+
+#user_strip_weekly_progress_bar {
+    width: 205px;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    float: left;
+    background-color: #8a8a8a;
+    position: relative;
+}
+
+
+#user_strip_weekly_progress_bar_progress {
+    height: 100%;
+    display: block;
+    float: left;
+    background-color: #17cc24;
+}
+
+
+.user_strip_weekly_achievements_item {
+    height: 100%;
+    width: auto;
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.trophy {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    margin-right: 3px;
+    float: left;
+    background-image: url('../Image/trophy_white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.trophy_gold {
+    background-image: none;
+    background-image: url('../Image/trophy_gold.png');
+}
+
+
+.trophy_text {
+    height: 18px;
+    padding: 0;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 18px;
+    color: #FFF;
+    float: left;
+}
+
+
+.trophy_text_last {
+    right: 0;
+    padding-right: 0;
+    margin-right: -20px;
+    float: right;
+}
+
+
+.subject_container_title {
+    display: block;
+    width: 90%;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+
+    .subject_container_title p {
+        text-align: center;
+        line-height: 20px;
+        font-size: 20px;
+        color: #FFF;
+        margin: 0;
+        padding: 0;
+        text-shadow: 3px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+
+.subject_container_text {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+}
+
+
+    .subject_container_text p {
+        text-align: center;
+        line-height: 16px;
+        font-size: 15px;
+        color: #FFF;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+.activity_btn_and_tip_container, .activity_btn_and_tip_container_WLP {
+    height: 140px;
+    width: 540px;
+    display: none;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.md_section_container {
+    height: 310px;
+    width: 540px;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.tip_container {
+    height: 50px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../Image/tip_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 99;
+    -webkit-animation: tipmove 1.5s ease 0s;
+    -webkit-animation-iteration-count: infinite;
+    animation: tipmove 1.5s ease 0s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+
+.wiz_tip_container {
+    height: 60px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -30px;
+}
+
+
+
+@-webkit-keyframes tipmove {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 12px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+
+@keyframes tipmove {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 12px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+
+.tip_container span {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 15px;
+    color: #CCC;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.activity_btn {
+    height: 80px;
+    width: 500px;
+    display: table;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    background-color: #ff6600;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+}
+
+
+.activity_btn_md {
+    margin-top: 220px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.activity_btn_view_md {
+    margin-top: 20px;
+}
+
+
+.setwork_btn {
+    margin-top: 10px;
+}
+
+
+.activity_btn .lesson-text {
+    text-decoration: none;
+    outline: none;
+    padding: 4px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+.double_btn a {
+    font-size: 15px;
+}
+
+
+.activity_icon {
+    height: 100%;
+    width: 45px;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.activity_icon_lesson {
+    background-image: url('../Image/activity_icon_lesson.png');
+}
+
+
+.activity_icon_game {
+    background-image: url('../Image/activity_icon_game.png');
+}
+
+
+.activity_icon_test {
+    background-image: url('../Image/activity_icon_test.png');
+}
+
+
+.activity_icon_md {
+    background-image: url('../Image/activity_icon_md.png');
+}
+
+
+.activity_icon_mdreport {
+    background-image: url('../Image/activity_icon_mdreport.png');
+}
+
+
+.activity_icon_addsubject {
+    background-image: url('../Image/activity_icon_addsubject.png');
+}
+
+
+.activity_icon_physics {
+    background-image: url('../Image/activity_icon_physics.png');
+}
+
+
+.activity_icon_chemistry {
+    background-image: url('../Image/activity_icon_chemistry.png');
+}
+
+
+.activity_icon_biology {
+    background-image: url('../Image/activity_icon_biology.png');
+}
+
+
+.activity_icon_generic {
+    background-image: url('../Image/activity_icon_generic.png');
+}
+
+
+.activity_icon_search {
+    background-image: url('../Image/activity_icon_search.png');
+}
+
+
+.activity_icon_start_lesson_plan {
+    background-image: url('../Image/activity_icon_start_lesson_plan.png');
+}
+
+.button_right_text {
+    height: 80px;
+    width: 100px;
+    display: inline-table;
+    float: right;
+    background-image: url('../Image/button_right_text_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+.button_right_text_overdue {
+    font-size: 10px;
+}
+
+
+.button_right_text span {
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 10px 0 20px;
+}
+
+
+.button_right_text_mdreport {
+    background-image: url('../Image/button_right_text_bg_mdreport.png');
+}
+
+
+.button_right_text_bonus {
+    background-image: url('../Image/button_right_text_bg_bonus.png');
+}
+
+
+.wlp_title_bar {
+    width: 500px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.wlp_title {
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 13px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    margin-right: 4px;
+}
+
+
+.setwork_progress_container,
+.lesson_plan_progress_container, .lesson_plan_progress_container_WLP {
+    width: 500px;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    position: relative;
+    background-color: #2b3d61;
+}
+
+.lesson_plan_progress_container, .setwork_progress_container {
+    display: none;
+}
+
+.lesson_plan_progress_container_WLP {
+    display: block;
+}
+
+
+.setwork_progress_bar,
+.lesson_plan_progress_bar {
+    width: 17%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #17cc24;
+}
+
+
+.setwork_progress_bar_red,
+.lesson_plan_progress_bar_red {
+    background-color: #FE3F44;
+}
+
+
+.view_full_plan_bar, .view_full_plan_bar_WLP {
+    height: 30px;
+    width: 500px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #3a4c71;
+    background-image: url('../Image/wlp_arrow_down.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.view_full_plan_bar_WLP {
+    display: block;
+}
+
+.view_full_plan_bar {
+    display: none;
+}
+
+
+    .view_full_plan_bar span, .view_full_plan_bar_WLP span {
+        display: inline-block;
+        height: 100%;
+        font-size: 13px;
+        line-height: 30px;
+        color: #FFF;
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+
+span.setwork_text,
+span.wlp_text {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    margin-right: 40px;
+    float: right;
+}
+
+
+.setwork_dropdown {
+    height: 30px;
+    width: 500px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    display: table;
+    cursor: pointer;
+    background-color: #283654;
+    background-image: url('../Image/wlp_arrow_down.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+
+.setwork_title_container {
+    height: 100%;
+    width: 80%;
+    display: table;
+    margin: 0 auto;
+}
+
+
+.setwork_dropdown span {
+    display: table-cell;
+    height: 100%;
+    font-size: 13px;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+span.setwork_text {
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    margin-right: 40px;
+    float: right;
+}
+
+
+.setwork_list_container,
+.lesson_plan_list_container {
+    width: 500px;
+    display: none;
+    margin: 0 auto;
+    background-color: #576d90;
+}
+
+
+    .setwork_list_container:after,
+    .lesson_plan_list_container:after {
+        clear: both;
+    }
+
+
+.setwork_groups_list_container {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    background-color: #3d4c69;
+    display: none;
+}
+
+
+    .setwork_groups_list_container:after {
+        clear: both;
+    }
+
+
+.setwork_list_item_row,
+.wlp_list_item_row {
+    height: 25px;
+    width: 100%;
+    display: table;
+    padding: 0;
+    border-bottom: solid 1px #6f84a7;
+    cursor: default;
+}
+
+
+.setwork_list_item_row_clickable,
+.wlp_list_item_row_clickable {
+    cursor: pointer;
+}
+
+
+.setwork_groups_list_item_row {
+    height: 25px;
+    width: 100%;
+    display: table;
+    padding: 0;
+    border-bottom: solid 1px #53617e;
+    cursor: pointer;
+}
+
+
+.setwork_list_current_activity_box,
+.wlp_list_current_activity_box {
+    display: inline-block;
+    outline: none;
+    margin: 0;
+    height: 25px;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.setwork_list_current_activity_arrow,
+.wlp_list_current_activity_arrow {
+    background-image: url('../Image/wlp_list_current_activity_arrow.png');
+}
+
+
+.setwork_list_current_activity_icon,
+.wlp_list_current_activity_icon {
+    display: inline-block;
+    outline: none;
+    margin: 0;
+    height: 20px;
+    width: 22px;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.setwork_list_current_activity_icon_lesson,
+.wlp_list_current_activity_icon_lesson {
+    background-image: url('../Image/activity_icon_lesson_sml.png');
+}
+
+
+.setwork_list_current_activity_icon_game,
+.wlp_list_current_activity_icon_game {
+    background-image: url('../Image/activity_icon_game.png');
+}
+
+
+.setwork_list_current_activity_icon_test,
+.wlp_list_current_activity_icon_test {
+    background-image: url('../Image/activity_icon_test_sml.png');
+}
+
+
+.setwork_list_current_activity_name,
+.wlp_list_current_activity_name {
+    display: inline-table;
+    outline: none;
+    margin: 0;
+    height: 100%;
+    width: 360px;
+    vertical-align: middle;
+    margin-left: 5px;
+    text-align: left;
+}
+
+
+    .setwork_list_current_activity_name p,
+    .wlp_list_current_activity_name p {
+        text-decoration: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        height: 25px;
+        width: 100%;
+        font-size: 10px;
+        color: #FFF;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+
+.setwork_groups_list_current_activity_name {
+    display: inline-table;
+    outline: none;
+    margin: 0;
+    height: 100%;
+    width: 260px;
+    vertical-align: middle;
+    margin-left: 10px;
+    text-align: left;
+}
+
+
+    .setwork_groups_list_current_activity_name p {
+        text-decoration: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        height: 25px;
+        width: 100%;
+        font-size: 10px;
+        color: #FFF;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+
+.setwork_list_current_activity_percentage,
+.wlp_list_current_activity_percentage {
+    display: inline-table;
+    float: right;
+    outline: none;
+    margin: 0;
+    margin-right: 15px;
+    height: 100%;
+    width: 40px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+
+    .setwork_list_current_activity_percentage p,
+    .wlp_list_current_activity_percentage p {
+        text-decoration: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 40px;
+        font-size: 10px;
+        color: #FFF;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+    }
+
+
+.setwork_groups_list_current_activity_duedate {
+    display: inline-table;
+    float: right;
+    outline: none;
+    margin: 0;
+    margin-right: 15px;
+    height: 100%;
+    width: 205px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+
+    .setwork_groups_list_current_activity_duedate p {
+        text-decoration: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100px;
+        font-size: 10px;
+        color: #FFF;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+    }
+
+
+.subject_bottom_gap {
+	 height:150px;
+    width: 100%;
+    display: block;
+}
+
+
+.subject_top_gap,
+.subject_middle_gap {
+    height: 40px;
+    width: 100%;
+    display: block;
+}
+
+
+.subject_wiz_game_container {
+    width: 500px;
+    height: 60px;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+.wiz_game_thumb {
+    height: 100%;
+    width: 22%;
+    margin: 0 auto;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    margin: 0 1px 0 1px;
+}
+
+#english_wizgame_thumb_01 {
+    background-image: url('../Image/wizgame_thumbs/GAME_E_FLASHCOLOR.gif');
+}
+
+#english_wizgame_thumb_02 {
+    background-image: url('../Image/wizgame_thumbs/GAME_PUZ2.gif');
+}
+
+#english_wizgame_thumb_03 {
+    background-image: url('../Image/wizgame_thumbs/GAME_E_HANGCD4.gif');
+}
+
+#english_wizgame_thumb_04 {
+    background-image: url('../Image/wizgame_thumbs/GAME_TIGL1.gif');
+}
+
+#math_wizgame_thumb_01 {
+    background-image: url('../Image/wizgame_thumbs/GAME_M_TIMES.gif');
+}
+
+#math_wizgame_thumb_02 {
+    background-image: url('../Image/wizgame_thumbs/GAME_SQX7.gif');
+}
+
+#math_wizgame_thumb_03 {
+    background-image: url('../Image/wizgame_thumbs/GAME_SUB19.gif');
+}
+
+#math_wizgame_thumb_04 {
+    background-image: url('../Image/wizgame_thumbs/GAME_ADDFS.gif');
+}
+
+.wiz_game_view_all_btn {
+    height: 55px;
+    width: 22%;
+    display: table;
+    float: right;
+    border: none;
+    background-color: #3a4c71;
+    padding: 0;
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin-top: 3px;
+    margin-left: -10px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 99;
+}
+
+    .wiz_game_view_all_btn a {
+        text-decoration: none;
+        outline: none;
+        padding: 0 15px 0 15px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 8px;
+        font-weight: bold;
+        color: #FFF;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+    }
+
+.wiz_game_view_all_btn_empty {
+    float: none;
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.looking_for_lesson_btn {
+    height: 40px;
+    width: 250px;
+    display: table;
+    border: none;
+    background-color: #f60;
+    padding: 0;
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin: 30px auto;
+    background-image: url('../Image/search_btn_icon2.png');
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+    .looking_for_lesson_btn a {
+        text-decoration: none;
+        outline: none;
+        padding: 0 15px 0 15px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+        color: #FFF;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+.subject_inner_hr {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-width: 0;
+    color: #444;
+    height: 6px;
+    line-height: 0;
+    margin: 30px auto;
+    page-break-after: always;
+    text-align: center;
+    width: 100%;
+}
+
+.completed_box {
+    height: 70px;
+    width: 500px;
+    display: table;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    background-image: url('../Image/completed_box_bg.png');
+    background-position: bottom right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+    .completed_box a {
+        text-decoration: none;
+        outline: none;
+        padding: 4px;
+        padding-top: 36px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+
+.setwork_groups_list_completed {
+    color: #0F0;
+}
+
+
+.setwork_groups_list_overdue {
+    color: #FE3F44;
+}
+
+
+.md_logo {
+    height: 120px;
+    width: 200px;
+    display: block;
+    margin: 40px auto;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../Image/md_logo_us_sml.png');
+}
+
+
+#hlinkStartPhysics,
+#hlinkStartBiology,
+#hlinkStartChemistry {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: inherit;
+}
+
+
+#hlinkStartPhysics {
+    background-image: url('../Image/science_btn_bg_physics.png');
+    background-color: #1aabb9;
+}
+
+
+#hlinkStartChemistry {
+    background-image: url('../Image/science_btn_bg_chemistry.png');
+    background-color: #99ca3c;
+}
+
+
+#hlinkStartBiology {
+    background-image: url('../Image/science_btn_bg_biology.png');
+    background-color: #0d6998;
+}
+
+
+#english_setwork_activity_btn_and_tip_container_set01,
+#english_setwork_activity_btn_and_tip_container_set02,
+#english_setwork_activity_btn_and_tip_container_set03,
+#math_setwork_activity_btn_and_tip_container_set01,
+#math_setwork_activity_btn_and_tip_container_set02,
+#math_setwork_activity_btn_and_tip_container_set03,
+#math_setwork_activity_btn_and_tip_container_msr_08_set01 {
+    height: 100px;
+}
+
+
+.activity_btn_and_tip_container_set {
+    height: 100px;
+}
+
+
+#english_setwork_selected_set_text,
+#math_setwork_selected_set_text {
+    font-size: 15px;
+    margin-top: 35px;
+    margin-bottom: -15px;
+}
+
+
+.single_btn {
+    margin-top: 25px;
+}
+
+
+.double_btn_container {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+}
+
+
+.double_btn {
+    margin: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 240px;
+    display: inline-table;
+    float: none;
+    background-color: #52334b;
+}
+
+
+.add_subject_btn {
+    margin-top: 20px;
+    background-color: #3a4c71;
+}
+
+
+#md_btn_righthand {
+    height: 60px;
+    width: 60px;
+    display: none;
+    margin-top: 184px;
+    right: 30px;
+    position: absolute;
+    background-image: url('../Image/md_btn_righthand.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
+
+
+#md_btn_lefthand {
+    height: 80px;
+    width: 80px;
+    display: none;
+    margin-top: 169px;
+    right: 200px;
+    position: absolute;
+    background-image: url('../Image/md_btn_lefthand.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999;
+}
+
+
+#md_btn_body {
+    height: 190px;
+    width: 160px;
+    display: none;
+    margin-top: 50px;
+    right: 50px;
+    position: absolute;
+    background-image: url('../Image/md_btn_body.png');
+    background-repeat: no-repeat;
+    background-position: cover;
+    z-index: 0;
+    bottom: 20px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+
+#md_btn_bubble {
+    height: 130px;
+    width: 290px;
+    display: none;
+    margin-top: 70px;
+    left: 30px;
+    position: absolute;
+    background-image: url('../Image/md_btn_bubble_landscape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+
+    #md_btn_bubble p {
+        padding: 0;
+        width: 205px;
+        height: 90px;
+        display: block;
+        margin-top: 25px;
+        margin-left: 30px;
+        color: #FFF;
+        font-size: 14px;
+    }
+
+
+.md_btn_bubble_title {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+
+.appear_bottom {
+    transform: translateY(-50px);
+}
+
+
+.activity_btn_bonus {
+    margin-top: 20px;
+    background-color: #0c8c15;
+}
+
+
+.list_crown {
+    width: 40px;
+    height: 25px;
+    float: right;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-image: url("../Image/wizcrown_icon_sml.png");
+}
+
+
+.list_crown_blank {
+    width: 40px;
+    height: 25px;
+    float: right;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-image: url("../Image/wizcrown_blank_icon_sml.png");
+}
+
+
+.add_activity_container {
+    height: 40px;
+    width: 500px;
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+
+.add_activity_text_container {
+    display: inline-table;
+    width: auto;
+    height: 35px;
+    padding: 0;
+    margin-right: 10px;
+    float: right;
+}
+
+
+    .add_activity_text_container a {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        color: #FFF;
+        padding: 0;
+        text-align: right;
+    }
+
+
+.add_activity_btn {
+    display: inline-table;
+    width: 250px;
+    height: 35px;
+    padding: 0;
+    background-color: #ff6600;
+    float: right;
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+    background-image: url('../Image/plus_btn_icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left;
+}
+
+
+    .add_activity_btn a {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        color: #FFF;
+        padding: 0;
+    }
+
+
+#wlp_add_activity {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(40, 40, 40, 0.995);
+    position: fixed;
+    z-index: 99;
+    text-align: center;
+}
+
+
+#wlp_add_activity_close_btn {
+    margin: 20px auto;
+    height: 70px;
+    width: 30%;
+    display: table;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+    #wlp_add_activity_close_btn p {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #464646;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+.wlp_list_added_activities {
+    background-color: #3a4c71;
+}
+
+
+    .wlp_list_added_activities span {
+        display: inline-block;
+        height: 100%;
+        font-size: 13px;
+        line-height: 30px;
+        color: #FFF;
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+
+    .wlp_list_added_activities .wlp_text {
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 30px;
+        color: #FFF;
+        padding: 0;
+        margin: 0;
+        margin-right: 10px;
+        float: right;
+    }
+
+
+#english_setwork_progress_bar_01 {
+    width: 75%;
+}
+
+
+#english_setwork_progress_bar_02 {
+    width: 80%;
+}
+
+
+#english_setwork_progress_bar_03 {
+    width: 0%;
+}
+
+
+#math_setwork_progress_bar_01 {
+    width: 100%;
+}
+
+
+#divEnglishTrophyContainer, #divMathsTrophyContainer, #divScienceTrophyContainer {
+    display: none;
+}
+
+
+#math_lesson_plan_progress_bar {
+    width: 45%;
+}
+
+
+#english_setwork_activity_btn_and_tip_container_set01,
+#english_setwork_activity_btn_and_tip_container_set02,
+#english_setwork_activity_btn_and_tip_container_set03,
+#math_setwork_activity_btn_and_tip_container_set02,
+#math_setwork_activity_btn_and_tip_container_set03,
+#english_setwork04_completed_container,
+#math_setwork_activity_btn_and_tip_container_msr_s_0501a_set01,
+#math_setwork_activity_btn_and_tip_container_msr_s_0501a_set02,
+#math_setwork_activity_btn_and_tip_container_msr_s_0501a_set03 {
+    display: none;
+}
+
+
+#setwork01_progress_container,
+#setwork02_progress_container,
+#setwork03_progress_container,
+#setwork04_progress_container,
+#math_setwork02_progress_container,
+#math_setwork03_progress_container,
+#msr_s_0501a_set01_progress_container,
+#msr_s_0501a_set02_progress_container,
+#msr_s_0501a_set03_progress_container {
+    display: none;
+}
+
+
+#english_setwork01_dropdown_bar,
+#english_setwork02_dropdown_bar,
+#english_setwork03_dropdown_bar,
+#english_setwork04_dropdown_bar,
+#math_setwork02_dropdown_bar,
+#math_setwork03_dropdown_bar,
+#math_msr_s_0501a_set01_dropdown_bar,
+#math_msr_s_0501a_set02_dropdown_bar,
+#math_msr_s_0501a_set03_dropdown_bar {
+    display: none;
+}
+
+
+#english_list_setwork01,
+#english_list_setwork02,
+#english_list_setwork03,
+#english_list_setwork04,
+#math_list_setwork02,
+#math_list_setwork03,
+#math_list_msr_s_0501a_setwork01,
+#math_list_msr_s_0501a_setwork02,
+#math_list_msr_s_0501a_setwork03 {
+    display: none;
+}
+
+
+@media screen and (max-width:1920px) {
+    #button_box {
+        height: auto;
+        margin-top: 0px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+
+
+    .general_btn {
+        height: 80px;
+        margin-top: 20px;
+    }
+    #change_user_btn {
+        margin-top: 28px;
+    }
+}
+
+
+@media screen and (max-width:1450px) {
+    .subject_container_right_bg_images {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .title_text {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .subject_container_right_bg_images {
+        background-size: cover;
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    #user_banner {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    #user_strip_right_container {
+        height: 80px;
+        clear: both;
+        float: left;
+    }
+
+
+    #user_strip_left_container {
+        height: 50px;
+        float: left;
+        min-width: 500px;
+        display: block;
+        clear: both;
+        position: absolute;
+        margin-left: 165px;
+        margin-top: 30px;
+    }
+
+
+    #user_strip_weekly_progress_container {
+        height: 12px;
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: both;
+    }
+
+
+    #user_strip_weekly_progress_text {
+        height: 12px;
+        padding: 0;
+        margin-right: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        float: left;
+        text-align: right;
+        display: inline-block;
+    }
+
+
+    #user_strip_weekly_achievements_container {
+        height: 18px;
+        width: 100%;
+        float: left;
+        margin-top: 3px;
+        padding: 0;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: both;
+    }
+
+
+    #user_strip_weekly_achievements_text {
+        height: 18px;
+        padding: 0;
+        display: inline-block;
+        margin-right: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 18px;
+        color: #FFF;
+        float: left;
+    }
+
+
+    #user_strip_weekly_progress_bar {
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        float: left;
+        background-color: #8a8a8a;
+        position: relative;
+    }
+
+
+    #user_strip_weekly_progress_bar_progress {
+        height: 100%;
+        display: block;
+        float: left;
+        background-color: #17cc24;
+    }
+
+
+    .user_strip_weekly_achievements_item {
+        height: 100%;
+        width: auto;
+        float: left;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+    .trophy {
+        height: 18px;
+        width: 18px;
+        display: inline-block;
+        margin-right: 3px;
+        float: left;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    .avatar_container {
+        height: 80px;
+        width: 80px;
+        display: inline-block;
+        float: left;
+        margin-left: 0px;
+        margin-right: 0;
+        padding: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    #my_points_container {
+        float: left;
+        display: block;
+    }
+
+
+    #my_points_text {
+        height: 12px;
+        width: auto;
+        float: left;
+        margin-left: 120px;
+        margin-top: 8px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: left;
+        position: absolute;
+    }
+
+
+    .my_points_amount {
+        height: 40px;
+        width: auto;
+        float: left;
+        margin-left: 200px;
+        margin-top: 8px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: right;
+    }
+
+
+    #ump_btn {
+        height: 24px;
+        width: 100px;
+        display: table;
+        background: #ff6600;
+        padding: 0;
+        transition: all 0.3s ease 0s;
+        float: left;
+        margin-top: 2px;
+        position: absolute;
+        margin-left: 165px;
+    }
+
+
+    .trophy {
+        height: 12px;
+        width: 12px;
+        margin-right: 3px;
+        margin-top: 3px;
+        float: left;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    #button_box {
+        margin-top: 0;
+    }
+
+
+    .general_btn {
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .subject_container_right_bg_images {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    span.wlp_add_activity_title_text {
+        margin-top: 80px;
+    }
+
+
+    #user_banner {
+        margin-top: 70px;
+        padding-top: 10px;
+    }
+
+
+    .subject_arrow_left_container {
+        margin-left: 10px;
+    }
+
+
+    .subject_arrow_right_container {
+        margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .title_text {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+
+    .subject_arrow {
+        width: 30px;
+    }
+
+
+    .subject_arrow_left {
+        margin-left: 0;
+    }
+
+
+    .subject_arrow_right {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:720px) {
+    span.wlp_add_activity_title_text {
+        margin-top: 30px;
+    }
+
+
+    #user_banner {
+        padding-top: 10px;
+        margin-top: 50px;
+    }
+
+
+    #user_strip_left_container {
+        height: 50px;
+        float: left;
+        min-width: inherit;
+        display: block;
+        clear: both;
+        position: absolute;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .title_text {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #user_banner {
+        height: 110px;
+    }
+
+
+    #user_strip_weekly_progress_bar {
+        width: 190px;
+        height: 10px;
+        position: absolute;
+        margin-top: 14px;
+    }
+
+
+    #user_strip_weekly_achievements_container {
+        height: 18px;
+        width: 100%;
+        float: left;
+        margin-top: 15px;
+        padding: 0;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: both;
+    }
+
+
+    .user_strip_weekly_achievements_item_first {
+        clear: left;
+    }
+
+
+    .trophy_text {
+        height: 15px;
+        line-height: 15px;
+    }
+
+
+    .trophy {
+        height: 12px;
+        margin-right: 3px;
+        margin-top: 1px;
+    }
+
+
+    #hlinkStartPhysics,
+    #hlinkStartBiology,
+    #hlinkStartChemistry {
+        margin-top: 30px;
+    }
+
+
+    .subject_arrow_text span {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:590px) {
+    .two_btn {
+        width: 40%;
+    }
+
+
+    .two_btn_left {
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .md_section_container {
+        margin: 0 auto;
+    }
+
+
+    #md_btn_righthand {
+        right: 15px;
+    }
+
+
+    #md_btn_lefthand {
+        right: 185px;
+    }
+
+
+    #md_btn_body {
+        right: 35px;
+    }
+
+
+    #md_btn_bubble {
+        height: 140px;
+        width: 290px;
+        margin-top: 70px;
+        left: 0;
+        background-image: url('../Image/md_btn_bubble_landscape_550.png');
+        background-position: left;
+    }
+
+
+        #md_btn_bubble p {
+            padding: 0;
+            width: 160px;
+            height: 90px;
+            display: block;
+            margin-top: 25px;
+            margin-left: 20px;
+            color: #FFF;
+            font-size: 14px;
+        }
+
+
+    .md_logo {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+
+    .subject_inner_hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .activity_btn_and_tip_container, .activity_btn_and_tip_container_WLP {
+        width: 425px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+
+
+    .md_section_container {
+        width: 425px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+
+
+    .activity_btn {
+        width: 425px;
+        margin-bottom: 10px;
+    }
+
+
+        .activity_btn .lesson-text {
+            font-size: 14px;
+        }
+
+
+    .activity_icon {
+        width: 35px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+
+    .button_right_text {
+        height: 80px;
+        width: 70px;
+    }
+
+
+    .button_right_text_overdue {
+        font-size: 10px;
+    }
+
+
+    .button_right_text p {
+        font-size: 12px;
+        padding: 0 10px 0 20px;
+    }
+
+
+    .subject_wiz_game_container {
+        width: 425px;
+    }
+
+
+    .wiz_game_thumb {
+        height: 60px;
+        width: 22%;
+        margin: 5px auto;
+        margin: 0 1px 0 1px;
+    }
+
+
+    .wiz_game_view_all_btn {
+        height: 45px;
+        width: 22%;
+        margin-top: 7px;
+        margin-left: -10px;
+        margin-right: 20px;
+    }
+
+
+    .setwork_groups_list_container {
+        width: 425px;
+    }
+
+
+    .setwork_list_container,
+    .lesson_plan_list_container {
+        width: 425px;
+    }
+
+
+    .setwork_groups_list_current_activity_name {
+        width: 245px;
+    }
+
+
+    .setwork_list_item_row,
+    .wlp_list_item_row {
+        height: 35px;
+    }
+
+
+    .setwork_groups_list_item_row {
+        height: 35px;
+    }
+
+
+    .setwork_groups_list_current_activity_duedate {
+        width: 150px;
+    }
+
+
+    .view_full_plan_bar, .view_full_plan_bar_WLP {
+        width: 425px;
+    }
+
+
+    .setwork_progress_container,
+    .lesson_plan_progress_container, .lesson_plan_progress_container_WLP {
+        width: 425px;
+    }
+
+
+    .setwork_dropdown {
+        width: 425px;
+    }
+
+
+    .setwork_list_current_activity_arrow,
+    .wlp_list_current_activity_arrow {
+        background-position: center;
+    }
+
+
+    .completed_box {
+        width: 425px;
+    }
+
+
+    .subject_container_text {
+        width: 80%;
+    }
+
+
+    .wiz_game_view_all_btn_empty {
+        float: none;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+
+    .add_activity_container {
+        width: 425px;
+    }
+
+
+    .setwork_list_current_activity_name,
+    .wlp_list_current_activity_name {
+        width: 305px;
+    }
+
+
+    .list_crown {
+        height: 35px;
+        background-image: url('../Image/wizcrown_icon_xsml.png');
+        background-size: auto;
+    }
+
+
+    .list_crown_blank {
+        height: 35px;
+        background-image: url('../Image/wizcrown_blank_icon_xsml.png');
+        background-size: auto;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    #user_banner {
+        height: 125px;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .md_section_container {
+        height: 410px;
+    }
+
+
+    .activity_btn_md {
+        margin-top: 310px;
+    }
+
+
+    #md_btn_righthand {
+        right: 60px;
+        margin-top: 274px;
+    }
+
+
+    #md_btn_lefthand {
+        right: 235px;
+        margin-top: 259px;
+        background-image: url("../Image/md_btn_lefthand_mob.png");
+    }
+
+
+    #md_btn_body {
+        right: 100px;
+        bottom: 30px;
+    }
+
+
+    #md_btn_bubble {
+        height: 140px;
+        width: 350px;
+        margin-top: 5px;
+        left: 0;
+        background-image: url('../Image/md_btn_bubble_landscape_425.png');
+        background-position: left;
+    }
+
+
+        #md_btn_bubble p {
+            text-align: center;
+            padding: 0;
+            width: 260px;
+            height: 70px;
+            display: block;
+            margin: auto;
+            margin: 25px auto;
+            font-size: 14px;
+        }
+
+
+    .setwork_title_container {
+        width: 60%;
+    }
+
+
+    .subject_container_title {
+        width: 90%;
+    }
+
+
+    #button_box {
+        height: 60px;
+        margin-top: 0;
+    }
+
+
+
+    .general_btn {
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+
+        .general_btn a {
+            padding: 0 10px 0 10px;
+            font-size: 13px;
+        }
+
+
+    .two_btn {
+        width: 42%;
+    }
+
+
+    .two_btn_left {
+        margin-right: 15px;
+    }
+
+
+    .two_btn_lightbox {
+        width: 42%;
+    }
+
+
+    .activity_btn_and_tip_container, .activity_btn_and_tip_container_WLP {
+        width: 365px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+
+
+    .md_section_container {
+        width: 365px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+
+
+    .activity_btn {
+        width: 365px;
+        margin-bottom: 10px;
+    }
+
+
+    .md_logo {
+        margin-top: 20px;
+    }
+
+
+    .subject_wiz_game_container {
+        width: 365px;
+    }
+
+
+    .wiz_game_thumb {
+        height: 60px;
+        width: 22%;
+        margin: 7px auto;
+        margin: 0 1px 0 1px;
+    }
+
+
+    .wiz_game_view_all_btn {
+        height: 40px;
+        width: 20%;
+        margin-top: 10px;
+        margin-left: -5px;
+        margin-right: 20px;
+    }
+
+
+    .setwork_groups_list_container {
+        width: 365px;
+    }
+
+
+    .setwork_list_container,
+    .lesson_plan_list_container {
+        width: 365px;
+    }
+
+
+    .setwork_groups_list_current_activity_name {
+        width: 245px;
+    }
+
+
+    .setwork_groups_list_current_activity_duedate {
+        width: 88px;
+    }
+
+
+    .view_full_plan_bar, .view_full_plan_bar_WLP {
+        width: 365px;
+    }
+
+
+    .setwork_progress_container,
+    .lesson_plan_progress_container, .lesson_plan_progress_container_WLP {
+        width: 365px;
+    }
+
+
+    .setwork_dropdown {
+        width: 365px;
+        height: 40px;
+    }
+
+
+        .setwork_dropdown span {
+            font-size: 12px;
+            line-height: 12px;
+        }
+
+
+    .completed_box {
+        width: 365px;
+        height: 30px;
+    }
+
+
+        .completed_box a {
+            padding-top: 35px;
+            font-size: 12px;
+        }
+
+
+    .setwork_list_current_activity_icon,
+    .wlp_list_current_activity_icon {
+        height: 20px;
+        width: 22px;
+    }
+
+
+    .setwork_list_current_activity_name,
+    .wlp_list_current_activity_name {
+        width: 235px;
+    }
+
+
+    #ump_btn {
+        width: 90px;
+    }
+
+
+    .button_right_text {
+        margin-left: 10px;
+    }
+
+
+    .wiz_game_view_all_btn_empty {
+        float: none;
+        margin: 0 auto;
+        width: 200px;
+    }
+
+
+    .subject_arrow_text span {
+        font-size: 8px;
+    }
+
+
+    .add_activity_container {
+        width: 365px;
+    }
+
+
+    .add_activity_container {
+        text-align: center;
+    }
+
+
+    .add_activity_btn {
+        float: none;
+    }
+    #my_points_text {
+        margin-left: 90px;
+    }
+
+    .my_points_amount {
+        margin-left: 160px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .title_text {
+        font-size: 25px;
+        line-height: 30px;
+        margin: 15px auto;
+        width: 80%;
+    }
+
+
+    #md_btn_righthand {
+        right: 40px;
+    }
+
+
+    #md_btn_lefthand {
+        right: 215px;
+    }
+
+
+    #md_btn_body {
+        right: 80px;
+    }
+
+
+    #md_btn_bubble {
+        height: 140px;
+        width: 300px;
+        background-image: url('../Image/md_btn_bubble_landscape_425.png');
+        background-position: center;
+        background-size: contain;
+    }
+
+
+        #md_btn_bubble p {
+            text-align: center;
+            padding: 0;
+            width: 190px;
+            height: 70px;
+            display: block;
+            margin: auto;
+            margin: 25px auto;
+            font-size: 13px;
+        }
+
+
+    .trophy_total_slash {
+        display: none;
+    }
+
+
+    .avatar_container {
+        height: 60px;
+        width: 60px;
+    }
+
+
+    #user_banner {
+        height: 75px;
+        min-width: 300px;
+    }
+
+
+    .subject_arrow {
+        width: 20px;
+    }
+
+
+    .subject_arrow_left {
+        margin-left: 0;
+    }
+
+
+    .subject_arrow_right {
+        margin-right: 0;
+    }
+
+
+    #my_points_text {
+        height: 12px;
+        width: auto;
+        float: left;
+        margin-left: 10px;
+        margin-top: 0px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: left;
+        position: absolute;
+    }
+
+
+    .my_points_amount {
+        height: 40px;
+        width: auto;
+        float: left;
+        margin-left: 85px;
+        margin-top: 0px;
+        padding: 0;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 12px;
+        color: #FFF;
+        clear: right;
+    }
+
+
+    #ump_btn {
+        margin-top: 15px;
+        position: absolute;
+        margin-left: 140px;
+    }
+
+
+    #user_strip_left_container {
+        width: 220px;
+        margin-top: 40px;
+        margin-left: 140px;
+    }
+
+
+    #user_strip_weekly_progress_bar {
+        width: 190px;
+    }
+
+
+    .activity_btn_and_tip_container, .activity_btn_and_tip_container_WLP {
+        width: 320px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+
+
+    .md_section_container {
+        width: 320px;
+        margin: 20px auto;
+        margin-bottom: 10px;
+    }
+
+
+    .activity_btn {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+
+        .activity_btn .lesson-text {
+            font-size: 12px;
+        }
+
+
+    .activity_icon {
+        width: 25px;
+        margin-left: 10px;
+        margin-right: 8px;
+    }
+
+
+    .button_right_text {
+        width: 60px;
+    }
+
+
+    .button_right_text_overdue {
+        font-size: 9px;
+    }
+
+
+    .button_right_text p {
+        font-size: 10px;
+        padding: 0 5px 0 20px;
+    }
+
+
+    #hlinkStartPhysics,
+    #hlinkStartBiology,
+    #hlinkStartChemistry {
+        background-position: center;
+        margin-top: 20px;
+    }
+
+
+    .md_logo {
+        height: 100px;
+        width: 250px;
+    }
+
+
+    .subject_wiz_game_container {
+        width: 300px;
+    }
+
+
+    .wiz_game_thumb {
+        height: 70px;
+        width: 29%;
+        margin: 7px auto;
+        margin: 0 1px 0 1px;
+    }
+
+
+    .wiz_game_view_all_btn {
+        height: 40px;
+        width: 90%;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+
+    .setwork_groups_list_container {
+        width: 300px;
+    }
+
+
+    .setwork_list_container,
+    .lesson_plan_list_container {
+        width: 300px;
+    }
+
+
+    .setwork_groups_list_current_activity_name {
+        width: 185px;
+    }
+
+
+    .setwork_groups_list_current_activity_duedate {
+        width: 80px;
+    }
+
+
+    .view_full_plan_bar, .view_full_plan_bar_WLP {
+        width: 300px;
+    }
+
+
+    .setwork_progress_container,
+    .lesson_plan_progress_container, .lesson_plan_progress_container_WLP {
+        width: 300px;
+    }
+
+
+    .setwork_dropdown {
+        width: 300px;
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+
+    .completed_box {
+        width: 300px;
+        background-image: url('../Image/completed_box_bg_sml.png');
+        background-position: bottom right;
+    }
+
+
+        .completed_box a {
+            padding-top: 25px;
+            font-size: 11px;
+        }
+
+
+    .setwork_list_current_activity_icon,
+    .wlp_list_current_activity_icon {
+        height: 20px;
+        width: 22px;
+    }
+
+
+    .setwork_list_current_activity_name,
+    .wlp_list_current_activity_name {
+        width: 195px;
+    }
+
+
+    #achievements_btn {
+        display: table;
+    }
+
+
+    #user_strip_weekly_achievements_container {
+        display: none;
+    }
+
+
+    .add_activity_container {
+        width: 300px;
+    }
+
+
+    .setwork_list_current_activity_name,
+    .wlp_list_current_activity_name {
+        width: 190px;
+    }
+
+
+    .setwork_list_current_activity_percentage,
+    .wlp_list_current_activity_percentage {
+        margin-right: 10px;
+    }
+}
+
+
+#mi_banner {
+    background-color: #005fa4;
+    background-size: cover;
+    background-image: url('../Image/mi_banner_bg.gif');
+}
+
+
+#mi_banner_text_img {
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    background-image: url('../Image/bar_titles_myincentives.png');
+}
+
+
+#mi_page_btn_container {
+    height: 50px;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #0d2346;
+}
+
+
+.mi_page_btn {
+    width: 25%;
+    height: 100%;
+    display: table;
+    float: left;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 2px solid #178ccc;
+    background-color: #0d2346;
+}
+
+
+.mi_page_btn_selected {
+    background-color: #178ccc;
+}
+
+
+.mi_page_btn_last {
+    border: none;
+}
+
+
+.mi_page_btn a {
+    text-decoration: none;
+    outline: none;
+    padding: 4px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.mi_page_bg {
+    min-height: 80vh;
+    background-color: #004798;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: repeat-y;
+}
+
+
+#mi_page_comps_current {
+    overflow: auto;
+    background-image: url('../Image/mi_page_comps_bg.png');
+}
+
+
+#mi_comps_current_container {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+
+.mi_comps_single_box {
+    height: 200px;
+    width: 48%;
+    min-width: 310px;
+    display: inline-block;
+    float: none;
+    margin: 25px auto;
+    -webkit-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
+    background: rgb(179, 202, 224);
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 0;
+    position: relative;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+    .mi_comps_single_box.mi_comps_single_box_expand {
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+
+.mi_comps_single_box_image {
+    height: 180px;
+    width: 300px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+    position: relative;
+}
+
+
+.mi_comps_single_box_right_container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: block;
+    left: 330px;
+}
+
+
+.mi_comps_single_box_right_title {
+    width: 270px;
+    display: block;
+    color: #292929;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+
+.mi_comps_single_box_right_price {
+    width: 270px;
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #2561c3;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 5px;
+}
+
+
+.mi_comps_single_box_right_entry_close {
+    width: 270px;
+    display: block;
+    font-size: 13px;
+    color: #2b2b2b;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.mi_comps_single_box_right_entries {
+    width: 270px;
+    display: block;
+    font-size: 13px;
+    color: #474747;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.mi_comps_single_box_right_btn {
+    width: 125px;
+    height: 35px;
+    display: table;
+    background-color: #3a4c71;
+    margin-top: 12px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    left: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.mi_comps_single_box_right_tc_btn {
+    background-color: #ed7314;
+}
+
+
+.mi_comps_single_box_right_btn a {
+    text-decoration: none;
+    outline: none;
+    padding: 4px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.mi_comps_single_box_right_tc_btn a {
+    text-transform: none;
+}
+
+
+.mi_comps_single_box_right_panel {
+    height: 100%;
+    width: 70px;
+    display: block;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: #d10000;
+}
+
+
+.mi_comps_single_box_right_panel_ending_soon {
+    background-color: #a700d1;
+}
+
+
+.mi_comps_single_box_right_panel p {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.mi_comps_single_box_right_panel_ending_soon p {
+    font-size: 16px;
+}
+
+
+.endingsoon {
+    display: block;
+}
+
+
+.ending_soon {
+    display: none;
+}
+
+
+.mi_comps_current_lightbox,
+.mi_comps_tandc_lightbox {
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(40, 40, 40, 0.995);
+    position: fixed;
+    z-index: 99;
+    text-align: center;
+}
+
+
+#mi_comps_current_lightbox_cancel_btn p,
+#mi_comps_current_lightbox_confirm_btn p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #464646;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.confirm_comps_entry_img {
+    height: 180px;
+    width: 300px;
+    display: block;
+    margin: -20px auto;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.mi_comps_current_lightbox_title,
+.mi_comps_tandc_lightbox_title {
+    font-size: 30px;
+    color: #FFF;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+
+.confirm_purchase_entry_price,
+.mi_comps_tandc_lightbox_price {
+    font-size: bold;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.confirm_purchase_entry_price_blue,
+.mi_comps_tandc_lightbox_price_blue {
+    color: #09F;
+}
+
+
+.confirm_purchase_entry_price_blue {
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.comps_tick {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-image: url('../Image/purchase_tick.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.mi_comps_current_lightbox_ok_btn {
+    display: none;
+}
+
+
+.mi_comps_tandc_lightbox_text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFF;
+    text-align: justify;
+    display: block;
+    margin: 15px auto;
+    width: 40%;
+}
+
+
+#mi_comps_toggle_row {
+    height: 50px;
+    width: 100%;
+    display: block;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+
+#mi_comps_toggle_container {
+    height: 50px;
+    width: 600px;
+    display: block;
+    margin: 0;
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #5fab45;
+    background: -moz-linear-gradient(top,#5fab45 0%,#7cbe51 100%);
+    background: -webkit-linear-gradient(top,#5fab45 0%,#7cbe51 100%);
+    background: linear-gradient(to bottom,#5fab45 0%,#7cbe51 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fab45',endColorstr='#7cbe51',GradientType=0);
+    overflow: hidden;
+}
+
+
+.mi_comps_toggle_button {
+    height: 46px;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 49%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f8f9f9;
+    display: inline-table;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.mi_comps_toggle_button_clear {
+    background-color: transparent;
+    float: right;
+}
+
+
+.mi_comps_toggle_button a {
+    text-decoration: none;
+    outline: none;
+    padding: 4px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.mi_comps_toggle_button_clear a {
+    color: #FFF;
+}
+
+
+.mi_comps_current_single_box_right_btn_not_enough {
+    background-color: #313131;
+    cursor: default;
+}
+
+
+.mi_comps_single_box_entries_container {
+    width: 100%;
+    float: left;
+}
+
+
+.mi_comps_single_box_total_entries_box,
+.mi_comps_single_box_my_entries_box {
+    height: 40px;
+    width: 50px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #005fa3;
+    display: inline-table;
+    position: relative;
+    left: 0;
+    float: left;
+    margin: 0;
+    margin-top: 10px;
+    clear: right;
+}
+
+
+.mi_comps_single_box_my_entries_box {
+    margin-left: 5px;
+    background-color: #5b4789;
+}
+
+
+    .mi_comps_single_box_total_entries_box p,
+    .mi_comps_single_box_my_entries_box p {
+        padding: 0;
+        margin: 0;
+        padding: 4px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 8px;
+        color: #FFF;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+        .mi_comps_single_box_total_entries_box p span,
+        .mi_comps_single_box_my_entries_box p span {
+            font-weight: bold;
+            font-size: 12px;
+            display: block;
+            margin-top: 2px;
+            margin-bottom: 0;
+        }
+
+
+@media screen and (max-width:1750px) {
+    .mi_comps_single_box_image {
+        height: 120px;
+        width: 200px;
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+
+    .mi_comps_single_box_right_container {
+        left: 230px;
+    }
+
+
+    .mi_comps_single_box_right_title {
+        width: 230px;
+        font-size: 15px;
+    }
+
+
+    .mi_comps_single_box_right_btn {
+        width: 105px;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .mi_comps_tandc_lightbox_text {
+        width: 50%;
+    }
+
+
+    .mi_comps_tandc_lightbox_title {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width:1240px) {
+    .mi_comps_single_box {
+        height: 390px;
+        width: 31.5%;
+        min-width: 100px;
+        overflow: hidden;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 160px;
+        width: 90%;
+        margin: 15px auto;
+        padding: 0;
+        clear: both;
+        float: none;
+        background-size: contain;
+    }
+
+
+    .mi_comps_single_box_right_container {
+        top: auto;
+        transform: none;
+        position: relative;
+        float: none;
+        left: auto;
+        margin: 20px auto;
+        width: 230px;
+    }
+
+
+    .mi_comps_single_box_right_title {
+        width: 230px;
+        font-size: 15px;
+    }
+
+
+    .mi_comps_single_box_right_price,
+    .mi_comps_single_box_right_entry_close,
+    .mi_comps_single_box_right_entries {
+        width: 230px;
+    }
+
+
+    .mi_comps_single_box_right_btn {
+        width: 105px;
+    }
+
+
+    .mi_comps_single_box_right_panel {
+        height: 100%;
+        width: 50px;
+    }
+
+
+    .endingsoon {
+        display: none;
+    }
+
+
+    .ending_soon {
+        display: block;
+    }
+
+
+    .mi_comps_single_box_right_panel {
+        height: 40px;
+        width: 150px;
+    }
+
+
+        .mi_comps_single_box_right_panel p {
+            font-size: 15px;
+            -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            -moz-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            -ms-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            -o-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        }
+}
+
+
+@media screen and (max-width:980px) {
+    .mi_comps_tandc_lightbox_text {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width:880px) {
+    .mi_comps_single_box {
+        height: 415px;
+        width: 47%;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 180px;
+        width: 90%;
+    }
+
+
+    .mi_comps_single_box_right_container {
+        top: auto;
+        transform: none;
+        position: relative;
+        float: none;
+        left: auto;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+
+    .mi_comps_single_box_right_title {
+        width: 100%;
+        font-size: 15px;
+    }
+
+
+    .mi_comps_single_box_right_price,
+    .mi_comps_single_box_right_entry_close,
+    .mi_comps_single_box_right_entries {
+        width: 100%;
+    }
+
+
+    .mi_comps_single_box_right_btn {
+        width: 105px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    #mi_comps_toggle_container {
+        height: 50px;
+        width: 600px;
+        float: none;
+        margin: 0 auto;
+    }
+
+
+    .mi_comps_toggle_button {
+        height: 46px;
+        width: 49%;
+    }
+
+
+    .mi_comps_tandc_lightbox_text {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:770px) {
+    .confirm_comps_entry_img {
+        margin-top: 30px;
+        width: 250px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width:660px) {
+    .mi_comps_single_box {
+        height: 460px;
+        width: 47%;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 150px;
+        width: 90%;
+    }
+
+
+    .mi_comps_single_box_right_container {
+        margin: 20px auto;
+        width: 85%;
+    }
+
+
+    .mi_comps_single_box_right_btn {
+        width: 100%;
+        height: 55px;
+        left: 0;
+        float: none;
+        margin: 20px auto;
+        margin-bottom: 0;
+    }
+
+
+    .mi_comps_single_box_right_tc_btn {
+        height: 35px;
+        margin: 10px auto;
+    }
+
+
+    .mi_comps_tandc_lightbox_title {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    #mi_comps_toggle_row {
+        height: 40px;
+        margin: 10px 0 0 0;
+    }
+
+
+    #mi_comps_toggle_container {
+        height: 40px;
+        width: 400px;
+    }
+
+
+    .mi_comps_toggle_button {
+        height: 36px;
+        width: 48.3%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .mi_comps_single_box {
+        height: 440px;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 130px;
+    }
+
+
+    .mi_comps_single_box_right_title {
+        font-size: 14px;
+    }
+
+
+    .mi_comps_single_box_right_price,
+    .mi_comps_single_box_right_entry_close,
+    .mi_comps_single_box_right_entries {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .mi_comps_single_box {
+        height: 480px;
+        width: 80%;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 180px;
+    }
+
+
+    .mi_comps_tandc_lightbox_text {
+        font-size: 14px;
+        line-height: 18px;
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .confirm_comps_entry_img {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+
+    .mi_comps_current_lightbox_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+
+    .confirm_purchase_entry_price {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    #mi_comps_toggle_row {
+        height: 36px;
+        margin: 8px 0 0 0;
+    }
+
+
+    #mi_comps_toggle_container {
+        height: 36px;
+        width: 270px;
+    }
+
+
+    .mi_comps_toggle_button {
+        height: 32px;
+    }
+
+
+    .mi_comps_single_box_right_btn a {
+        font-size: 8px;
+    }
+
+
+    .mi_comps_tandc_lightbox_text {
+        font-size: 12px;
+        line-height: 16px;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .mi_comps_single_box {
+        height: 480px;
+        width: 95%;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 180px;
+    }
+
+
+    .mi_comps_single_box_right_btn a {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width:370px) {
+    .confirm_comps_entry_img {
+        height: 100px;
+        width: 167px;
+    }
+
+
+    .mi_comps_single_box {
+        height: 450px;
+        width: 95%;
+    }
+
+
+    .mi_comps_single_box_image {
+        height: 145px;
+    }
+}
+
+#mi_comps_toggle_buttonT{
+    float: left;
+}

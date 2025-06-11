@@ -1,0 +1,25 @@
+//studentdetails
+SELECT EL_Login.SchoolCode, EL_Login.FamilyCode, EL_Login.Login, EL_Login.FName, EL_LoginStudent.Std, EL_LoginStudent.Currentpoints, EL_LoginStudent.CurrentAvatar, EL_LoginStudent.Status, EL_Schools.Country, EL_Schools.Website FROM EL_Login LEFT JOIN EL_LoginStudent ON EL_Login.SchoolCode = EL_LoginStudent.SchoolCode AND EL_Login.FamilyCode = EL_LoginStudent.FamilyCode AND EL_Login.Login = EL_LoginStudent.Login LEFT JOIN EL_Schools ON EL_Login.SchoolCode = EL_Schools.SchoolCode WHERE EL_Login.SchoolCode = 'DLR_KE_AU' AND EL_Login.FamilyCode = 'kedemo' AND EL_Login.Login = 'Child3'
+
+
+//if country is austraila :id(divLogo)   -distributor logo 
+divLogo.Style.Add("background-image", "url('/Storage/assets/Image/DistributorLogo/WebsiteLogo/DLR_KE_AU.png')")
+
+
+//avatar
+AvatarPath = "/Storage/assets/Avatar/" & CStr(dtStudentDetails(0)("CurrentAvatar"))
+
+
+//weekly lesson progress
+SELECT * FROM EL_MD_LessonPlan WHERE SchoolCode = 'DLR_KE_AU' AND FamilyCode = 'AUSVELS' AND Login = 'Child3' AND WeekEndDate = '02-09-2025' AND DoMore IS NULL   AND LastDoneOn = ''
+100 * TotalDoneActivitiesAllSubjects / dtLessonPlan.Rows.Count
+
+
+
+
+CLOUDINARY_CLOUD_NAME=fmstorage
+CLOUDINARY_API_KEY=PwIOd/PZPOygPzZKL+mYPDzrnjKBzdULn2IHjMg1gmkPf2K8ywT41egQyqRQj8cartSbD8/pytjIoEsjKPBxVA==
+CLOUDINARY_API_SECRET=your_api_secret
+
+
+AccountName=fmstorage;AccountKey=PwIOd/PZPOygPzZKL+mYPDzrnjKBzdULn2IHjMg1gmkPf2K8ywT41egQyqRQj8cartSbD8/pytjIoEsjKPBxVA==

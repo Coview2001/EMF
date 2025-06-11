@@ -1,0 +1,82 @@
+﻿body, html {
+   padding: 0;
+   margin: 0;
+}
+
+.trNavBar {
+   height: 5%;
+   width: 100%;
+   background-color: rgb(0, 164, 255);
+}
+
+.trtitle {
+   height: 3%;
+   width: 100%;
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.2em;
+   color: red;
+   background-color: rgb(132, 249, 226);
+}
+
+#imgBtnBack {
+   padding-top: 5px;
+   margin-left: 5px;
+}
+
+#imgbtnGameCompleted {
+   padding-top: 5px;
+   margin-right: 5px;
+}
+.tblMain {
+   width: auto;
+   height: auto;
+}
+
+body {
+   margin: 0 auto;
+   background-color: #FFF;
+}
+
+#container {
+   min-height: 300px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.game_div {
+   width: 100%;
+   height: 75%;
+   min-height: 300px;
+   float: left;
+}
+
+.sizer {
+   min-height: 300px;
+   min-width: 500px;
+   margin: 0 auto;
+   width: 100%;
+   height: 100%;
+}
+
+iframe{
+   border:none;
+}
+
+.tdNavBarT{
+   display: flex;
+   justify-content: space-between;
+}
+
+.imgBtnBackT{
+   cursor: pointer;
+}
+
+.imgbtnGameCompletedT{
+   cursor: pointer;
+}
+
+.divGameHolderT{
+   height: auto;
+   width: 100%;
+}

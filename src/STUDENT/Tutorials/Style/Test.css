@@ -1,0 +1,464 @@
+﻿body {
+    font-size: 18px;
+}
+
+#divProgressBarContainer {
+    border: solid 1px #8DA2AF;
+    background-color: white;
+    width: 90%;
+    padding: 1px;
+}
+
+#divProgressBar {
+    width: 25%;
+    height: 15px;
+    background-color: #686c70;
+}
+
+.grey_stripe {
+    width: 1em;
+    background-color: lightgrey;
+}
+
+.white_stripe {
+    width: 1em;
+    background-color: white;
+}
+
+
+.bodyStyle {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btnStyle {
+    width: 90px;
+    height: 50px;
+}
+
+.btnStyle2 {
+    width: 130px;
+    height: 50px;
+}
+
+.QnPanel {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='#d8e4f8', endcolorstr='#7a96df');
+    background-color: #7a96df;
+}
+
+.AnsOK {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='green', endcolorstr='green');
+    background-color: green;
+    width: 100%;
+}
+
+.AnsWrong1 {
+    background-color: Red;
+    width: 100%;
+}
+
+.AnsWrong2 {
+    background-color: Blue;
+    width: 100%;
+}
+
+.xAnsWrong1 {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='red', endcolorstr='red');
+    background-color: Red;
+}
+
+.xAnsWrong2 {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='blue', endcolorstr='blue');
+    background-color: Blue;
+}
+
+.QnPanelTitle {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    height: 25px;
+}
+
+.menuItem {
+    background-color: menu;
+    color: black;
+}
+
+.menuItemOn {
+    background-color: mintcream;
+    color: red;
+}
+
+.tooltip {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='lemonchiffon', endcolorstr='palegoldenrod');
+    background-color: palegoldenrod;
+    font-family: Arial;
+    font-size: small;
+    overflow: auto;
+}
+
+.tdQnMid {
+    width: 100%;
+    height: 585px;
+}
+
+.tdTestMid {
+    width: 100%;
+}
+
+.tdTutMid {
+    width: 100%;
+    height: 610px;
+}
+
+.TutNav {
+    width: 100%;
+    height: 55px;
+}
+
+.QnNav {
+    width: 100%;
+}
+
+.QnNavNEW {
+    width: 100%;
+    background-color: #20699B;
+    color: white;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.trQnLoadMsg {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: small;
+}
+
+.trTutLoadMsg {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: small;
+}
+
+.HeadMsg {
+    background-color: #E4E4E4;
+    font-size: small;
+    font-weight: bold;
+    font-family: Arial;
+    color: cornflowerblue;
+    height: 20px;
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    vertical-align: middle;
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='whitesmoke', endcolorstr='lightgrey');
+}
+
+.LsnSelHeight {
+    height: 525px;
+}
+
+.tblSelNodeDetailsHead {
+    font-family: Arial;
+    font-size: small;
+    width: 100%;
+}
+
+.FrameSelNode {
+    font-family: Arial;
+    font-size: small;
+    width: 100%;
+}
+
+.Hdr {
+    background-image: url(../../Images/headerBg.gif);
+    background-repeat: repeat-x;
+}
+
+.row1 {
+    background-image: url(../../Images/rowBg.gif);
+    background-repeat: repeat-x;
+}
+
+.row2 {
+    background-image: none;
+}
+
+.CertFont {
+    color: Blue;
+    width: 100%;
+    font-size: 20pt;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.tdCert {
+    font-size: 14pt;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.tdCertRes {
+    font-family: Arial;
+    font-size: 14pt;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+.tdLsnHead {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+}
+
+.tdLsnName {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    color: Blue;
+}
+
+.tdLbl {
+    font-family: Arial;
+    font-size: 16pt;
+    color: Blue;
+}
+
+.trDet {
+    font-family: Arial;
+    font-size: 10pt;
+    height: 20px;
+}
+
+.tdDet1 {
+    border-color: Black;
+    border-style: solid;
+    border-bottom-style: none;
+    border-width: 1px;
+    padding-left: 5px;
+}
+
+.tdDet2 {
+    border-color: Black;
+    border-style: solid;
+    border-bottom-style: none;
+    border-width: 1px;
+    border-left-style: none;
+    padding-left: 5px;
+}
+
+.tdRep1 {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    border-left-style: none;
+    border-right-style: none;
+    height: 20px;
+    padding-left: 5px;
+    border-bottom-style: none;
+}
+
+.tdRep2 {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    border-right-style: none;
+    height: 20px;
+    border-bottom-style: none;
+}
+
+.tdRep3 {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    border-right-style: none;
+    height: 20px;
+    padding-left: 5px;
+    border-bottom-style: none;
+}
+
+.tdRepDesc {
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #cc3366;
+}
+
+.tdRepCon {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.tdHead {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    height: 20px;
+    color: White;
+    font-weight: bold;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    padding-left: 5px;
+}
+
+.tdDepLsnHead {
+    width: 100%;
+    color: blue;
+    font-size: small;
+    background-color: ButtonFace;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btnTestNav {
+    font-family: Arial;
+    font-size: small;
+    height: 20px;
+}
+
+.tdTestHead {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='cornflowerblue', endcolorstr='midnightblue');
+    background-color: midnightblue;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    height: 20px;
+}
+
+.tdTestTime {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='orange', endcolorstr='darkorange');
+    background-color: darkorange;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+    height: 20px;
+}
+
+.tdHeadforProRep {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 20px;
+    border-bottom-style: none;
+    color: White;
+}
+
+.tdColforProRep {
+    font-family: Trebuchet MS;
+    font-size: 10pt;
+    background-color: White;
+    height: 20px;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+}
+
+.TvwNodeIconStyle {
+    background-color: Transparent;
+}
+
+.AllReportHead {
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: middle;
+    color: navy;
+}
+
+.ASPanelTitle {
+    filter: progid:dximagetransform.microsoft.gradient(gradienttype=0, startcolorstr='#00ff00', endcolorstr='green');
+    background-color: green;
+    font-family: Arial;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+.cssBtnNav {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+}
+
+.cssBtnLsnNav {
+    width: 100px;
+    height: 50px;
+}
+
+.cssDivQnNo {
+    background-color: Red;
+    color: White;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Arial;
+    text-align: center;
+    position: absolute;
+}
+
+.cssDivRedirect {
+    background-color: Blue;
+    color: White;
+    font-weight: normal;
+    font-size: small;
+    font-family: Arial;
+    text-align: center;
+    position: absolute;
+}
+
+.cssLoadMsgBG {
+    background-color: Gray;
+    text-align: center;
+    vertical-align: middle;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(opacity=0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.cssDivQnMsg {
+    background-color: Transparent;
+    text-align: center;
+    vertical-align: middle;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(opacity=0);
+    position: absolute;
+}
+
+.trowT{
+    height: 50px;
+}
+
+.trow2T{
+    padding-right: 5px;
+}
+
+#tdTimeProgress{
+    padding-left: 5px;
+}
+
+.trow3T{
+    width: 10%;
+    padding-left: 5px;
+}
+
+.iFrameQnT{
+    width: 100%;
+}
+
+.dialog-confirmT{
+    display: none;
+}
+
+#spanAlertT{
+    float: left;
+    margin: 12px 12px 20px 0px;
+}

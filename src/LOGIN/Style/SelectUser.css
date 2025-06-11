@@ -1,0 +1,590 @@
+﻿@charset "utf-8";
+/* body {
+    background: url("../Image/wall.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+.section_divT{
+    background: url("../Image/wall.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.SelectUser-background {
+    background: url("../Image/wall.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#bt_select_user {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.hide{
+    display:none;
+}
+
+#bt_select_user {
+    background-image: url('../Image/bar_titles_select_user.png');
+}
+
+
+#select_user_title_bar {
+    margin-top: 80px;
+}
+
+
+
+#user_container {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 35px;
+    line-height: 12px;
+    overflow: hidden;
+    display: inline;
+    margin: 0 20px 0 20px;
+    margin-top: 30px;
+    background-color: none;
+}
+
+
+    #user_container.user_container_row2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+.userselect{
+    text-decoration:none;
+    color:black;
+    
+}
+
+.user {
+    background-color: #f5f5f5;
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+}
+
+
+    .user:hover {
+        -webkit-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.3);
+        box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.3);
+    }
+
+
+.user_avatar {
+    height: 200px;
+    width: 200px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+
+    .user_avatar p {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+        line-height: 202px;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 85px;
+        color: #FFF;
+        text-align: center;
+        letter-spacing: normal;
+        -moz-transition: all .2s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+    }
+
+
+        .user_avatar p:hover {
+            -moz-transform: scale(1.1,1.1);
+            -webkit-transform: scale(1.1,1.1);
+            transform: scale(1.1,1.1);
+            border: none;
+        }
+
+
+.user_initials{
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+
+.imgUserAvatar {
+    border: none;
+    height: 200px;
+    width: 200px;
+    display: table;
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-color: #df6f26;
+}
+
+.user_avatar img {
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -moz-transform: scale(1.02,1.02);
+    -webkit-transform: scale(1.02,1.02);
+    transform: scale(1.02,1.02);
+    border: none;
+}
+
+
+.user_avatar:hover img {
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    border: none;
+}
+
+
+.user_avatar p.image_in,
+img.image_in {
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+
+
+.user_avatar p.image_out,
+img.image_out {
+    -moz-transform: scale(1.02,1.02);
+    -webkit-transform: scale(1.02,1.02);
+    transform: scale(1.02,1.02);
+}
+
+
+.user_name {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: normal;
+    margin-top: 15px;
+}
+
+
+.user_grade {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: normal;
+}
+
+
+img {
+    border: 0;
+}
+
+
+.user_blank {
+    background-color: transparent;
+    cursor: default;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+    .user_blank:hover {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+
+@media screen and (max-width:1920px) {
+    .user {
+        width: 150px;
+        height: 230px;
+        margin : 20px
+
+    }
+
+
+    .user_avatar {
+        height: 150px;
+        width: 150px;
+    }
+
+
+    .imgUserAvatar {
+        height: 150px;
+        width: 150px;
+    }
+
+
+    .user_name {
+        height: 25px;
+        line-height: 25px;
+        font-size: 17px;
+    }
+
+
+    .user_grade {
+        line-height: 18px;
+        font-size: 12px;
+    }
+
+
+    .user_avatar p {
+        line-height: 153px;
+        font-size: 60px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    #user_container {
+        letter-spacing: 20px;
+        margin : 20px
+
+    }
+
+
+    .user {
+        width: 125px;
+        height: 190px;
+    }
+
+
+    .user_avatar {
+        height: 125px;
+        width: 125px;
+    }
+
+
+    .imgUserAvatar {
+        height: 125px;
+        width: 125px;
+    }
+
+
+    .user_name {
+        height: 20px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+
+    .user_grade {
+        line-height: 16px;
+        font-size: 10px;
+    }
+
+
+    .user_avatar img {
+        -moz-transform: scale(1.02,1.02);
+        -webkit-transform: scale(1.02,1.02);
+        transform: scale(1.02,1.02);
+    }
+
+
+    img.image_in {
+        -moz-transform: scale(1.1,1.1);
+        -webkit-transform: scale(1.1,1.1);
+        transform: scale(1.1,1.1);
+    }
+
+
+    img.image_out {
+        -moz-transform: scale(1.02,1.02);
+        -webkit-transform: scale(1.02,1.02);
+        transform: scale(1.02,1.02);
+    }
+
+
+    #home_logo {
+        display: none;
+    }
+
+
+    .user_avatar p {
+        line-height: 128px;
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    #select_user_title_bar {
+        height: 60px;
+        margin-top: 70px;
+    }
+
+
+    #user_container {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 35px;
+        white-space: nowrap;
+        line-height: 12px;
+        overflow: hidden;
+        display: inline;
+        margin: 0 20px 0 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+
+        #user_container.user_container_row2 {
+            margin-top: -10px;
+            margin-bottom: 60px;
+        }
+
+
+    .user {
+        width: 55%;
+        height: 100px;
+        display: block;
+        vertical-align: middle;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+        box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+    }
+
+
+    .user_avatar {
+        height: 100px;
+        width: 100px;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: inline-block;
+        float: left;
+        margin-right: 20px;
+    }
+
+
+    .imgUserAvatar {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .user_name {
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
+        text-align: left;
+        letter-spacing: normal;
+        margin-top: 20px;
+        display: inline-block;
+        clear: right;
+        float: left;
+    }
+
+
+    .user_grade {
+        width: 60%;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: normal;
+        display: inline-block;
+        float: left;
+    }
+
+
+    .user_blank {
+        background-color: transparent;
+        cursor: default;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+
+        .user_blank:hover {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+
+
+    .user_avatar p {
+        line-height: 100px;
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:720px) {
+    #select_user_title_bar {
+        height: 40px;
+        margin-top: 40px ;
+    }
+
+
+    .user {
+        width: 80%;
+        height: 100px;
+        margin-top: 15px;
+    }
+
+
+    .user_avatar {
+        height: 100px;
+        width: 100px;
+        display: block;
+    }
+
+
+    .imgUserAvatar {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .user_name {
+        width: 60%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+
+    .user_grade {
+        width: 60%;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    #user_container {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+
+    .user {
+        width: 95%;
+        height: 80px;
+        margin-top: 20px;
+    }
+
+
+    .user_avatar {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .imgUserAvatar {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    .user_name {
+        width: 50%;
+        height: 30px;
+        margin-top: 15px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+
+    .user_grade {
+        width: 50%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+
+    .user_avatar p {
+        line-height: 82px;
+        font-size: 40px;
+    }
+}
+
+.linkbtnLogOutT{
+    border: none;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section_divT{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    background-color: transparent;
+}
+
+.user_containerT{
+    cursor: pointer;
+    display: contents;
+}
+
+.user{
+    cursor: pointer;
+}
+
+.userselectT{
+    cursor: pointer;
+}
+

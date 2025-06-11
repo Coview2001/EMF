@@ -1,0 +1,222 @@
+﻿@charset "utf-8";
+
+head, body, form, html, table, tr, a, iframe, button, div, img, image, span, label {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   border-spacing: 0;
+   border-collapse: collapse;
+   border-spacing: 0;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0px;
+   padding: 0px;
+}
+
+form {
+   margin: 0px;
+   padding: 0px;
+}
+
+#divProgressBarContainer {
+   border: 2px solid silver;
+   background-color: rgb(19, 105, 172);
+   width: 95%;
+}
+
+#divProgressBar {
+   width: 1px;
+   height: 30px;
+   background-color: #ffffff;
+}
+
+.cssLabel {
+   border-style: none;
+   background-color: yellow;
+   font-weight: bold;
+   font-size: 14pt;
+   color: blue;
+   font-family: Arial;
+   padding-left: 5px;
+   padding-right: 5px;
+}
+
+.cssIfrmT {
+   overflow: auto;
+   width: 100%;
+   background-color: #f8fafc;
+   -webkit-overflow-scrolling: touch;
+   overflow: auto;
+}
+
+.CssHead {
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 17pt;
+}
+
+.divAssessmentT{
+   font-family: Arial;
+   font-size: 11pt;
+   color: #1760cf;
+   padding: 0px;
+   margin: 0px;
+}
+
+.tableT{
+   border-collapse: collapse;
+   width: 100%;
+   height: 79px;
+   /* background-image: url(${top_blue_panel}); */
+   background-repeat: repeat;
+}
+
+.TabledataT{
+   width: 5%;
+   padding-left: 10px;
+   vertical-align: top;
+   padding-top: 13px;
+}
+
+.CssHeadT{
+   width: 32%;
+   text-align: left;
+   padding-left: 10px;
+   padding-right: 20px;
+   vertical-align: top;
+   padding-top: 19px;
+}
+
+.CssHeadT{
+   width: 3%;
+   text-align: right;
+   vertical-align: top;
+   padding-top: 19px;
+}
+
+.Tabledata2T{
+   width: 30%;
+   padding-left: 10px;
+   vertical-align: top;
+   padding-top: 19px;
+   padding-right: 10px;
+}
+
+.Tabledata3T{
+   width: 30%;
+   text-align: right;
+   vertical-align: top;
+   padding-top: 13px;
+   padding-right: 10px;
+}
+
+.imgSkipT {
+   cursor: pointer;
+}
+
+.imgOkT {
+   cursor: pointer;
+}
+
+.divOpaqueT{
+   display: none;
+   position: absolute;
+   background-color: #cccccc;
+   opacity: 0.8;
+   z-index: 200;
+}
+
+.divMesgT{
+   display: none;
+   position: absolute;
+   background-color: white;
+   z-index: 300;
+   border: solid 2px blue;
+   font-family: Arial;
+   font-size: 14pt;
+   text-align: center;
+}
+
+.divTestCompleteT{
+   display: none;
+   font-family: Arial;
+   font-size: 12pt;
+   color: #1760cf;
+   text-align: center;
+}
+
+.divSubTestCompleteT{
+   width: 800px;
+   height: 24px;
+}
+
+.div_1T{
+   width: 800px;
+   height: 24px;
+   padding-top: 77px;
+}
+
+.tableAssessmentCompletedT{
+   width: 100%;
+   text-align: left;
+}
+
+.td_1T{
+   width: 190px;
+}
+
+.tdAssessmentCompletedT{
+   width: 327px;
+}
+
+.tdDateT{
+   width: 190px;
+}
+
+.RemoveSelBorder{
+   color: red;
+   text-decoration: none;
+}
+
+.divP1T{
+   width: 347px;
+   padding-top: 115px;
+   padding-left: 65px;
+}
+
+.tableCompletionOfAssessmentT{
+   width: 100%;
+   text-align: left;
+}
+
+.divP2T{
+   width: 282px;
+   padding-top: 12px;
+   padding-left: 40px;
+}
+
+.tableCompletionOfAssessment2T{
+   width: 100%;
+   text-align: center;
+   color: black;
+}
+
+.tdCompletionOfAssessmentT{
+   height: 10px;
+}
+
+.tdCompletionOfAssessment2T{
+   height: 10px;
+}
+
+.imgSendEmailT{
+   outline: none;
+}
+
+.imgExitT{
+   outline: none;
+}

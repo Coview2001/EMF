@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Style/Common.css';
 import './Style/Header.css';
 import './Style/SelectUser.css';
-import $ from 'jquery';
+// import $ from 'jquery';
 import wallImg from './Image/wall.jpg';
 import Loading from '../Common/Loading';
 
@@ -23,8 +23,12 @@ const SelectUser: React.FC = () => {
   const [UserData, setUserData] = useState<User[]>([]);
   const [avatars, setAvatars] = useState<{ name: string, url: string }[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [trophyCount, setTrophyCount] = useState<string>('');
-  const [error, setError] = useState<string>('');
+  const [
+    // trophyCount
+    , setTrophyCount] = useState<string>('');
+  const [
+    // error
+    , setError] = useState<string>('');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -133,7 +137,7 @@ const SelectUser: React.FC = () => {
   return (
     <form id='form1'>
       <div>
-        <a href="#" className="back-to-top">Back to Top</a>
+        {/* <a href="#" className="back-to-top">Back to Top</a> */}
         <div id="main_top_container">
           <div id="header">
             <div className="section_div">

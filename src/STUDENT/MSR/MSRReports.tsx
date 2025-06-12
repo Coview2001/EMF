@@ -3,20 +3,34 @@ import "./Style/MSRReports.css";
 import "./Style/common.css";
 import "./Style/header.css";
 import "./Style/trophy_club.css";
-import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
-import Loading from "../../Common/Loading";
+// import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
+// import Loading from "../../Common/Loading";
 import Header from "../../Common/Header";
 import Section from "../../Common/Section";
 
 const MSRReports: React.FC = () => {
-  const [myPoints, setMyPoints] = useState(0);
-  const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-  const [weekCount, setWeekCount] = useState(0);
-  const [trophyData, setTrophyData] = useState<string[]>([]);
-  const [userName, setUserName] = useState<string>("");
-  const [purchases, setPurchases] = useState<any[]>([6405]);
-  const [imageSrc, setImageSrc] = useState('');
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [
+    // myPoints
+    , setMyPoints] = useState(0);
+  const [
+    // overallWeeklyProgress
+    , setOverallWeeklyProgress] = useState(0);
+  const [
+    // weekCount
+    , setWeekCount] = useState(0);
+  const [
+    // trophyData
+    , setTrophyData] = useState<string[]>([]);
+  const [
+    // userName
+    , setUserName] = useState<string>("");
+  // const [purchases, setPurchases] = useState<any[]>([6405]);
+  const [
+    // imageSrc
+    , setImageSrc] = useState('');
+  const [
+    // isMenuVisible
+    , setIsMenuVisible] = useState(false);
   
 
   useEffect(() => {
@@ -30,7 +44,7 @@ const MSRReports: React.FC = () => {
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
-    const UserLogin = sessionStorage.getItem('login');
+    // const UserLogin = sessionStorage.getItem('login');
     const UserAvatar = sessionStorage.getItem('CurrentAvatar');
     sessionStorage.setItem("CurrentPage", "StudyRoom");
 
@@ -53,13 +67,13 @@ const MSRReports: React.FC = () => {
   }, []);
 
   
-  const handleTrophyClick = () => {
-    const trophyClubLegend = document.getElementById("trophy_club_legend");
-    if (trophyClubLegend) {
-      trophyClubLegend.style.display = 
-        trophyClubLegend.style.display === "none" ? "block" : "none";
-    }
-  };
+  // const handleTrophyClick = () => {
+  //   const trophyClubLegend = document.getElementById("trophy_club_legend");
+  //   if (trophyClubLegend) {
+  //     trophyClubLegend.style.display = 
+  //       trophyClubLegend.style.display === "none" ? "block" : "none";
+  //   }
+  // };
 
   
     const handleClickOutside = (e: MouseEvent | TouchEvent) => {
@@ -70,9 +84,9 @@ const MSRReports: React.FC = () => {
       }
     };
   
-    const handleMobileBoxClick = (e: MouseEvent | TouchEvent) => {
-      e.stopPropagation(); 
-    };
+    // const handleMobileBoxClick = (e: MouseEvent | TouchEvent) => {
+    //   e.stopPropagation(); 
+    // };
   
     useEffect(() => {
       window.addEventListener('mouseup', handleClickOutside);
@@ -84,14 +98,14 @@ const MSRReports: React.FC = () => {
       };
     }, []);
   
-    const toggleMenu = () => {
-      setIsMenuVisible((prevState) => !prevState);
-    };
+    // const toggleMenu = () => {
+    //   setIsMenuVisible((prevState) => !prevState);
+    // };
 
   return (
     <form>
-      		<a href="#" className="back-to-top">Back to Top</a>
-          <a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
+      		<a href="/MSRReports" className="back-to-top">Back to Top</a>
+          <a href="/MSRReports" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
         <div id="main_top_container">
           <Header />
           <Section />
@@ -102,13 +116,13 @@ const MSRReports: React.FC = () => {
                 <div className="subject_arrow_text subject_arrow_text_left">
                   <label id="lblArrowLeftText"></label>
                 </div>
-                <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left"></a>
+                <div id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left"></div>
               </div>
                 <div className="subject_arrow_right_container" id="divsubject_arrow_right" >
                 <div className="subject_arrow_text subject_arrow_text_right">
                   <label id="lblArrowRightText"></label>
                 </div>
-                <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right"></a>
+                <div id="linkbtnArrowRight" className="subject_arrow subject_arrow_right"></div>
               </div>
             </div>
         </div>
@@ -117,7 +131,9 @@ const MSRReports: React.FC = () => {
             <div id="subject_container_right_bg_images_math" className="subject_container_right_bg_images"></div>
             <div className="subject_top_gap"></div>
 
-            <a id="linkbtnStudentActivityReport" className="activity_btn">
+            <a 
+            href="/StudentActivityReport"
+            id="linkbtnStudentActivityReport" className="activity_btn">
                           <span id="md_wlp_icon" className="activity_icon activity_icon_mdreport"></span>
                           <span className="lesson-text"><a href="/StudentActivityReport">View your Student Report</a></span>
                           <span className="button_right_text">
@@ -125,7 +141,9 @@ const MSRReports: React.FC = () => {
                           </span>
             </a>
 
-            <a id="linkbtnUserDiary" className="activity_btn">
+            <a 
+            href="/UserDiary"
+            id="linkbtnUserDiary" className="activity_btn">
                           <span id="md_wlp_icon" className="activity_icon activity_icon_mdreport"></span>
                           <span className="lesson-text"><a href="/UserDiary">View your User Diary</a></span>
                           <span className="button_right_text">
@@ -133,7 +151,9 @@ const MSRReports: React.FC = () => {
                           </span>
             </a>
 
-            <a id="linkbtnMDReport" className="activity_btn">
+            <a 
+            href="/StudentMathsDoctorReport"
+            id="linkbtnMDReport" className="activity_btn">
                           <span id="md_wlp_icon" className="activity_icon activity_icon_mdreport"></span>
                     <span id="MDReport" className="lesson-text"><a href="/StudentMathsDoctorReport">View your Maths Doctor Report</a></span>
                           <span className="button_right_text">

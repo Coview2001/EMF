@@ -64,7 +64,7 @@ const ModifyProfile: React.FC = () => {
                 <a id="linkbtnReportsprofile" href='/MSRReports' >REPORTS</a>
               </div>
               <div id="sn2_sub" className="scrolled_nav_item subbed">
-              <a  
+              <a href='/Profile' 
               // style={{ color: '#b9b9b9' }} 
               id="lnkbtnprofile" className='lnkbtnprofileT' >PROFILE</a>
               </div>
@@ -158,15 +158,15 @@ const ModifyProfile: React.FC = () => {
             className="general_btn two_btn_lightbox two_btn_left"
             onClick={handleCancel}
           >
-            <a>Cancel</a>
+            <a href='/Profile'>Cancel</a>
           </div>
           <div className="general_btn two_btn_lightbox">
-            <a>Submit</a>
+            <a href='/Profile'>Submit</a>
           </div>
           <div 
           // style={{ display: 'none' }} 
           id="modify_details_ok_btn" className="general_btn two_btn_lightbox single_btn">
-					<a>OK</a>
+					<a href='/Profile'>OK</a>
 				</div>
         </div>
       </div>

@@ -155,7 +155,7 @@ const SchoolLogin: React.FC = () => {
             )}
             <div className="button_box">
               <div id="login_btn" className="general_btn two_btn">
-                <a onClick={handleLogin}>Log In</a>
+                <a href='/SchoolLogin' onClick={handleLogin}>Log In</a>
               </div>
             </div>
             <p className="page_text_smlT" 

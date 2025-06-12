@@ -415,14 +415,15 @@ import React, { useState, useEffect, useCallback } from "react";
 import "./Style/UserDiary.css";
 import Header from "../../Common/Header";
 import Section from "../../Common/Section";
-import { data } from "jquery";
+// import { get } from "jquery";
+// import { data } from "jquery";
 
-interface Student {
-    id: number;
-    name: string;
-    completed: number;
-    pending: number;
-}
+// interface Student {
+//     id: number;
+//     name: string;
+//     completed: number;
+//     pending: number;
+// }
 
 interface ActivityRecord {
     StartDateTime_Local: string;
@@ -468,19 +469,25 @@ const UserDiary: React.FC = () => {
         setDateDisplay(formatDateDisplay(selectedDate));
     }, [selectedDate]);
 
-    const [showNextDate, setShowNextDate] = useState(false);
-    const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
-    const [weeklyProgress, setWeeklyProgress] = useState(50);
-    const [myPoints, setMyPoints] = useState(0);
-    const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-    const [weekCount, setWeekCount] = useState(0);
-    const [trophyData, setTrophyData] = useState<string[]>([]);
-    const [userName, setUserName] = useState<string>("");
-    const [purchases, setPurchases] = useState<any[]>([6405]);
-    const [selectedOption, setSelectedOption] = useState<string>("Weekly");
+    const [showNextDate, 
+        // setShowNextDate
+    ] = useState(false);
+    // const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
+    // const [weeklyProgress, setWeeklyProgress] = useState(50);
+    // const [myPoints, setMyPoints] = useState(0);
+    // const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
+    // const [weekCount, setWeekCount] = useState(0);
+    // const [trophyData, setTrophyData] = useState<string[]>([]);
+    const [
+        // userName
+        , setUserName] = useState<string>("");
+    // const [purchases, setPurchases] = useState<any[]>([6405]);
+    // const [selectedOption, setSelectedOption] = useState<string>("Weekly");
     const [fromDate, setFromDate] = useState<string>("");
     const [toDate, setToDate] = useState<string>("");
-    const [imageSrc, setImageSrc] = useState('');
+    const [
+        // imageSrc
+        , setImageSrc] = useState('');
     const [activities, setActivities] = useState<ActivityRecord[]>([]);
     const [showDates, setShowDates] = useState<boolean>(false);
     
@@ -505,7 +512,7 @@ const UserDiary: React.FC = () => {
 
     useEffect(() => {
         const UserName = sessionStorage.getItem('FName');
-        const UserLogin = sessionStorage.getItem('login');
+        // const UserLogin = sessionStorage.getItem('login');
         const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
         if (UserName !== null) {
@@ -526,10 +533,73 @@ const UserDiary: React.FC = () => {
             document.body.classList.remove('StudyRoom-background');
         };
     }, []);
+    //     const getStartDate = () => {
+    //     switch (period) {
+    //         case "Daily":
+    //             return formatDate(new Date());
+    //         case "Weekly":
+    //             return formatDate(getFirstDayOfWeek());
+    //         case "Monthly":
+    //             return formatDate(getFirstDayOfMonth());
+    //         case "Between":
+    //             return fromDate || formatDate(new Date());
+    //         default:
+    //             return formatDate(new Date());
+    //     }
+    // };
+
+    // const getEndDate = () => {
+    //     switch (period) {
+    //         case "Daily":
+    //             return formatDate(new Date());
+    //         case "Weekly":
+    //             return formatDate(getLastDayOfWeek());
+    //         case "Monthly":
+    //             return formatDate(getLastDayOfMonth());
+    //         case "Between":
+    //             return toDate || formatDate(new Date());
+    //         default:
+    //             return formatDate(new Date());
+    //     }
+    // };
+
+    const getStartDate = useCallback(() => {
+    switch (period) {
+        case "Daily":
+            return formatDate(new Date());
+        case "Weekly":
+            return formatDate(getFirstDayOfWeek());
+        case "Monthly":
+            return formatDate(getFirstDayOfMonth());
+        default:
+            return formatDate(new Date());
+    }
+}, [period]);
+
+
+const getLastDayOfWeek = useCallback(() => {
+    const now = new Date();
+    const last = new Date(now.setDate(now.getDate() - now.getDay() + 6));
+    return last;
+}, []);
+
+const getEndDate = useCallback(() => {
+    switch (period) {
+        case "Daily":
+            return formatDate(new Date());
+        case "Weekly":
+            return formatDate(getLastDayOfWeek());
+        case "Monthly":
+            return formatDate(getLastDayOfMonth());
+        default:
+            return formatDate(new Date());
+    }
+}, [period, getLastDayOfWeek]);
+
 
     const fetchActivities = useCallback(() => {
-        const startDate = getStartDate();
-        const endDate = getEndDate();
+        let startDate = getStartDate();
+        let endDate = getEndDate();
 
         fetch("http://localhost:5000/Report", {
             method: "POST",
@@ -553,7 +623,7 @@ const UserDiary: React.FC = () => {
             .catch(error => {
                 console.error("Error fetching activities:", error);
             });
-    }, [period, fromDate, toDate]);
+    }, [getStartDate, getEndDate]);
 
     useEffect(() => {
         fetchActivities();
@@ -617,35 +687,7 @@ const UserDiary: React.FC = () => {
             return newDate;
         });
     };
-    const getStartDate = () => {
-        switch (period) {
-            case "Daily":
-                return formatDate(new Date());
-            case "Weekly":
-                return formatDate(getFirstDayOfWeek());
-            case "Monthly":
-                return formatDate(getFirstDayOfMonth());
-            case "Between":
-                return fromDate || formatDate(new Date());
-            default:
-                return formatDate(new Date());
-        }
-    };
 
-    const getEndDate = () => {
-        switch (period) {
-            case "Daily":
-                return formatDate(new Date());
-            case "Weekly":
-                return formatDate(getLastDayOfWeek());
-            case "Monthly":
-                return formatDate(getLastDayOfMonth());
-            case "Between":
-                return toDate || formatDate(new Date());
-            default:
-                return formatDate(new Date());
-        }
-    };
 
     const getFirstDayOfMonth = () => {
         const today = new Date();
@@ -664,10 +706,10 @@ const UserDiary: React.FC = () => {
         return new Date(today.setDate(diff));
     };
 
-    const getLastDayOfWeek = () => {
-        const firstDay = getFirstDayOfWeek();
-        return new Date(firstDay.setDate(firstDay.getDate() + 6));
-    };
+    // const getLastDayOfWeek = () => {
+    //     const firstDay = getFirstDayOfWeek();
+    //     return new Date(firstDay.setDate(firstDay.getDate() + 6));
+    // };
 
     const formatDate = (date: Date): string => {
         return date.toISOString().split("T")[0];
@@ -701,10 +743,10 @@ const UserDiary: React.FC = () => {
     return (
         <div>
             <form>
-                <a href="#" className="back-to-top">
+                <a href="/UserDiary" className="back-to-top">
                     Back to Top
                 </a>
-                <a href="#" className="back-to-bottom" id="back_to_bottom_link">
+                <a href="/UserDiary" className="back-to-bottom" id="back_to_bottom_link">
                     Back to Top
                 </a>
                 <div id="main_top_container">
@@ -715,13 +757,13 @@ const UserDiary: React.FC = () => {
                             <div className="subject_arrow_text subject_arrow_text_left">
                                 <label id="lblArrowLeftText"></label>
                             </div>
-                            <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left"></a>
+                            <div id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left"></div>
                         </div>
                         <div className="subject_arrow_right_container" id="divsubject_arrow_right">
                             <div className="subject_arrow_text subject_arrow_text_right">
                                 <label id="lblArrowRightText"></label>
                             </div>
-                            <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right"></a>
+                            <div id="linkbtnArrowRight" className="subject_arrow subject_arrow_right"></div>
                         </div>
                     </div>
                 </div>
@@ -778,12 +820,12 @@ const UserDiary: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="week-ending-container">
-                                    <a className="arrow-left" onClick={handlePrevDateClick} />
+                                    <div className="arrow-left" onClick={handlePrevDateClick} />
                                     <div className="wk-ending-text" id="divDateDisplay">
                                         {dateDisplay.split(",")[1]}
                                     </div>
                                     {showNextDate && (
-                                        <a className="arrow-right" onClick={handleNextDateClick} />
+                                        <div className="arrow-right" onClick={handleNextDateClick} />
                                     )}
                                 </div>
                             </div>

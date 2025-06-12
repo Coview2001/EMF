@@ -2,49 +2,75 @@ import React, { useState, useEffect} from "react";
 import "./Style/StudyRoom.css";
 import "./Style/common.css";
 import "./Style/header.css";
-import Loading from "../../Common/Loading";
+// import Loading from "../../Common/Loading";
 import Header from "../../Common/Header";
 import Section from "../../Common/Section";
 
-import trophy_club_0 from './trophy_club/trophy_club_0.png';
-import trophy_club_10 from './trophy_club/trophy_club_10.png';
-import trophy_club_25 from './trophy_club/trophy_club_25.png';
-import trophy_club_50 from './trophy_club/trophy_club_50.png';
-import trophy_club_75 from './trophy_club/trophy_club_75.png';
-import trophy_club_100 from './trophy_club/trophy_club_100.png';
-import trophy_club_150 from './trophy_club/trophy_club_150.png';
-import trophy_club_200 from './trophy_club/trophy_club_200.png';
-import trophy_club_250 from './trophy_club/trophy_club_250.png';
-import trophy_club_300 from './trophy_club/trophy_club_300.png';
-import trophy_club_350 from './trophy_club/trophy_club_350.png';
-import trophy_club_400 from './trophy_club/trophy_club_400.png';
+// import trophy_club_0 from './trophy_club/trophy_club_0.png';
+// import trophy_club_10 from './trophy_club/trophy_club_10.png';
+// import trophy_club_25 from './trophy_club/trophy_club_25.png';
+// import trophy_club_50 from './trophy_club/trophy_club_50.png';
+// import trophy_club_75 from './trophy_club/trophy_club_75.png';
+// import trophy_club_100 from './trophy_club/trophy_club_100.png';
+// import trophy_club_150 from './trophy_club/trophy_club_150.png';
+// import trophy_club_200 from './trophy_club/trophy_club_200.png';
+// import trophy_club_250 from './trophy_club/trophy_club_250.png';
+// import trophy_club_300 from './trophy_club/trophy_club_300.png';
+// import trophy_club_350 from './trophy_club/trophy_club_350.png';
+// import trophy_club_400 from './trophy_club/trophy_club_400.png';
 
-interface TrophyRange {
-  totalTrophyCount: number;
-  min: number;
-  max?: number;  
-  points: number;
-}
+// interface TrophyRange {
+//   totalTrophyCount: number;
+//   min: number;
+//   max?: number;  
+//   points: number;
+// }
 
 const StudyRoom: React.FC = () => {
   const [trophyVisible, setTrophyVisible] = useState(false);
-  const [wtaVisible, setWtaVisible] = useState(false);
-  const [setWorkVisible, setSetWorkVisible] = useState(false);
-  const [imageSrc, setImageSrc] = useState('');
-  const [rewardPoints, setRewardPoints] = useState(0);
-  const [trophy, setTrophy] = useState<string | null>(null);
-  const [setWork, setSetWork] = useState<any[]>([]);
-  const [weeklyProgress, setWeeklyProgress] = useState(50);
-  const [myPoints, setMyPoints] = useState(0);
-  const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-  const [weekCount, setWeekCount] = useState(0);
-  const [trophyData, setTrophyData] = useState<string[]>([]);
-  const [userName, setUserName] = useState<string>("");
-  const [purchases, setPurchases] = useState<string | null>(null);
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const [totalTrophyCount, setTotalTrophyCount] = useState<number>(0);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>("");
+  const [wtaVisible, 
+    // setWtaVisible
+  ] = useState(false);
+  const [setWorkVisible, 
+    // setSetWorkVisible
+  ] = useState(false);
+  const [
+    // imageSrc
+    , setImageSrc] = useState('');
+  const [rewardPoints, 
+    // setRewardPoints
+  ] = useState(0);
+  const [trophy, 
+    // setTrophy
+  ] = useState<string | null>(null);
+  const [setWork, 
+    // setSetWork
+  ] = useState<any[]>([]);
+  // const [weeklyProgress, setWeeklyProgress] = useState(50);
+  const [
+    // myPoints
+    , setMyPoints] = useState(0);
+  const [
+    // overallWeeklyProgress
+    , setOverallWeeklyProgress] = useState(0);
+  const [
+    // weekCount
+    , setWeekCount] = useState(0);
+  const [
+    // trophyData
+    , setTrophyData] = useState<string[]>([]);
+  const [
+    // userName
+    , setUserName] = useState<string>("");
+  const [
+    // purchases
+    , setPurchases] = useState<string | null>(null);
+  const [
+    // isMenuVisible
+    , setIsMenuVisible] = useState(false);
+  // const [totalTrophyCount, setTotalTrophyCount] = useState<number>(0);
+  // const [loading, setLoading] = useState<boolean>(true);
+  // const [error, setError] = useState<string>("");
 
 
 
@@ -52,7 +78,7 @@ const StudyRoom: React.FC = () => {
         sessionStorage.setItem("CurrentPage", "StudyRoom");
 
         const UserName = sessionStorage.getItem('FName');
-        const UserLogin = sessionStorage.getItem('login');
+        // const UserLogin = sessionStorage.getItem('login');
         const UserAvatar = sessionStorage.getItem('CurrentAvatar');
         // console.log("totalTrophyCount222", totalTrophyCount)
         setPurchases(sessionStorage.getItem("CurrentPoints"));
@@ -82,13 +108,13 @@ const StudyRoom: React.FC = () => {
         }, []);
         
         
-        const handleTrophyClick = () => {
-          const trophyClubLegend = document.getElementById("trophy_club_legend");
-          if (trophyClubLegend) {
-            trophyClubLegend.style.display = 
-              trophyClubLegend.style.display === "none" ? "block" : "none";
-          }
-        };
+        // const handleTrophyClick = () => {
+        //   const trophyClubLegend = document.getElementById("trophy_club_legend");
+        //   if (trophyClubLegend) {
+        //     trophyClubLegend.style.display = 
+        //       trophyClubLegend.style.display === "none" ? "block" : "none";
+        //   }
+        // };
 
   const handleWtaClick = () => {
   };
@@ -108,9 +134,9 @@ const StudyRoom: React.FC = () => {
     }
   };
 
-  const handleMobileBoxClick = (e: MouseEvent | TouchEvent) => {
-    e.stopPropagation(); 
-  };
+  // const handleMobileBoxClick = (e: MouseEvent | TouchEvent) => {
+  //   e.stopPropagation(); 
+  // };
 
   useEffect(() => {
     window.addEventListener('mouseup', handleClickOutside);
@@ -122,18 +148,18 @@ const StudyRoom: React.FC = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuVisible((prevState) => !prevState);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuVisible((prevState) => !prevState);
+  // };
 
   // if (loading) return (<Loading />)
 
   return (
     <form>
-      <a href="#" className="back-to-top">
+      <a href="/StudyRoom" className="back-to-top">
         Back to Top
       </a>
-      <a href="#" className="back-to-bottom" id="back_to_bottom_link">
+      <a href="/StudyRoom" className="back-to-bottom" id="back_to_bottom_link">
         Back to Bottom
       </a>
 
@@ -149,13 +175,13 @@ const StudyRoom: React.FC = () => {
             <div className="subject_arrow_text subject_arrow_text_left">
               <label id="lblArrowLeftText" ></label>
             </div>
-            <a id="linkbtnArrowLeft" ><div id="english_subject_arrow_left_0101a" className="subject_arrow subject_arrow_left"></div></a>
+            <div id="linkbtnArrowLeft" ><div id="english_subject_arrow_left_0101a" className="subject_arrow subject_arrow_left"></div></div>
           </div>
           <div className="subject_arrow_right_container" id="divsubject_arrow_right" >
             <div className="subject_arrow_text subject_arrow_text_right">
               <label id="lblArrowRightText" >SCIENCE</label>
             </div>
-            <a id="linkbtnArrowRight" ><div id="english_subject_arrow_right_0101a" className="subject_arrow subject_arrow_right"></div></a>
+            <div id="linkbtnArrowRight" ><div id="english_subject_arrow_right_0101a" className="subject_arrow subject_arrow_right"></div></div>
           </div>
         </div>
 
@@ -246,7 +272,7 @@ const StudyRoom: React.FC = () => {
                     <div id="WTATitle" className="subject_container_title" >
                       <p>Your Tutor Has Set Writing Task Activity For You</p>
                     </div>
-                      <a id="libkbtnWTA" className="activity_btn setwork_btn" >
+                      <a href="/StudyRoom" id="libkbtnWTA" className="activity_btn setwork_btn" >
                         <span id="WTALeson_Text" className="lesson-text" 
                         // style={{textAlign:'center'}} 
                         ></span>
@@ -363,7 +389,9 @@ const StudyRoom: React.FC = () => {
                 <div className="subject_container_text">
                   <p id="math_setwork_selected_set_text"></p>
                 </div>
-                  <a id="linkbtnStartMDSetWork" className="activity_btn setwork_btn" >
+                  <a 
+                  href="/StudyRoom"
+                  id="linkbtnStartMDSetWork" className="activity_btn setwork_btn" >
                     <span id="math_wlp_icon" className="activity_icon activity_icon_md"></span>
                     <span id="MathsLeson_Text" className="lesson-text" ></span>
                     <span className="button_right_text">
@@ -418,7 +446,7 @@ const StudyRoom: React.FC = () => {
 						<div className="tip_container">
 							<label id="lblWLPHeading" >Here is your first activity</label>
 						</div>
-						<a id="linkbtnWLPStartActivity"   className="activity_btn">
+						<a href="StartActivity" id="linkbtnWLPStartActivity"   className="activity_btn">
 							<label id="lblWLPActivityIcon" ></label>
 							<label id="lblWLPActivityText" className="lesson-text" ></label>
 							<span className="button_right_text">
@@ -452,7 +480,7 @@ const StudyRoom: React.FC = () => {
 						</asp:Repeater> */}
 
 						<div className="wlp_list_item_row wlp_list_added_activities" id="divExtraWLPActivity" >
-							<a id="spnExtraActivites" >Extra activities (max 5)</a><span id="wlpText"></span>
+							<a href="StartActivity" id="spnExtraActivites" >Extra activities (max 5)</a><span id="wlpText"></span>
 							<span className="list_smileicon" id="spnLogo" ></span>
 						</div>
 						{/* <asp:Repeater id="rptExtraWLPActivity" >

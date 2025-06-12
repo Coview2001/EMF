@@ -8,18 +8,30 @@ import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 
 
 const SkillBuildingGames: React.FC = () => {
-      const [weeklyProgress, setWeeklyProgress] = useState(50);
-      const [myPoints, setMyPoints] = useState(0);
-      const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-      const [weekCount, setWeekCount] = useState(0);
-      const [trophyData, setTrophyData] = useState<string[]>([]);
-      const [userName, setUserName] = useState<string>("");
-      const [purchases, setPurchases] = useState<any[]>([6405]);
+    //   const [weeklyProgress, setWeeklyProgress] = useState(50);
+      const [
+		// myPoints
+		, setMyPoints] = useState(0);
+      const [
+		// overallWeeklyProgress
+		, setOverallWeeklyProgress] = useState(0);
+      const [
+		// weekCount
+		, setWeekCount] = useState(0);
+      const [
+		// trophyData
+		, setTrophyData] = useState<string[]>([]);
+      const [
+		// userName
+		, setUserName] = useState<string>("");
+      const [purchases, 
+		// setPurchases
+	] = useState<any[]>([6405]);
 			const [imageSrc, setImageSrc] = useState('');
 
 			useEffect(() => {
 				const UserName = sessionStorage.getItem('FName');
-				const UserLogin = sessionStorage.getItem('login');
+				// const UserLogin = sessionStorage.getItem('login');
 				const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
 				if (UserName !== null) {
@@ -39,9 +51,9 @@ const SkillBuildingGames: React.FC = () => {
 				};
 			}, []);
   
-    const handlePurchase = (storeID: string) => {
-    //   console.log(`Purchase confirmed for StoreID: ${storeID}`);
-    };
+    // const handlePurchase = (storeID: string) => {
+    // //   console.log(`Purchase confirmed for StoreID: ${storeID}`);
+    // };
   
 		useEffect(() => {
 		  setMyPoints(1200);
@@ -63,10 +75,10 @@ const SkillBuildingGames: React.FC = () => {
 
   return (
     <form>
-      <a href="#" className="back-to-top">
+      <a href="/SkillBuildingGames" className="back-to-top">
         Back to Top
       </a>
-      <a href="#" className="back-to-bottom" id="back_to_bottom_link">
+      <a href="/SkillBuildingGames" className="back-to-bottom" id="back_to_bottom_link">
         Back to Top
       </a>
 
@@ -121,7 +133,7 @@ const SkillBuildingGames: React.FC = () => {
         <div id="user_banner">
             <div className="section_div">
               <div id="achievements_btn">
-                <a href="#">ACHIEVEMENTS</a>
+                <a href="/SkillBuildingGames">ACHIEVEMENTS</a>
               </div>
               <div id="user_strip_right_container">
 							<div id="divAvatarContainer" className="avatar_container"><img id="imgAvatar" src={imageSrc} alt="Avatar" /></div>
@@ -231,12 +243,12 @@ const SkillBuildingGames: React.FC = () => {
 
       <div id="msr_sbg_page_btn_container">
         <div id="msr_sbg_page_btn_store" className="msr_sbg_page_btn_last">
-          <a>
+          <a href="/SkillBuildingGames">
             <label id="lblMathsPlan">Maths</label>
           </a>
         </div>
         <div id="msr_sbg_page_btn_purchase" className="msr_sbg_page_btn msr_sbg_page_btn_last">
-          <a>ENGLISH</a>
+          <a href="/SkillBuildingGames">ENGLISH</a>
         </div>
       </div>
 

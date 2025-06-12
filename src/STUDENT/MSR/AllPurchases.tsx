@@ -4,15 +4,19 @@ import './Style/header.css';
 import './Style/AllPurchases.css';
 import './Style/trophy_club.css';
 import "./Style/SkillBuildingGames.css";
-import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
+// import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 import $ from 'jquery';
 import Header from '../../Common/Header';
 import Section from '../../Common/Section';
 
 
 const AllPurchases: React.FC = () => {
-  const [userName, setUserName] = useState<string>("");
-  const [imageSrc, setImageSrc] = useState('');
+  const [
+    // userName
+    , setUserName] = useState<string>("");
+  const [
+    // imageSrc
+    , setImageSrc] = useState('');
   const [purchases, setPurchases] = useState<any[]>([
     { AvatarTitle: "reading", type: "avatar", PurchasedOn: "2023-04-25", PointsUsed: 0 },
   ]);
@@ -49,7 +53,7 @@ const AllPurchases: React.FC = () => {
 
         useEffect(() => {
           const UserName = sessionStorage.getItem('FName');
-          const UserLogin = sessionStorage.getItem('login');
+          // const UserLogin = sessionStorage.getItem('login');
           const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
           if (UserName !== null) {
@@ -71,13 +75,13 @@ setImageSrc(`${UserAvatar}`);
 
 
 
-  const handleTrophyClick = () => {
-    const trophyClubLegend = document.getElementById("trophy_club_legend");
-    if (trophyClubLegend) {
-      trophyClubLegend.style.display = 
-        trophyClubLegend.style.display === "none" ? "block" : "none";
-    }
-  };
+  // const handleTrophyClick = () => {
+  //   const trophyClubLegend = document.getElementById("trophy_club_legend");
+  //   if (trophyClubLegend) {
+  //     trophyClubLegend.style.display = 
+  //       trophyClubLegend.style.display === "none" ? "block" : "none";
+  //   }
+  // };
 
   function getAvatarUrl(avatarTitle: string): string {
     const hasExtension = /\.[a-zA-Z0-9]+$/.test(avatarTitle);

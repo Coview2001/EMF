@@ -151,7 +151,9 @@ import "./Style/ChangeAvatar.css";
 
 const ChangeAvatar: React.FC = () => {
   const [userName, setUserName] = useState<string>("");
-  const [selectedAvatar, setSelectedAvatar] = useState<string | null>(null);
+  const [
+    // selectedAvatar
+    , setSelectedAvatar] = useState<string | null>(null);
   // const [avatars, setAvatars] = useState(
   //   [
   //     { key: courage, value: "" },
@@ -161,8 +163,8 @@ const ChangeAvatar: React.FC = () => {
   // );
   // const [isAvatarSelected, setIsAvatarSelected] = useState(false); 
 
-  const [currentAvatar, setCurrentAvatar] = useState<string | null>(null); 
-  const [newAvatar, setNewAvatar] = useState<string | null>(null); 
+  // const [currentAvatar, setCurrentAvatar] = useState<string | null>(null); 
+  // const [newAvatar, setNewAvatar] = useState<string | null>(null); 
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
@@ -208,9 +210,9 @@ const ChangeAvatar: React.FC = () => {
   //   setSelectedAvatar(currentAvatar || null); 
   // };
 
-  const handleBack = () => {
-    // console.log("Navigating Back");
-  };
+  // const handleBack = () => {
+  //   // console.log("Navigating Back");
+  // };
 
   return (
     <form id="form1">
@@ -301,13 +303,19 @@ const ChangeAvatar: React.FC = () => {
         </div> */}
         <div className="button_box">
           <div id="change_avatar_cancel_btn" className="general_btn two_btn_lightbox two_btn_left">
-            <a id="lnkbtnCancel" >Cancel</a>
+            <a 
+            href="/Profile" 
+            id="lnkbtnCancel" >Cancel</a>
           </div>
           <div id="change_avatar_save_btn" className="general_btn two_btn_lightbox">
-            <a id="lnkbtnSave" >Save</a>
+            <a 
+            href="/Profile"
+            id="lnkbtnSave" >Save</a>
           </div>
           <div id="change_avatar_back_btn" className="general_btn two_btn_lightbox single_btn">
-            <a id="lnkbtnBack" >Back</a>
+            <a 
+            href="/Profile"
+            id="lnkbtnBack" >Back</a>
           </div>
 			</div>
       </div>

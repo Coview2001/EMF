@@ -3,7 +3,7 @@ import "./Style/common.css";
 import "./Style/header.css";
 import "./Style/MyIncentives.css";
 import "./Style/trophy_club.css";
-import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
+// import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 import Header from "../../Common/Header";
 import Section from "../../Common/Section";
 
@@ -28,18 +28,28 @@ const MyIncentives: React.FC = () => {
     { AvatarLink: "avatar2.png", CurrentAvatar: "eve", Points: 2000 },
   ]);
 
-  const [weeklyProgress, setWeeklyProgress] = useState(50);
+  // const [weeklyProgress, setWeeklyProgress] = useState(50);
   const [myPoints, setMyPoints] = useState(0);
-  const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-  const [weekCount, setWeekCount] = useState(0);
-  const [trophyData, setTrophyData] = useState<string[]>([]);
-  const [userName, setUserName] = useState<string>("");
-  const [purchases, setPurchases] = useState<any[]>([6405]);
-  const [imageSrc, setImageSrc] = useState('');
+  const [
+    // overallWeeklyProgress
+    , setOverallWeeklyProgress] = useState(0);
+  const [
+    // weekCount
+    , setWeekCount] = useState(0);
+  const [
+    // trophyData
+    , setTrophyData] = useState<string[]>([]);
+  const [
+    // userName
+    , setUserName] = useState<string>("");
+  // const [purchases, setPurchases] = useState<any[]>([6405]);
+  const [
+    // imageSrc
+    , setImageSrc] = useState('');
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
-    const UserLogin = sessionStorage.getItem('login');
+    // const UserLogin = sessionStorage.getItem('login');
     const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
     if (UserName !== null) {
@@ -159,13 +169,13 @@ const MyIncentives: React.FC = () => {
     setMyPoints((prevPoints) => prevPoints - avatars[i].Points); 
   };
   
-  const handleTrophyClick = () => {
-    const trophyClubLegend = document.getElementById("trophy_club_legend");
-    if (trophyClubLegend) {
-      trophyClubLegend.style.display = 
-        trophyClubLegend.style.display === "none" ? "block" : "none";
-    }
-  };
+  // const handleTrophyClick = () => {
+  //   const trophyClubLegend = document.getElementById("trophy_club_legend");
+  //   if (trophyClubLegend) {
+  //     trophyClubLegend.style.display = 
+  //       trophyClubLegend.style.display === "none" ? "block" : "none";
+  //   }
+  // };
 
   return (
     <form>
@@ -204,8 +214,8 @@ const MyIncentives: React.FC = () => {
               </div>
             ))}
           </div>
-        <a href="#" className="back-to-top">Back to Top</a>
-        <a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
+        <a href="/MyIncentives" className="back-to-top">Back to Top</a>
+        <a href="/MyIncentives" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
         <div id="main_top_container">
           {/* <div id="header">
             <div className="section_div">
@@ -348,9 +358,11 @@ const MyIncentives: React.FC = () => {
 
             <div id="mi_page_btn_container">
                 <div id="mi_page_btn_store" className="mi_page_btn">
-                    <a id="hlinkStore" href="/MyStore" >Store</a></div>
-                            <div id="mi_page_btn_avatars" className="mi_page_btn mi_page_btn_selected">
-                    <a id="hlinkMyIncentives" >Avatars</a></div>
+                    <a id="hlinkStore" href="/MyStore" >Store</a>
+                    </div>
+                  <div id="mi_page_btn_avatars" className="mi_page_btn mi_page_btn_selected">
+                    <a href="/MyIncentives" id="hlinkMyIncentives" >Avatars</a>
+                  </div>
                 <div id="mi_page_btn_comp" className="mi_page_btn">
                     <a href="/MyCompsCurrent">Comps</a></div>            
                 <div id="mi_page_btn_purchase" className="mi_page_btn mi_page_btn_last">

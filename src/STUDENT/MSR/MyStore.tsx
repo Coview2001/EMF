@@ -3,10 +3,10 @@ import "./Style/common.css";
 import "./Style/header.css";
 import "./Style/MyStore.css";
 import "./Style/trophy_club.css";
-import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
+// import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 import Header from "../../Common/Header";
 import Section from "../../Common/Section";
-import { data } from "jquery";
+// import { data } from "jquery";
 
 interface StoreDetails {
   StoreID: string;
@@ -28,9 +28,9 @@ interface Store {
   Image : string;
 }
 
-interface Trophy {
-  TrophyRange: string;
-}
+// interface Trophy {
+//   TrophyRange: string;
+// }
 
 
 
@@ -55,20 +55,26 @@ const MyStore: React.FC = () => {
     },
   ]);
 
-  const [trophies] = useState<Trophy[]>([
-    { TrophyRange: "0-50" },
-    { TrophyRange: "51-100" },
-  ]);
+  // const [trophies] = useState<Trophy[]>([
+  //   { TrophyRange: "0-50" },
+  //   { TrophyRange: "51-100" },
+  // ]);
 
 
-    const [weeklyProgress, setWeeklyProgress] = useState(50);
+    // const [weeklyProgress, setWeeklyProgress] = useState(50);
     const [myPoints, setMyPoints] = useState(0);
-    const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-    const [weekCount, setWeekCount] = useState(0);
-    const [trophyData, setTrophyData] = useState<string[]>([]);
-    const [userName, setUserName] = useState<string>("");
-    const [purchases, setPurchases] = useState<Trophy[]>([]);
-    const [imageSrc, setImageSrc] = useState('');
+    const [
+      // overallWeeklyProgress
+      , setOverallWeeklyProgress] = useState(0);
+    const [
+      // weekCount
+      , setWeekCount] = useState(0);
+    const [
+      // trophyData
+      , setTrophyData] = useState<string[]>([]);
+    // const [userName, setUserName] = useState<string>("");
+    // const [purchases, setPurchases] = useState<Trophy[]>([]);
+    // const [imageSrc, setImageSrc] = useState('');
     const [stores, setStores] = useState<Store[]>([
       { StoreTitle: "DONATION_starlight", Image: "DONATION_starlight", Points: 15000},
       { StoreTitle: "ITEM_smiggle20", Image: "ITEM_smiggle20", Points: 60000},
@@ -103,13 +109,13 @@ const MyStore: React.FC = () => {
       // setUserName("Varun");
     }, []);
 
-          const handleTrophyClick = () => {
-            const trophyClubLegend = document.getElementById("trophy_club_legend");
-            if (trophyClubLegend) {
-              trophyClubLegend.style.display = 
-                trophyClubLegend.style.display === "none" ? "block" : "none";
-            }
-          };
+          // const handleTrophyClick = () => {
+          //   const trophyClubLegend = document.getElementById("trophy_club_legend");
+          //   if (trophyClubLegend) {
+          //     trophyClubLegend.style.display = 
+          //       trophyClubLegend.style.display === "none" ? "block" : "none";
+          //   }
+          // };
 
           const handlePurchaseStoreItem = (title: string) => {
             alert(`Purchased store item: ${title}`);
@@ -150,7 +156,7 @@ const MyStore: React.FC = () => {
               id={`mi_store_details_lightbox_ok_btn${detail.StoreID}`}
               className="general_btn two_btn_lightbox"
             >
-              <a className={detail.StoreID}>OK</a>
+              <div  className={detail.StoreID}>OK</div>
             </div>
           </div>
         </div>
@@ -207,7 +213,7 @@ const MyStore: React.FC = () => {
               id={`mi_store_lightbox_cancel_btn${store.StoreID}`}
               className="general_btn two_btn_lightbox two_btn_left mi_store_lightbox_cancel_btn"
             >
-              <a id={`lca${store.StoreID}`}>Cancel</a>
+              <div id={`lca${store.StoreID}`}>Cancel</div>
             </div>
             <div
               id={`mi_store_lightbox_confirm_btn${store.StoreID}`}
@@ -222,15 +228,15 @@ const MyStore: React.FC = () => {
               id={`mi_store_lightbox_ok_btn${store.StoreID}`}
               className="general_btn two_btn_lightbox mi_store_lightbox_ok_btn"
             >
-              <a id={`lco${store.StoreID}`}>OK</a>
+              <div id={`lco${store.StoreID}`}>OK</div>
             </div>
           </div>
         </div>
       ))}
 
 
-        <a href="#" className="back-to-top">Back to Top</a>
-        <a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
+        <a href="/MyStore" className="back-to-top">Back to Top</a>
+        <a href="/MyStore" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
         <div id="main_top_container">
           {/* <div id="header">
             <div className="section_div">
@@ -422,12 +428,13 @@ const MyStore: React.FC = () => {
                     {store.Points} Points
                   </p>
                   <div className="mi_store_single_box_right_btn mi_store_single_box_right_buy_btn">
-                  <a onClick={() => handlePurchaseStoreItem(store.StoreTitle)}>
+                  <a href="/MyStore" 
+                  onClick={() => handlePurchaseStoreItem(store.StoreTitle)}>
                     {myPoints < store.Points ? "EARN MORE POINTS" : "BUY"}
                   </a>
                   </div>
                   <div className="mi_store_single_box_right_btn mi_store_single_box_right_details">
-                    <a>DETAILS</a>
+                    <a href="/MyStore">DETAILS</a>
                   </div>
                   </div>
                 </div>

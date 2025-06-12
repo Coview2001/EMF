@@ -9,18 +9,22 @@ import Loading from "../../Common/Loading";
 
 
 const ExploreActivities: React.FC = () => {
-  const [purchases, setPurchases] = useState<any[]>([6405]);
-  const [weeklyProgress, setWeeklyProgress] = useState<number>(0); 
-  const [points, setPoints] = useState<number>(0); 
-  const [loading, setLoading] = useState<boolean>(true);
-  const [weeklyAchievements, setWeeklyAchievements] = useState<{ english: boolean; math: boolean; science: boolean; total: number }>({
-    english: true,
-    math: true,
-    science: true,
-    total: 0,
-  });
+  const [purchases, 
+    // setPurchases
+  ] = useState<any[]>([6405]);
+  // const [weeklyProgress, setWeeklyProgress] = useState<number>(0); 
+  // const [points, setPoints] = useState<number>(0); 
+  // const [loading, setLoading] = useState<boolean>(true);
+  // const [weeklyAchievements, setWeeklyAchievements] = useState<{ english: boolean; math: boolean; science: boolean; total: number }>({
+  //   english: true,
+  //   math: true,
+  //   science: true,
+  //   total: 0,
+  // });
   const [units, setUnits] = useState<Unit[]>([]);
-  const [userName, setUserName] = useState<string>("");
+  const [
+    // userName
+    , setUserName] = useState<string>("");
   const [imageSrc, setImageSrc] = useState('');
   
 type Activity = {
@@ -86,7 +90,7 @@ useEffect(() => {
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
-    const UserLogin = sessionStorage.getItem('login');
+    // const UserLogin = sessionStorage.getItem('login');
     const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
     if (UserName !== null) {
@@ -164,7 +168,9 @@ useEffect(() => {
           <div id="user_banner">
             <div className="section_div">
               <div id="achievements_btn">
-                <a href="#">ACHIEVEMENTS</a>
+                <a 
+                href="/ExploreActivities"
+                >ACHIEVEMENTS</a>
               </div>
               <div id="user_strip_right_container">
               <div id="divAvatarContainer" className="avatar_container"><img
@@ -273,13 +279,16 @@ useEffect(() => {
               <div className="subject_arrow_text subject_arrow_text_left">
                 <label id="lblArrowLeftText" ></label>
               </div>
-              <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></a>
+              <div
+              id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left">
+              </div>
             </div>
             <div className="subject_arrow_right_container" id="divsubject_arrow_right"  >
               <div className="subject_arrow_text subject_arrow_text_right">
                 <label id="lblArrowRightText" ></label>
               </div>
-              <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></a>
+              <div
+              id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></div>
             </div>
           </div>
         </div>

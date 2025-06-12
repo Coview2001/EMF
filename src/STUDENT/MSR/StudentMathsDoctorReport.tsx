@@ -7,21 +7,35 @@ import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 
 const StudentMathsDoctorReport: React.FC = () => {
     const [selectedReport, setSelectedReport] = useState<string>('');
-    const [passLevelVisible, setPassLevelVisible] = useState<boolean>(false);
-    const [scoreAnalysisVisible, setScoreAnalysisVisible] = useState<boolean>(false);
-    const [weeklyProgress, setWeeklyProgress] = useState(50);
-    const [myPoints, setMyPoints] = useState(0);
-    const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-    const [weekCount, setWeekCount] = useState(0);
-    const [trophyData, setTrophyData] = useState<string[]>([]);
+    const [passLevelVisible, 
+      // setPassLevelVisible
+    ] = useState<boolean>(false);
+    const [scoreAnalysisVisible, 
+      // setScoreAnalysisVisible
+    ] = useState<boolean>(false);
+    // const [weeklyProgress, setWeeklyProgress] = useState(50);
+    const [
+      // myPoints
+      , setMyPoints] = useState(0);
+    const [
+      // overallWeeklyProgress
+      , setOverallWeeklyProgress] = useState(0);
+    const [
+      // weekCount
+      , setWeekCount] = useState(0);
+    const [
+      // trophyData
+      , setTrophyData] = useState<string[]>([]);
     const [userName, setUserName] = useState<string>("");
-    const [purchases, setPurchases] = useState<any[]>([6405]);
+    const [purchases, 
+      // setPurchases
+    ] = useState<any[]>([6405]);
     const [imageSrc, setImageSrc] = useState('');
 
 
     useEffect(() => {
       const UserName = sessionStorage.getItem('FName');
-      const UserLogin = sessionStorage.getItem('login');
+      // const UserLogin = sessionStorage.getItem('login');
       const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
       if (UserName !== null) {
@@ -40,9 +54,9 @@ const StudentMathsDoctorReport: React.FC = () => {
         document.body.classList.remove('StudyRoom-background');
       };
     }, []);
-    const handlePurchase = (storeID: string) => {
-      console.log(`Purchase confirmed for StoreID: ${storeID}`);
-    };
+    // const handlePurchase = (storeID: string) => {
+    //   console.log(`Purchase confirmed for StoreID: ${storeID}`);
+    // };
   
     useEffect(() => {
       setMyPoints(1200);
@@ -63,10 +77,10 @@ const StudentMathsDoctorReport: React.FC = () => {
 
     return (
       <form>
-      <a href="#" className="back-to-top">
+      <a href="/StudentMathsDoctorReport" className="back-to-top">
         Back to Top
       </a>
-      <a href="#" className="back-to-bottom" id="back_to_bottom_link">
+      <a href="/StudentMathsDoctorReport" className="back-to-bottom" id="back_to_bottom_link">
         Back to Top
       </a>
 
@@ -123,7 +137,7 @@ const StudentMathsDoctorReport: React.FC = () => {
         >
             <div className="section_div">
               <div id="achievements_btn">
-                <a href="#">ACHIEVEMENTS</a>
+                <a href="/StudentMathsDoctorReport">ACHIEVEMENTS</a>
               </div>
               <div id="user_strip_right_container">
               <div id="divAvatarContainer" className="avatar_container"><img id="imgAvatar" src={imageSrc} alt="Avatar" /></div>
@@ -232,13 +246,13 @@ const StudentMathsDoctorReport: React.FC = () => {
                     <div className="subject_arrow_text subject_arrow_text_left">
                         <label id="lblArrowLeftText" ></label>
                     </div>
-                    <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></a>
+                    <div id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></div>
                 </div>
 					      <div className="subject_arrow_right_container" id="divsubject_arrow_right"  >
                     <div className="subject_arrow_text subject_arrow_text_right">
                         <label id="lblArrowRightText" ></label>
                     </div>
-                    <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></a>
+                    <div id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></div>
                 </div>
             </div>
       </div>
@@ -247,11 +261,11 @@ const StudentMathsDoctorReport: React.FC = () => {
             <div className="content-container">
                 <div className="content-top responsive-divider">
                     <div className="report-heading-container">
-                        <a id='linkbtnReportLeft' className="report-arrow-left"></a>
+                        <div id='linkbtnReportLeft' className="report-arrow-left"></div>
                         <div className="report-heading">
                             <span id="spnMathOrMathsReportHeader"></span>
                         </div>
-                        <a id='linkbtnReportRight' className="report-arrow-right"></a>
+                        <div id='linkbtnReportRight' className="report-arrow-right"></div>
                     </div>
                     <div className="report-displayed-select">
                         <div className="report-displayed-heading">Report Displayed:</div>

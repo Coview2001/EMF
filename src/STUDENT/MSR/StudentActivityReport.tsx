@@ -4,20 +4,20 @@ import "./Style/header.css";
 import './Style/StudentActivityReport.css';
 import './Style/trophy_club.css';
 import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
-import { now } from 'jquery';
+// import { now } from 'jquery';
 
-interface Student {
-  id: number;
-  name: string;
-  completed: number;
-  pending: number;
-}
+// interface Student {
+//   id: number;
+//   name: string;
+//   completed: number;
+//   pending: number;
+// }
 
-const students: Student[] = [
-  { id: 1, name: 'Varun Sharma', completed: 5, pending: 3 },
-  { id: 2, name: 'Arun Kumar', completed: 7, pending: 1 },
-  { id: 3, name: 'Manish Sharma', completed: 10, pending: 0 },
-];
+// const students: Student[] = [
+//   { id: 1, name: 'Varun Sharma', completed: 5, pending: 3 },
+//   { id: 2, name: 'Arun Kumar', completed: 7, pending: 1 },
+//   { id: 3, name: 'Manish Sharma', completed: 10, pending: 0 },
+// ];
 interface StudentActivity {
   DICFileName: string;
   ChildShortDesc: string;
@@ -30,14 +30,24 @@ interface StudentActivity {
 }
 const StudentActivityReport: React.FC = () => {
     const nowDate = new Date();
-  const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
-  const [weeklyProgress, setWeeklyProgress] = useState(50);
-  const [myPoints, setMyPoints] = useState(0);
-  const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-  const [weekCount, setWeekCount] = useState(0);
-  const [trophyData, setTrophyData] = useState<string[]>([]);
+//   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
+//   const [weeklyProgress, setWeeklyProgress] = useState(50);
+  const [
+    // myPoints
+    , setMyPoints] = useState(0);
+  const [
+    // overallWeeklyProgress
+    , setOverallWeeklyProgress] = useState(0);
+  const [
+    // weekCount
+    , setWeekCount] = useState(0);
+  const [
+    // trophyData
+    , setTrophyData] = useState<string[]>([]);
   const [userName, setUserName] = useState<string>("");
-  const [purchases, setPurchases] = useState<any[]>([6405]);
+  const [purchases, 
+    // setPurchases
+] = useState<any[]>([6405]);
   const [selectedOption, setSelectedOption] = useState<string>("Weekly");
   const [fromDate, setFromDate] = useState<string>(nowDate.toISOString().split('T')[0]);
   const [toDate, setToDate] = useState<string>(nowDate.toISOString().split('T')[0]);
@@ -72,7 +82,7 @@ const StudentActivityReport: React.FC = () => {
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
-    const UserLogin = sessionStorage.getItem('login');
+    // const UserLogin = sessionStorage.getItem('login');
     const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
     if (UserName !== null) {
@@ -139,9 +149,9 @@ return () => {
 };
 }, []);
 
-  const handlePurchase = (storeID: string) => {
-    // console.log(`Purchase confirmed for StoreID: ${storeID}`);
-  };
+//   const handlePurchase = (storeID: string) => {
+//     // console.log(`Purchase confirmed for StoreID: ${storeID}`);
+//   };
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
@@ -164,21 +174,21 @@ return () => {
     }
   };
 
-  const handleSelectStudent = (student: Student) => {
-    setSelectedStudent(student);
-  };
+//   const handleSelectStudent = (student: Student) => {
+//     setSelectedStudent(student);
+//   };
 
-  const handleDownloadReport = (student: Student) => {
-    alert(`Downloading report for ${student.name}`);
-  };
+//   const handleDownloadReport = (student: Student) => {
+//     alert(`Downloading report for ${student.name}`);
+//   };
 
   return (
     <form>
 
-<a href="#" className="back-to-top">
+<a href="/StudentActivityReport" className="back-to-top">
         Back to Top
       </a>
-      <a href="#" className="back-to-bottom" id="back_to_bottom_link">
+      <a href="/StudentActivityReport" className="back-to-bottom" id="back_to_bottom_link">
         Back to Top
       </a>
 
@@ -222,7 +232,7 @@ return () => {
         <div id="user_banner">
             <div className="section_div">
               <div id="achievements_btn">
-                <a href="#">ACHIEVEMENTS</a>
+                <a href="/StudentActivityReport">ACHIEVEMENTS</a>
               </div>
               <div id="user_strip_right_container">
               <div id="divAvatarContainer" className="avatar_container">
@@ -340,13 +350,13 @@ return () => {
               <div className="subject_arrow_text subject_arrow_text_left">
                 <label id="lblArrowLeftText" ></label>
               </div>
-              <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></a>
+              <div id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></div>
             </div>
             <div className="subject_arrow_right_container" id="divsubject_arrow_right"  >
               <div className="subject_arrow_text subject_arrow_text_right">
                 <label id="lblArrowRightText" ></label>
               </div>
-              <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></a>
+              <div id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></div>
             </div>
           </div>
       </div>
@@ -355,9 +365,9 @@ return () => {
             <div className="content-container">
                 <div className="content-top">
                     <div className="report-heading-container">
-                        <a id="linkbtnReportLeft" className="report-arrow-left" ></a>
+                        <div id="linkbtnReportLeft" className="report-arrow-left" ></div>
                         <label id="lblReportText" className="report-heading" >Student Reports</label>
-                        <a id="linkbtnReportRight" className="report-arrow-right" ></a>
+                        <div id="linkbtnReportRight" className="report-arrow-right" ></div>
                     </div>
                     <div className="report-displayed-select">
                         <div className="report-displayed-heading"
@@ -408,7 +418,7 @@ return () => {
                         </div>
                     </div>
                     <div id="divWeekEndingText" className="week-ending-container" >
-                        <a className="arrow-left" id="linkbtnPreviousWeek" ></a>
+                        <div className="arrow-left" id="linkbtnPreviousWeek" ></div>
                         <div className="wk-ending-text" id="divWeekEndingDate" >Week ending { toDate }</div>
                         {/* <a className="arrow-right" id="linkbtnNextWeek" ></a> */}
                     </div>
@@ -481,7 +491,8 @@ return () => {
                                         </table>
                                     </div>
                                 </div>
-                                <div className="show-hide-btn" id="wlp-weekly-btn"><a className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
+                                <div className="show-hide-btn" id="wlp-weekly-btn">
+                                    <a href='/StudentActivityReport' className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
                                 <div className="report-table-container" id="wlp-weekly-expanded">
                                     <div className="wlp-table-container">
                                         <table>
@@ -565,7 +576,8 @@ return () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="show-hide-btn" id="wlp-between-btn"><a className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
+                                <div className="show-hide-btn" id="wlp-between-btn">
+                                    <a href='/StudentActivityReport' className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
 
                                 <div className="report-table-container" id="wlp-between-expanded">
                                     <div className="heading wlp-details-heading">
@@ -618,7 +630,8 @@ return () => {
 
                     <div className="wlp-between-view-more widget-container">
                         <div>
-                            <div className="show-hide-btn wlp-back"><a className="btn blue" id="between-wlp1-back">Back</a></div>
+                            <div className="show-hide-btn wlp-back">
+                                <a href='/StudentActivityReport' className="btn blue" id="between-wlp1-back">Back</a></div>
                             <div className="heading wlp-details-heading">
                                 Weekly Lesson Plan Details | Week Ending: { (nowDate).toString().split('1')[0] }
                             </div>
@@ -721,7 +734,8 @@ return () => {
                                     </div>
                                 </div>
 
-                                <div className="show-hide-btn" id="manual-selection-btn"><a className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
+                                <div className="show-hide-btn" id="manual-selection-btn"><a 
+                                href="/StudentActivityReport" className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
                                 <div className="report-table-container" id="manual-selection-expanded">
                                     <div className="wlp-table-container">
                                         <table>
@@ -821,7 +835,7 @@ return () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="show-hide-btn" id="set-work-btn"><a className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
+                                <div className="show-hide-btn" id="set-work-btn"><a href='/StudentActivityReport' className="btn blue">Show Details<span className="btn-expand">+</span></a></div>
                                 <div className="report-table-container" id="set-work-expanded">
                                     <div className="wlp-table-container">
                                         <table>

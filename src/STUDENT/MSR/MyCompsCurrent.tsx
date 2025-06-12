@@ -3,33 +3,45 @@ import './Style/common.css';
 import './Style/header.css';
 import "./Style/MyCompsCurrent.css";
 import './Style/trophy_club.css';
-import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
+// import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 import Header from "../../Common/Header";
 import Section from "../../Common/Section";
 
-interface Competition {
-  CompID: number;
-  CompTitle: string;
-  TermsAndConditions: string;
-  CompImageLink: string;
-  Points: number;
-}
+// interface Competition {
+//   CompID: number;
+//   CompTitle: string;
+//   TermsAndConditions: string;
+//   CompImageLink: string;
+//   Points: number;
+// }
 
 const MyCompsCurrent: React.FC = () => {
-  const [competitions, setCompetitions] = useState<Competition[]>([]); 
-  const [myPoints, setMyPoints] = useState(0);
-  const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-  const [weekCount, setWeekCount] = useState(0);
-  const [trophyData, setTrophyData] = useState<string[]>([]);
-  const [userName, setUserName] = useState<string>("");
-  const [purchases, setPurchases] = useState<any[]>([6405]);
-  const [imageSrc, setImageSrc] = useState('');
+  // const [competitions, setCompetitions] = useState<Competition[]>([]); 
+  const [
+    // myPoints
+    , setMyPoints] = useState(0);
+  const [
+    // overallWeeklyProgress
+    , setOverallWeeklyProgress] = useState(0);
+  const [
+    // weekCount
+    , setWeekCount] = useState(0);
+  const [
+    // trophyData
+    , setTrophyData] = useState<string[]>([]);
+  const [
+    // userName
+    , setUserName] = useState<string>("");
+  // const [purchases, setPurchases] = useState<any[]>([6405]);
+  const [
+    // imageSrc
+    , setImageSrc] = useState('');
 
 
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
-    const UserLogin = sessionStorage.getItem('login');
+    // const UserLogin = sessionStorage.getItem('login');
     const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
     if (UserName !== null) {
@@ -50,9 +62,9 @@ const MyCompsCurrent: React.FC = () => {
   }, []);
   
 
-  const handleEnterCompetition = (compID: number) => {
-    // console.log(`Entering competition with id: ${compID}`);
-  };
+  // const handleEnterCompetition = (compID: number) => {
+  //   // console.log(`Entering competition with id: ${compID}`);
+  // };
   
     useEffect(() => {
       setMyPoints(1200);
@@ -63,13 +75,13 @@ const MyCompsCurrent: React.FC = () => {
     }, []);
   
     
-    const handleTrophyClick = () => {
-      const trophyClubLegend = document.getElementById("trophy_club_legend");
-      if (trophyClubLegend) {
-        trophyClubLegend.style.display = 
-          trophyClubLegend.style.display === "none" ? "block" : "none";
-      }
-    };
+    // const handleTrophyClick = () => {
+    //   const trophyClubLegend = document.getElementById("trophy_club_legend");
+    //   if (trophyClubLegend) {
+    //     trophyClubLegend.style.display = 
+    //       trophyClubLegend.style.display === "none" ? "block" : "none";
+    //   }
+    // };
 
   return (
     <form>
@@ -117,8 +129,8 @@ const MyCompsCurrent: React.FC = () => {
             ))} */}
 
             
-<a href="#" className="back-to-top">Back to Top</a>
-<a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
+<a href="/MyCompsCurrent" className="back-to-top">Back to Top</a>
+<a href="/MyCompsCurrent" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
 
         <div id="main_top_container">
           {/* <div id="header">
@@ -267,7 +279,7 @@ const MyCompsCurrent: React.FC = () => {
                             <div id="mi_page_btn_avatars" className="mi_page_btn">
                     <a id="hlinkMyIncentives" href="/MyIncentives" >Avatars</a></div>
                 <div id="mi_page_btn_comp" className="mi_page_btn mi_page_btn_selected">
-                    <a href="">Comps</a></div>            
+                    <a href="/MyCompsCurrent">Comps</a></div>            
                 <div id="mi_page_btn_purchase" className="mi_page_btn mi_page_btn_last">
                     <a id="hlinkPurchases" href="/AllPurchases" >Purchases</a></div>
             </div>
@@ -281,7 +293,7 @@ const MyCompsCurrent: React.FC = () => {
                         <div className="mi_comps_toggle_button" id="mi_comps_toggle_buttonT"
                         // style={{float:'left'}}
                         >
-                                <a  >Current Comps</a>
+                                <a href="/MyCompsCurrent" >Current Comps</a>
                             </div>
                         <div className="mi_comps_toggle_button mi_comps_toggle_button_clear">
                                 <a id="hlinkPastComps" href="/MyCompsPast" >Past Comps</a>
@@ -336,13 +348,16 @@ const MyCompsCurrent: React.FC = () => {
                 <div className="subject_arrow_text subject_arrow_text_left">
                   <label id="lblArrowLeftText"></label>
                 </div>
-                <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left"></a>
+                <div
+                
+                
+                id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left"></div>
               </div>
                 <div className="subject_arrow_right_container" id="divsubject_arrow_right" >
                 <div className="subject_arrow_text subject_arrow_text_right">
                   <label id="lblArrowRightText"></label>
                 </div>
-                <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right"></a>
+                <div id="linkbtnArrowRight" className="subject_arrow subject_arrow_right"></div>
               </div>
             </div>
           </div>

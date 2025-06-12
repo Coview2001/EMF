@@ -128,19 +128,23 @@ const ModifyLessonPlan: React.FC = () => {
                   className="general_btn two_btn_lightbox two_btn_left"
                   onClick={handleCancel}
                 >
-                  <a id="linkbtnCancel">Cancel</a>
+                  <a 
+                  href="/"
+                  id="linkbtnCancel">Cancel</a>
                 </div>
                 <div
                   id="modify_lesson_plan_submit_btn"
                   className="general_btn two_btn_lightbox"
                   onClick={handleSubmit}
                 >
-                  <a id="linkbtnSubmit">Submit</a>
+                  <a 
+                  href="/"
+                  id="linkbtnSubmit">Submit</a>
                 </div>
                 <div 
                 // style={{display: 'none'}} 
                 id="modify_lesson_plan_ok_btn" className="general_btn two_btn_lightbox single_btn">
-                  <a>OK</a>
+                  <a href="/">OK</a>
                 </div>
               </div>
             </div>

@@ -5,7 +5,9 @@ import './Style/DoAgain.css';
 import activity_icon_lesson from './Image/activity_icon_lesson.png';
 
 const DoAgainPage: React.FC = () => {
-  const [activityList, setActivityList] = useState([
+  const [
+    // activityList
+    , setActivityList] = useState([
     {
       CssClassForCurrentDicFileName: "vsdgdg",
       CssClassForCurrentLessonCode: "",
@@ -24,18 +26,22 @@ const DoAgainPage: React.FC = () => {
     }
   }, []);
 
-  const handleStartActivity = () => {
-    // console.log('Start Activity');
-  };
+  // const handleStartActivity = () => {
+  //   // console.log('Start Activity');
+  // };
 
-  const handleCancel = () => {
-    // console.log('Cancel');
-  };
+  // const handleCancel = () => {
+  //   // console.log('Cancel');
+  // };
 
   return (
     <form id='form1'>
-      		<a href="#" className="back-to-top">Back to Top</a>
-          <a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
+      		<a 
+          href="/DoAgain"
+          className="back-to-top">Back to Top</a>
+          <a 
+          href="DoAgain" 
+          className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
           <div id="main_top_container">
             <div id="header">
               <div className="section_div">
@@ -117,7 +123,7 @@ const DoAgainPage: React.FC = () => {
                 </div>
               </div>
             </div> */}
-            			<div id="divSubjectContainer" className="subject_container" >
+      <div id="divSubjectContainer" className="subject_container" >
 				<div id="wlp_add_activity" >
 					<p>
 						<span className="title_text wlp_add_activity_title_text">Select your activity to Do Again</span>
@@ -126,7 +132,9 @@ const DoAgainPage: React.FC = () => {
 						<div className="tip_container">
 							<label id="lblWLPText" >Practice activity</label>
 						</div>
-						<a id="lnkStartActivity"   className="activity_btn" >
+						<a id="lnkStartActivity"
+            href='/DoAgain'
+            className="activity_btn" >
 							<span id="spnWLPicon" className="activity_icon" 
 
 
@@ -146,7 +154,7 @@ const DoAgainPage: React.FC = () => {
 					<div id="divWLPCompletedContainer" className="completed_box" 
           // style={{ display: "none" }} 
           >
-						<a>Weekly lesson plan completed</a>
+						<a href='DoAgain'>Weekly lesson plan completed</a>
 					</div>
 					<div id="english_lesson_plan_list" className="lesson_plan_list_container" >
 						{/* <asp:Repeater id="rptWLPActivityList" >

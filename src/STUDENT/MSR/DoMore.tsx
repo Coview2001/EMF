@@ -20,8 +20,8 @@ const DoMore: React.FC = () => {
     <form id="form1" 
     // style={{ overflow: "hidden", backgroundColor: "#333333" }}
     >
-      <a href="#" className="back-to-top">Back to Top</a>
-      <a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Bottom</a>
+      <a href="DoMore" className="back-to-top">Back to Top</a>
+      <a href="DoMore" className="back-to-bottom" id="back_to_bottom_link">Back to Bottom</a>
       <div id="main_top_container">
         <div id="header">
           <div className="section_div">
@@ -73,7 +73,9 @@ const DoMore: React.FC = () => {
             <div className="tip_container">
               <label id="lblWLPText">New activity</label>
             </div>
-            <a id="lnkStartActivity" className="activity_btn">
+            <a 
+            href="DoMore"
+            id="lnkStartActivity" className="activity_btn">
               <span id="spnWLPicon" className="activity_icon" 
               
               

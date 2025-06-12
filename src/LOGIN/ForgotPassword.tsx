@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+
 import './Style/ForgotPassword.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Loading from '../Common/Loading';
 
 const ForgotPassword: React.FC = () => {
@@ -8,14 +9,15 @@ const ForgotPassword: React.FC = () => {
     const [newPassword, setNewPassword] = useState<string>('');
     const [confirmPassword, setConfirmPassword] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const handleCancel = () => {
-        setEmail('');
-        setNewPassword('');
-        setConfirmPassword('');
-        window.close();
-    };
+    const handleCancel = useCallback(() => {
+    setEmail('');
+    setNewPassword('');
+    setConfirmPassword('');
+    window.close();
+}, []);
+
 
     const handleSubmit = () => {
         if (email !== '') {
@@ -28,38 +30,62 @@ const ForgotPassword: React.FC = () => {
         }
     };
 
-    const handleSubmitPasswordChange = () => {
-        if (newPassword !== '' && confirmPassword !== '') {
-            if (newPassword === confirmPassword) {
-                alert('Password reset successful!');
-            } else {
-                alert('New Password and Confirm Password should be the same.');
-            }
+    const handleSubmitPasswordChange = useCallback(() => {
+    if (newPassword !== '' && confirmPassword !== '') {
+        if (newPassword === confirmPassword) {
+            alert('Password reset successful!');
         } else {
-            alert('Please enter your Passwords.');
+            alert('New Password and Confirm Password should be the same.');
         }
-    };
+    } else {
+        alert('Please enter your Passwords.');
+    }
+}, [newPassword, confirmPassword]);
+
+
+    // useEffect(() => {
+    //     const linkbtnSubmit = document.getElementById('linkbtnSubmit') as HTMLAnchorElement;
+    //     if (linkbtnSubmit) {
+    //         linkbtnSubmit.addEventListener('click', handleSubmitPasswordChange);
+    //     }
+
+    //     const linkbtnCancelBtn = document.getElementById('linkbtnCancelBtn') as HTMLAnchorElement;
+    //     if (linkbtnCancelBtn) {
+    //         linkbtnCancelBtn.addEventListener('click', handleCancel);
+    //     }
+
+    //     return () => {
+    //         if (linkbtnSubmit) {
+    //             linkbtnSubmit.removeEventListener('click', handleSubmitPasswordChange);
+    //         }
+    //         if (linkbtnCancelBtn) {
+    //             linkbtnCancelBtn.removeEventListener('click', handleCancel);
+    //         }
+    //     };
+    // }, [newPassword, confirmPassword]);
 
     useEffect(() => {
-        const linkbtnSubmit = document.getElementById('linkbtnSubmit') as HTMLAnchorElement;
+    const linkbtnSubmit = document.getElementById('linkbtnSubmit') as HTMLAnchorElement;
+    if (linkbtnSubmit) {
+        linkbtnSubmit.addEventListener('click', handleSubmitPasswordChange);
+    }
+
+    const linkbtnCancelBtn = document.getElementById('linkbtnCancelBtn') as HTMLAnchorElement;
+    if (linkbtnCancelBtn) {
+        linkbtnCancelBtn.addEventListener('click', handleCancel);
+    }
+
+    return () => {
         if (linkbtnSubmit) {
-            linkbtnSubmit.addEventListener('click', handleSubmitPasswordChange);
+            linkbtnSubmit.removeEventListener('click', handleSubmitPasswordChange);
         }
-
-        const linkbtnCancelBtn = document.getElementById('linkbtnCancelBtn') as HTMLAnchorElement;
         if (linkbtnCancelBtn) {
-            linkbtnCancelBtn.addEventListener('click', handleCancel);
+            linkbtnCancelBtn.removeEventListener('click', handleCancel);
         }
+    };
+}, [handleSubmitPasswordChange, handleCancel]);
 
-        return () => {
-            if (linkbtnSubmit) {
-                linkbtnSubmit.removeEventListener('click', handleSubmitPasswordChange);
-            }
-            if (linkbtnCancelBtn) {
-                linkbtnCancelBtn.removeEventListener('click', handleCancel);
-            }
-        };
-    }, [newPassword, confirmPassword]);
+
 
     return (
         <div>
@@ -124,14 +150,14 @@ const ForgotPassword: React.FC = () => {
                 </div>
 
                 <div className="button_box">
-                    <a 
+                    <a href='/FamilyLogin'
                         id="linkbtnCancelBtn" 
                         className="general_btn two_btn_lightbox two_btn_left"
                         onClick={handleCancel}
                     >
                         <span>Cancel</span>
                     </a>
-                    <a
+                    <a href='/FamilyLogin'
                         id="linkbtnSubmit"
                         className="general_btn two_btn_lightbox"
                         onClick={handleSubmit}

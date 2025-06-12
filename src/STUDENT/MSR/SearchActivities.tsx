@@ -5,60 +5,74 @@ import "./Style/SearchActivities.css";
 import "./Style/trophy_club.css";
 import trophy_club_0 from './Image/trophy_club/trophy_club_0.png';
 
-interface StoreDetails {
-  StoreID: string;
-  StoreTitle: string;
-  TermsAndCondition: string;
-}
+// interface StoreDetails {
+//   StoreID: string;
+//   StoreTitle: string;
+//   TermsAndCondition: string;
+// }
 
-interface PurchaseStore {
-  StoreID: string;
-  StoreTitle: string;
-  Price: string;
-  StoreImageLink: string;
-}
+// interface PurchaseStore {
+//   StoreID: string;
+//   StoreTitle: string;
+//   Price: string;
+//   StoreImageLink: string;
+// }
 
-interface Trophy {
-  TrophyRange: string;
-}
+// interface Trophy {
+//   TrophyRange: string;
+// }
 const SearchActivities: React.FC = () => {
-  const [storeDetails] = useState<StoreDetails[]>([
-    {
-      StoreID: "1",
-      StoreTitle: "Example Item",
-      TermsAndCondition: "Example Terms and Conditions",
-    },
-  ]);
+  // const [storeDetails] = useState<StoreDetails[]>([
+  //   {
+  //     StoreID: "1",
+  //     StoreTitle: "Example Item",
+  //     TermsAndCondition: "Example Terms and Conditions",
+  //   },
+  // ]);
 
-  const [purchaseStore] = useState<PurchaseStore[]>([
-    {
-      StoreID: "1",
-      StoreTitle: "Example Purchase Item",
-      Price: "$10",
-      StoreImageLink: "url('image.jpg')",
-    },
-  ]);
+  // const [purchaseStore] = useState<PurchaseStore[]>([
+  //   {
+  //     StoreID: "1",
+  //     StoreTitle: "Example Purchase Item",
+  //     Price: "$10",
+  //     StoreImageLink: "url('image.jpg')",
+  //   },
+  // ]);
 
-  const [trophies] = useState<Trophy[]>([
-    { TrophyRange: "0-50" },
-    { TrophyRange: "51-100" },
-  ]);
+  // const [trophies] = useState<Trophy[]>([
+  //   { TrophyRange: "0-50" },
+  //   { TrophyRange: "51-100" },
+  // ]);
 
 
-    const [weeklyProgress, setWeeklyProgress] = useState(50);
-    const [myPoints, setMyPoints] = useState(0);
-    const [overallWeeklyProgress, setOverallWeeklyProgress] = useState(0);
-    const [weekCount, setWeekCount] = useState(0);
-    const [trophyData, setTrophyData] = useState<string[]>([]);
-    const [userName, setUserName] = useState<string>("");
-    const [purchases, setPurchases] = useState<any[]>([6405]);
+  //   const [weeklyProgress, setWeeklyProgress] = useState(50);
+    const [
+      // myPoints
+      , setMyPoints] = useState(0);
+    const [
+      // overallWeeklyProgress
+      , setOverallWeeklyProgress] = useState(0);
+    const [
+      // weekCount
+      , setWeekCount] = useState(0);
+    const [
+      // trophyData
+      , setTrophyData] = useState<string[]>([]);
+    const [
+      // userName
+      , setUserName] = useState<string>("");
+    const [purchases, 
+      // setPurchases
+    ] = useState<any[]>([6405]);
     const [imageSrc, setImageSrc] = useState('');
-    const [searchText, setSearchText] = useState<string>("");
+    const [searchText, 
+      // setSearchText
+    ] = useState<string>("");
     const [searchResults, setSearchResults] = useState<any[]>([]);
 
     useEffect(() => {
       const UserName = sessionStorage.getItem('FName');
-      const UserLogin = sessionStorage.getItem('login');
+      // const UserLogin = sessionStorage.getItem('login');
       const UserAvatar = sessionStorage.getItem('CurrentAvatar');
 
       if (UserName !== null) {
@@ -110,9 +124,9 @@ const SearchActivities: React.FC = () => {
 
 
 
-  const handlePurchase = (storeID: string) => {
-    // console.log(`Purchase confirmed for StoreID: ${storeID}`);
-  };
+  // const handlePurchase = (storeID: string) => {
+  //   // console.log(`Purchase confirmed for StoreID: ${storeID}`);
+  // };
 
           useEffect(() => {
             setMyPoints(1200);
@@ -132,8 +146,8 @@ const SearchActivities: React.FC = () => {
           };
   return (
     <form>
-          <a href="#" className="back-to-top">Back to Top</a>
-          <a href="#" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
+          <a href="/SearchActivities" className="back-to-top">Back to Top</a>
+          <a href="/SearchActivities" className="back-to-bottom" id="back_to_bottom_link">Back to Top</a>
           <div id="main_top_container">
           <div id="header">
             <div className="section_div">
@@ -181,7 +195,7 @@ const SearchActivities: React.FC = () => {
           <div id="user_banner">
             <div className="section_div">
               <div id="achievements_btn">
-                <a href="#">ACHIEVEMENTS</a>
+                <a href="/SearchActivities">ACHIEVEMENTS</a>
               </div>
               <div id="user_strip_right_container">
               <div id="divAvatarContainer" className="avatar_container">
@@ -297,13 +311,15 @@ const SearchActivities: React.FC = () => {
               <div className="subject_arrow_text subject_arrow_text_left">
                 <label id="lblArrowLeftText" ></label>
               </div>
-              <a id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></a>
+              <div 
+              id="linkbtnArrowLeft" className="subject_arrow subject_arrow_left" ></div>
             </div>
             <div className="subject_arrow_right_container" id="divsubject_arrow_right"  >
               <div className="subject_arrow_text subject_arrow_text_right">
                 <label id="lblArrowRightText" ></label>
               </div>
-              <a id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></a>
+              <div 
+              id="linkbtnArrowRight" className="subject_arrow subject_arrow_right" ></div>
             </div>
           </div>
         </div>

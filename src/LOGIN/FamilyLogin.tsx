@@ -142,7 +142,7 @@ const FamilyLogin: React.FC = () => {
               support@kineticeducation.com.au<br />
             </p>
             <div id="hl_close_btn" className="general_btn two_btn">
-              <a href='' onClick={(e) => { e.preventDefault(); setShowHelplines(false); }}>Close</a>
+              <a href='/' onClick={(e) => { e.preventDefault(); setShowHelplines(false); }}>Close</a>
             </div>
           </div>
           <div id="login_title_bar" className="section_container section_title_bar">
@@ -188,16 +188,16 @@ const FamilyLogin: React.FC = () => {
             )}
             <div className="button_box">
               <div id="login_btn" className="general_btn two_btn">
-                <a id="linkbtnLogIn" className="general_btn two_btn" onClick={handleLogin}>Log In</a>
+                <a href='/SelectUser' id="linkbtnLogIn" className="general_btn two_btn" onClick={handleLogin}>Log In</a>
               </div>
             </div>
 
 
             <p className="page_text_sml" >
-              <a href='' id="hlinkForgotPassword"  target="_blank" className="page_link"  onClick={handleForgotPassword} >Forgotten my password</a>
+              <a href='/ForgotPassword' id="hlinkForgotPassword"  target="_blank" className="page_link"  onClick={handleForgotPassword} >Forgotten my password</a>
               <span id="helplines_link"  className="page_link" onClick={(e) => { e.preventDefault(); setShowHelplines(true); }}>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;Helplines</span>
               <span className="text_breaker"></span>
-              <a id="hlinkSchoolUser" target="_blank" className="page_link" >
+              <a href='/SchoolLogin' id="hlinkSchoolUser" target="_blank" className="page_link" >
                 <span id="login_school_link" className="page_link" onClick={handleSchoolLogin}>
                           <span id="school_icon"></span>School users log in here
                       </span>

@@ -5,8 +5,10 @@ import './Style/ViewAllGames.css';
 
 const ViewAllGames: React.FC = () => {
   const [gameSelected, setGameSelected] = useState<string>('game1'); 
-  const [username, setUsername] = useState<string>(''); 
-  const [schoolCode, setSchoolCode] = useState<string>(''); 
+  // const [username, setUsername] = useState<string>(''); 
+  const [schoolCode, 
+    // setSchoolCode
+  ] = useState<string>(''); 
 
   const handleGameChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setGameSelected(e.target.value);
@@ -27,7 +29,8 @@ const ViewAllGames: React.FC = () => {
                               </div>
                               <div className="mobile_nav_item"><a id="hlinkReportsMobile" href='/MSRReports' >REPORTS</a></div>
                               <div className="mobile_nav_item"><a id="hlinkProfileMobile" href='Profile' >PROFILE</a></div>
-                              <div className="mobile_nav_item scrolled_nav_item_last"><a href="#">ACCOUNT</a></div>
+                              <div className="mobile_nav_item scrolled_nav_item_last">
+                                <a href="/ViewAllGames">ACCOUNT</a></div>
 
                               <div className="mobile_nav_item mobile_nav_item_hidden">
                                   <a id="linkbtnLogOutMobile" href='/LoggedOut' >LOG OUT</a>
@@ -49,7 +52,7 @@ const ViewAllGames: React.FC = () => {
                           </div>
                           <div id="sn3_sub" className="scrolled_nav_item subbed"><a id="hlinkReports" href='/MSRReports' >REPORTS</a></div>
                           <div id="sn2_sub" className="scrolled_nav_item subbed"><a id="hlinkProfile" href='/Profile' >PROFILE</a></div>
-                          <div id="sn1_sub" className="scrolled_nav_item scrolled_nav_item_last subbed"><a href="#">ACCOUNT</a></div>
+                          <div id="sn1_sub" className="scrolled_nav_item scrolled_nav_item_last subbed"><a href="/ViewAllGames">ACCOUNT</a></div>
                       </div>
                   </div>
               </div>
@@ -76,7 +79,7 @@ const ViewAllGames: React.FC = () => {
             <span id='english_wlp_icon' className="activity_icon activity_icon_lesson"></span>
             <label id='lblGame'>{gameSelected}</label>
             <span className="button_right_text">
-              <a id='lnkStart' onClick={handleStartGame}>GET STARTED</a>
+              <div id='lnkStart' onClick={handleStartGame}>GET STARTED</div>
             </span>
           </div>
         </div>

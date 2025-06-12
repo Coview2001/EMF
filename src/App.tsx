@@ -69,6 +69,10 @@ const App: React.FC = () => {
           window.removeEventListener('resize', handleResize); 
         };
       }, []);
+
+      // const documentLink = process.env.REACT_APP_DOCUMENT_LINK;
+      // console.log("Using DOCUMENT LINK:", documentLink);
+
   return (
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>

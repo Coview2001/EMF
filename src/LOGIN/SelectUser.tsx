@@ -29,8 +29,10 @@ const SelectUser: React.FC = () => {
 
   useEffect(() => {
     setLoading(true); 
+    // const url = `${process.env.REACT_APP_DOCUMENT_LINK}/getUsers`;
+    const url = "http://localhost:5000/SelectUser";
   
-    fetch("http://localhost:5000/SelectUser", {
+    fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

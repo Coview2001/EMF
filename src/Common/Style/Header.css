@@ -191,7 +191,7 @@
 
 #header {
     top: 0;
-    width: 98.9vw;
+    width: 100vw;
     position: fixed;
     background-color: #333333;
     display: block;
@@ -790,3 +790,26 @@
 #scrolled_nav_sub{
    display: flex;
 }
+
+
+/* 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #2C2C2C;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D1D1;
+} */

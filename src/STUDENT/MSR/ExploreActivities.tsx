@@ -335,19 +335,18 @@ useEffect(() => {
                               backgroundImage: `url(${
                               activity.CssClassForActivity === "activity_icon_game"
                                 ? "https://www.elearnoncloud.com/STUDENT/MSR/Image/games_icon_lrg.png"
-                                : activity.CssClassForActivity === "activity_icon_lesson"
-                                ? "https://www.elearnoncloud.com/STUDENT/MSR/Image/lessons_icon_lrg.png"
-                                : activity.CssClassForActivity === "activity_icon_test"
-                                ? "https://www.elearnoncloud.com/STUDENT/MSR/Image/tests_icon_lrg.png"
-                                : ""
+                                : (activity.CssClassForActivity === "activity_icon_lesson"
+                                  ? "https://www.elearnoncloud.com/STUDENT/MSR/Image/lessons_icon_lrg.png"
+                                  : "https://www.elearnoncloud.com/STUDENT/MSR/Image/tests_icon_lrg.png"
+                                )
                             })`
                             }}
                           ></div>
 
-                          <div className="activity_icon_lesson"
+                          {/* <div className="activity_icon_lesson"
                           style={{ backgroundImage: `url(${"https://www.elearnoncloud.com/STUDENT/MSR/Image/lessons_icon_lrg.png"})` }}
                           >
-                          </div>
+                          </div> */}
                           <div className="activity_name">
                             <p>{activity.ChildShortDesc}</p>
                           </div>

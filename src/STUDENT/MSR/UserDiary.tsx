@@ -445,11 +445,29 @@ interface ActivityRecord {
     EndDateTime: string;
 }
 
+const formatDateDisplay = (date: Date): string => {
+    const options: Intl.DateTimeFormatOptions = {
+        weekday: 'long',
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+    };
+  return date.toLocaleDateString('en-GB', options); 
+};
+
+
 const UserDiary: React.FC = () => {
     const [dateTimeOrder, setDateTimeOrder] = useState("DateTime");
     const [sortOrder, setSortOrder] = useState("DESC");
     const [period, setPeriod] = useState("Daily");
-    const [dateDisplay, setDateDisplay] = useState("Tuesday, 15/11/2016");
+    // const [dateDisplay, setDateDisplay] = useState("Tuesday, 15/11/2016");
+    const [selectedDate, setSelectedDate] = useState(new Date());
+    const [dateDisplay, setDateDisplay] = useState('');
+
+    useEffect(() => {
+        setDateDisplay(formatDateDisplay(selectedDate));
+    }, [selectedDate]);
+
     const [showNextDate, setShowNextDate] = useState(false);
     const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
     const [weeklyProgress, setWeeklyProgress] = useState(50);
@@ -577,14 +595,28 @@ const UserDiary: React.FC = () => {
     }
     };
 
+    // const handlePrevDateClick = () => {
+    //     setDateDisplay("Monday, 14/11/2016");
+    // };
     const handlePrevDateClick = () => {
-        setDateDisplay("Monday, 14/11/2016");
+        setSelectedDate(prev => {
+            const newDate = new Date(prev);
+            newDate.setDate(newDate.getDate() - 1);
+            return newDate;
+        });
     };
+
+    // const handleNextDateClick = () => {
+    //     setDateDisplay("Wednesday, 16/11/2016");
+    // };
 
     const handleNextDateClick = () => {
-        setDateDisplay("Wednesday, 16/11/2016");
+        setSelectedDate(prev => {
+            const newDate = new Date(prev);
+            newDate.setDate(newDate.getDate() + 1);
+            return newDate;
+        });
     };
-
     const getStartDate = () => {
         switch (period) {
             case "Daily":
@@ -748,7 +780,7 @@ const UserDiary: React.FC = () => {
                                 <div className="week-ending-container">
                                     <a className="arrow-left" onClick={handlePrevDateClick} />
                                     <div className="wk-ending-text" id="divDateDisplay">
-                                        {dateDisplay}
+                                        {dateDisplay.split(",")[1]}
                                     </div>
                                     {showNextDate && (
                                         <a className="arrow-right" onClick={handleNextDateClick} />

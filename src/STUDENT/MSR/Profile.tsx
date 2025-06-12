@@ -1,27 +1,39 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
+// import { useNavigate } from "react-router-dom";
+
 import "./Style/common.css";
 import "./Style/Profile.css";
 import Header from "../../Common/Header";
 
 const Profile: React.FC = () => {
   const [userName, setUserName] = useState<string>("");
-  const [name, setName] = useState();
-  const [gender, setGender] = useState("Male");
-  const [dob, setDob] = useState("07/05/2001");
-  const [grade, setGrade] = useState("Grade 12");
-  const [subjectMinutes, setSubjectMinutes] = useState({
-    subject1: 120,
-    subject2: 90,
-  });
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  // const [name, setName] = useState();
+  const [gender, 
+    // setGender
+  ] = useState("Male");
+  const [dob, 
+    // setDob
+  ] = useState("07/05/2001");
+  const [grade, 
+    // setGrade
+  ] = useState("Grade 12");
+
+  // const [subjectMinutes, setSubjectMinutes] = useState({
+  //   subject1: 120,
+  //   subject2: 90,
+  // });
+
+  const [
+    // isMenuVisible
+    , setIsMenuVisible] = useState(false);
   const [imageSrc, setImageSrc] = useState('');
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   
 
   useEffect(() => {
     const UserName = sessionStorage.getItem('FName');
-    const UserLogin = sessionStorage.getItem('login');
+    // const UserLogin = sessionStorage.getItem('login');
     const UserAvatar = sessionStorage.getItem('CurrentAvatar');
     sessionStorage.setItem("CurrentPage", "StudyRoom");
 
@@ -43,18 +55,18 @@ const Profile: React.FC = () => {
   }, []);
 
 
-  const handleModifyDetails = () => {
-    // console.log("Modify details clicked");
-  };
+  // const handleModifyDetails = () => {
+  //   // console.log("Modify details clicked");
+  // };
 
-  const handleChangeAvatar = () => {
-    // console.log("Change avatar clicked");
-    navigate('/ChangeAvatar');
-  };
+  // const handleChangeAvatar = () => {
+  //   // console.log("Change avatar clicked");
+  //   navigate('/ChangeAvatar');
+  // };
 
-  const handleModifyLessonPlan = () => {
-    // console.log("Modify lesson plan clicked");
-  };
+  // const handleModifyLessonPlan = () => {
+  //   // console.log("Modify lesson plan clicked");
+  // };
 
 
   
@@ -66,9 +78,9 @@ const Profile: React.FC = () => {
         }
       };
     
-      const handleMobileBoxClick = (e: MouseEvent | TouchEvent) => {
-        e.stopPropagation(); 
-      };
+      // const handleMobileBoxClick = (e: MouseEvent | TouchEvent) => {
+      //   e.stopPropagation(); 
+      // };
     
       useEffect(() => {
         window.addEventListener('mouseup', handleClickOutside);
@@ -80,9 +92,9 @@ const Profile: React.FC = () => {
         };
       }, []);
     
-      const toggleMenu = () => {
-        setIsMenuVisible((prevState) => !prevState);
-      };
+      // const toggleMenu = () => {
+      //   setIsMenuVisible((prevState) => !prevState);
+      // };
   
 
   return (
@@ -121,9 +133,9 @@ const Profile: React.FC = () => {
                         {grade}<br />
                       </p>
                     </div>
-                    <a className="section_link" onClick={handleModifyDetails}>
+                    {/* <a className="section_link" onClick={handleModifyDetails}>
                       Modify details
-                    </a>
+                    </a> */}
                   </div>
                 </div>
 
@@ -143,18 +155,22 @@ const Profile: React.FC = () => {
                     <div id="mobile_Change">
                 <div id="mobile_Avatar" className="mobile_dropdown">
                   <div className="mobile_nav_item">
-                    <a id="lnkChangeAvatarMobile" className="section_link" onClick={handleChangeAvatar}>Change Avatar</a>
+                    <a id="lnkChangeAvatarMobile" className="section_link" href="/ChangeAvatar" 
+                    // onClick={handleChangeAvatar}
+                    >Change Avatar</a>
                     </div>
                   </div>
                         </div>
-                    <a className="section_link" onClick={handleChangeAvatar}>
+                    <a className="section_link" href="/ChangeAvatar" 
+                    // onClick={handleChangeAvatar}
+                    >
                       Change avatar
                     </a>
                     <a className="section_link" href="/MyIncentives">Get more avatars</a>
                   </div>
                 </div>
 
-                <div  id="divLPSettings" className="section_block last_section_block">
+                {/* <div  id="divLPSettings" className="section_block last_section_block">
                   <div id="section_icon_03" className="section_icon"></div>
                   <div className="right_content">
                     <p className="section_title">Lesson Plan Settings</p>
@@ -185,7 +201,7 @@ const Profile: React.FC = () => {
                       Modify
                     </a>
                   </div>
-                </div>
+                </div> */}
             </div>
           </div>
         </div>

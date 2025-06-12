@@ -5,6 +5,10 @@ body{
 	background-repeat:repeat-x repeat-y;
 }
 
+#form1{
+	background:url("../Image/dots_dark.png");
+}
+
 .custom-background {
   background-color: #121316 !important;
 }

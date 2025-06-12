@@ -100,8 +100,9 @@ const SchoolLogin: React.FC = () => {
               </div>
             </div>
           </div>
+          <br /><br />
           <div 
-          // style={{ display: 'none' }} 
+          style={{ display: 'none' }} 
           id="browser_name_message" className="subject_container_title subject_container_title_sbg">
             <p >
               Please use standard Browsers like Chrome, Firefox, Safari, Internet Explorer or Microsoft Edge.

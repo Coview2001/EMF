@@ -227,7 +227,7 @@ useEffect(() => {
               <div id="user_strip_left_container">
                 <div id="user_strip_weekly_progress_container">
                   <div id="user_strip_weekly_progress_text">
-                    OVERALL WEEKLY PROGRESS: <label id="lblOverAllWeeklyProgress"></label>%
+                    OVERALL WEEKLY PROGRESS: { sessionStorage.getItem('WeeklyProgress') || 0 }<label id="lblOverAllWeeklyProgress"></label>%
                   </div>
                   <div id="user_strip_weekly_progress_bar">
                     <div id="user_strip_weekly_progress_bar_progress" className="user_strip_weekly_progress_bar_progressT"

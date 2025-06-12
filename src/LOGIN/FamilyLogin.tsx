@@ -120,7 +120,7 @@ const FamilyLogin: React.FC = () => {
         <div id="main_top_container">
           <div id="header"></div>
           <div id="helplines" className='helplinesT'
-          // style={{ display: showHelplines ? "block" : "none" }}
+          style={{ display: showHelplines ? "block" : "none" }}
           >
             <p>
               <span className="title_text">Helplines</span><br />

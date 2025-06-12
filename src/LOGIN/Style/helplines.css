@@ -8,8 +8,8 @@
 	height:100%;
 	width:100%;
 	display:none;
-	/* background-color:rgba(40, 40, 40, 0.995); */
-	background-color: rgba(40, 40, 40, 0.5); /* 50% transparent */
+	background-color:rgba(40, 40, 40, 0.995);
+	/* background-color: rgba(40, 40, 40, 0.5); 50% transparent */
 
 	position:fixed;
 	z-index:9999999999999;

@@ -1,5 +1,20 @@
 ﻿@charset "utf-8";
-body {
+/* body {
+    background: url("../Image/login_bg2_school.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #32495f;
+    min-width: 100%;
+    min-height: 100%;
+} */
+
+#pannelMain{
     background: url("../Image/login_bg2_school.jpg") no-repeat center center fixed;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -13,7 +28,6 @@ body {
     min-width: 100%;
     min-height: 100%;
 }
-
 
 #login_title_bar {
     margin-top: 80px;

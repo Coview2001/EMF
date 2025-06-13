@@ -76,7 +76,7 @@ const Tutorial: React.FC =() => {
 						<span className='spanWhiteBoardLinkT'
 						// style={{margin: '104px'}}
 						>
-							<a id="WhiteBoardLink" className='WhiteBoardLinkT'  
+							<a href='/Tutorial' id="WhiteBoardLink" className='WhiteBoardLinkT'  
 							// style={{fontSize: '11pt', color: '#333333', display: 'none', fontWeight: 'bold'}}
 							target="_blank">Whiteboard</a>
 						</span></td>
@@ -105,7 +105,7 @@ const Tutorial: React.FC =() => {
 								>
 									<input type='image' id='imgNextStep' src={nextStepSrc} alt="Next Page" onMouseOver={handleNextStepMouseOver} onMouseOut={handleNextStepMouseOut} onMouseDown={handleNextStepMouseDown}  />
 									<input type='image' id='imgNextPage' src={nextpageSrc} alt="Next Page" onMouseOver={handleNextPageMouseOver} onMouseOut={handleNextPageMouseOut} onMouseDown={handleNextPageMouseDown} />
-									<a href=''><img id='imgbtnQuestions' src={questionsSrc} alt="Next Page" onMouseOver={handleQuestionsMouseOver} onMouseOut={handleQuestionsMouseOut} onMouseDown={handleQuestionsMouseDown} /> </a>
+									<a href='/Questions'><img id='imgbtnQuestions' src={questionsSrc} alt="Next Page" onMouseOver={handleQuestionsMouseOver} onMouseOut={handleQuestionsMouseOut} onMouseDown={handleQuestionsMouseDown} /> </a>
 								</td>
 							</tr>
 						</tbody>
@@ -119,7 +119,7 @@ const Tutorial: React.FC =() => {
 					<div id="divFrameTut" className='TutFrame2T'
 					// style={{ WebkitOverflowScrolling: "touch", overflow: "auto"}}
 					>
-						<iframe id="iframeTut" frameBorder={0} scrolling="yes" className='iframeTutT'
+						<iframe id="iframeTut" frameBorder={0} scrolling="yes" className='iframeTutT' title='iframeTut'
 						// style={{ display: "block", width: "100%"}} 
 						></iframe>
 					</div>

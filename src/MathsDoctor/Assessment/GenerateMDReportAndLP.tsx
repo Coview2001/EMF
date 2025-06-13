@@ -38,7 +38,7 @@ import b4 from './Image/gwd/generate_anim/load_bar_piece.svg';
 const GenerateMDReportAndLP: React.FC = () => {
   return (
     <div>
-      <a href="#" className="back-to-top">Back to Top</a>
+      <a href="/GenerateMDReportAndLP" className="back-to-top">Back to Top</a>
       <div id="main_top_container">
         <div id="header">
           <div className="section_div"></div>
@@ -83,7 +83,7 @@ const GenerateMDReportAndLP: React.FC = () => {
           <img src={b4} className="gwd-img-13ao gwd-gen-zzdfgwdanimation" id="b4" alt="" />
         </div>
         <div id="generate_text_container">
-          <h2 id="gtext"></h2>
+          <h2 id="gtext">.</h2>
           <div id="gwaittext">Continue button will appear once ready</div>
           <div id="gcontinue">
             <button onClick={() => alert('Continue clicked')} className="linkbtnContinue">Continue</button>

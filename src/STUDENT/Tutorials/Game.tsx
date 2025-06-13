@@ -73,10 +73,10 @@ const Game: React.FC = () => {
           <div className="tdNavBarT"
           // style={{display: "flex", justifyContent: "space-between"}}
           >
-            <a id="imgBtnBack" className="imgBtnBackT"
+            <a href="/Game" id="imgBtnBack" className="imgBtnBackT"
             // style={{ cursor: "pointer" }}
             ><img src={`${back_n}`} alt="Back" width="80" height="30" /></a>
-            <a id="imgbtnGameCompleted" className="imgbtnGameCompletedT"
+            <a href="/Game" id="imgbtnGameCompleted" className="imgbtnGameCompletedT"
             // style={{ cursor: "pointer" }}
             >
               <img src={doneSrc} alt="Back" width="80px" height="30px"

@@ -87,7 +87,7 @@ const Question: React.FC = () => {
 						<span id='spanWhiteBoardLinkT'
 						// style={{ margin: "104px" }}
 						>
-							<a id="WhiteBoardLink"  className='WhiteBoardLinkT'
+							<a href='/Question' id="WhiteBoardLink"  className='WhiteBoardLinkT'
 							// style={{ fontSize: "11pt", color: "#333333",  display:"none", fontWeight: "bold" }} 
 							target="_blank">Whiteboard</a>
 						</span>
@@ -109,7 +109,7 @@ const Question: React.FC = () => {
 								<td id='QnPanelId2T'
 								// style={{ width: "13%", textAlign: "center" }} 
 								className="QnPanel">
-                  <a id='imgbtnBack' className='imgbtnBackT'
+                  <a href='/Question' id='imgbtnBack' className='imgbtnBackT'
 				//   style={{ cursor: "pointer" }}
 				  ><img src={backSrc} alt="Back" onMouseOver={handleBackMouseOver} onMouseOut={handleBackMouseOut} onMouseDown={handleBackMouseDown} onMouseUp={handleBackMouseUp} 
 				//   style={{ verticalAlign: "middle" }} 
@@ -119,25 +119,25 @@ const Question: React.FC = () => {
 								<td id='QnPanelId3T'
 								// style={{ width: "13%", textAlign: "center" }} 
 								className="QnPanel">
-									<input type="image" id="imgPrc" src={principle_n} className='imgPrcT'
+									<input type="image" id="imgPrc" src={principle_n} className='imgPrcT' alt='image'
 									// style={{ cursor: "pointer", verticalAlign: "middle" }} 
 									/></td>
 								<td id='QnPanelId4T'
 								// style={{ width: "13%", textAlign: "center", padding: "0px", margin: "0px" }} 
 								className="QnPanel">
-									<input type="image" id="imgClue" src={clue_n} className='imgClueT'
+									<input type="image" id="imgClue" src={clue_n} className='imgClueT' alt='images'
 									// style={{ cursor: 'pointer', verticalAlign: 'middle'}} 
 									/></td>
 								<td id='QnPanelId5T'
 								// style={{ width: "13%", textAlign: "center", padding: "0px", margin: "0px" }} 
 								className="QnPanel">
-									<input type="image" id="imgSoln" src={solutionSrc} className='imgSolnT'
+									<input type="image" id="imgSoln" src={solutionSrc} className='imgSolnT' alt='input_image'
 									// style={{ cursor: 'pointer', verticalAlign: 'middle'}} 
 									/></td>
 								<td id='QnPanelId6T'
 								// style={{ width: "13%", textAlign: "center" }} 
 								className="QnPanel">
-                  <a id='imgbtnTut' className='imgbtnTutT'
+                  <a href='/Question' id='imgbtnTut' className='imgbtnTutT'
 				//   style={{ cursor: "pointer" }}
 				  ><img src={tutorials_n} alt="Tutorial" id='imgbtnTut2T'
 				//   style={{ verticalAlign: "middle" }} 
@@ -176,9 +176,10 @@ const Question: React.FC = () => {
 								// style={{ textAlign: "right", width: "31%" }} 
 								className="QnPanel">
                 <input type='image' id='imgNextQuestion' src={nextSrc} onMouseOver={handleNextMouseOver} onMouseOut={handleNextMouseOut} onMouseDown={handleNextMouseDown} onMouseUp={handleNextMouseUp} 
-				// style={{cursor: 'pointer', verticalAlign: 'middle' }} 
+				// style={{cursor: 'pointer', verticalAlign: 'middle' }}
+				alt='input_images'
 				/>
-                <a id='imgbtnAllQuestionsCompleted'><img src={doneSrc} alt="Done" id='imgbtnAllQuestionsCompleted2T'
+                <a href='/Question' id='imgbtnAllQuestionsCompleted'><img src={doneSrc} alt="Done" id='imgbtnAllQuestionsCompleted2T'
 				// style={{ cursor: "pointer", verticalAlign: "middle", display: "none" }} 
 				onMouseOver={handleDoneMouseOver} onMouseOut={handleDoneMouseOut} 
 				onMouseDown={handleDoneMouseDown} onMouseUp={handleDoneMouseUp} /> </a>
@@ -197,7 +198,7 @@ const Question: React.FC = () => {
 						<div id="divFrameQn" 
 						// style={{ WebkitOverflowScrolling: "touch",  overflow: "hidden" }}
 						>
-							<iframe id="iFrameQn" marginHeight={0} marginWidth={0} frameBorder={0} scrolling="auto" className="CssiFrm"></iframe>
+							<iframe id="iFrameQn" title='iFrameQn' marginHeight={0} marginWidth={0} frameBorder={0} scrolling="auto" className="CssiFrm"></iframe>
 						</div>
 					</td>
 				</tr>
@@ -214,7 +215,7 @@ const Question: React.FC = () => {
 					<td id="tdPCSTitle2" 
 					// style={{ backgroundRepeat:'repeat', width:'100%', verticalAlign:'middle', textAlign:'right', padding:'2px', paddingRight:'20px' }}
 					>
-            <img id='imgPCClose' src={CloseBtnSrc} 
+            <img id='imgPCClose' src={CloseBtnSrc}  alt='Close'
 			// style={{width: '30px', height:'30px', backgroundSize:'cover', marginRight: '30px', backgroundPosition:'center', backgroundRepeat: 'no-repeat', cursor: 'pointer'}} 
 			onMouseOver={handleCloseBtnMouseOver} onMouseOut={handleCloseBtnMouseOut}/>
 					</td>
@@ -223,7 +224,7 @@ const Question: React.FC = () => {
 			<div id="divFramePCS" 
 			// style={{ WebkitOverflowScrolling: "touch",  overflow: "hidden" }}
 			>				
-				<iframe id='iFrameSolution' className='iFrameSolutionT'
+				<iframe id='iFrameSolution' className='iFrameSolutionT' title='iFrameSolution'
 				// style={{ width:'100%', border:'none', height:'auto', overflowY:'scroll', WebkitOverflowScrolling:'touch', display:'none'}}
 				></iframe>
 			</div>
@@ -238,10 +239,10 @@ const Question: React.FC = () => {
 							<input id='btnPCSPrevious' type='button' value='PREVIOUS' 
 							// style={{ fontWeight: "bold", color: "White", fontSize: "12pt", borderStyle: "none", backgroundColor: "#333333", cursor: "pointer" }} 
 							/>&nbsp;&nbsp;&nbsp;&nbsp;
-              <img id='btnPCSNext' src={NextStepBtnSrc} onMouseOver={handleNextStepBtnMouseOver} onMouseOut={handleNextStepBtnMouseOut} 
+              <img id='btnPCSNext' src={NextStepBtnSrc} onMouseOver={handleNextStepBtnMouseOver} onMouseOut={handleNextStepBtnMouseOut} alt='Next'
 			//   style={{width: '100px', height:'40px', backgroundSize:'cover', marginRight: '30px', marginTop:'5px' , backgroundPosition:'center', backgroundRepeat: 'no-repeat', cursor: 'pointer', marginBottom: '5px'}} 
 			  />
-              <img id='btnPCSClose' src={GotItBtnSrc} onMouseOver={handleGotItBtnMouseOver} onMouseOut={handleGotItBtnMouseOut} 
+              <img id='btnPCSClose' src={GotItBtnSrc} onMouseOver={handleGotItBtnMouseOver} onMouseOut={handleGotItBtnMouseOut} alt='Got It'
 			//   style={{ width: '100px', height:'40px', backgroundSize:'cover', marginRight: '30px', marginTop:'5px' , backgroundPosition:'center', backgroundRepeat: 'no-repeat', cursor: 'pointer', marginBottom: '5px'}} 
 			  />
 						</span>
@@ -260,7 +261,7 @@ const Question: React.FC = () => {
 					<td id="tdClueTitle2" className='tdClueTitle2T'
 					// style={{ backgroundRepeat: "repeat", width: "100%", verticalAlign: "middle", textAlign: "right" }}
 					>
-          <img id='imgPCClose' src={CloseBtnSrc} className='imgPCCloseT'
+          <img id='imgPCClose' src={CloseBtnSrc} className='imgPCCloseT' alt='Close'
 		//   style={{ width: '30px', height:'30px', backgroundSize:'cover', marginRight: '30px', backgroundPosition:'center', backgroundRepeat: 'no-repeat', cursor: 'pointer' }} 
 		  onMouseOver={handleCloseBtnMouseOver} onMouseOut={handleCloseBtnMouseOut}/>
 					</td>
@@ -269,7 +270,7 @@ const Question: React.FC = () => {
 			<div id="divFrameClue" className='divFrameClueT'
 			// style={{ width: "100%", borderBottom: "solid 1px #e3e3e3", background: "#ffffff" }}
 			>
-				<iframe id='iFrameClue' className='iFrameClueT'
+				<iframe id='iFrameClue' className='iFrameClueT' title='iFrameClue'
 				// style={{ width: "100%", border: "none", display: "none" }}
 				></iframe>
 			</div>
@@ -281,7 +282,7 @@ const Question: React.FC = () => {
 					// style={{ height: "30px", backgroundRepeat: "repeat", verticalAlign: "middle", textAlign: "right" }}
 					>
 						<span id="spanClueButtons">							
-            <img id='btnPCSCloseT' src={GotItBtnSrc} onMouseOver={handleGotItBtnMouseOver} onMouseOut={handleGotItBtnMouseOut} 
+            <img id='btnPCSCloseT' src={GotItBtnSrc} onMouseOver={handleGotItBtnMouseOver} onMouseOut={handleGotItBtnMouseOut} alt='Got It'
 			// style={{ width: '100px', height:'40px', backgroundSize:'cover', marginRight: '30px', marginTop:'5px' , backgroundPosition:'center', backgroundRepeat: 'no-repeat', cursor: 'pointer', marginBottom: '5px'}} 
 			/>
 						</span>

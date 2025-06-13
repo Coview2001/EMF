@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import './Style/AnswerSheet.css';
 import nav_previous_n from '../Tutorials/Image/nav_previous_n.png';
-import nav_next_n from '../Tutorials/Image/nav_next_n.png';
+// import nav_next_n from '../Tutorials/Image/nav_next_n.png';
 import next_test from '../Tutorials/Image/next_test.png';
 import Close from '../Tutorials/Image/Close.png';
 
 const AnswerSheet: React.FC = () => {
-  const navigate = useNavigate();
-  const [answers, setAnswers] = useState<{ question: string; answer: string }[]>([]);
+  // const navigate = useNavigate();
+  const [
+    // answers
+    , setAnswers] = useState<{ question: string; answer: string }[]>([]);
 
   useEffect(() => {
     const fetchAnswers = async () => {
@@ -71,7 +73,7 @@ const AnswerSheet: React.FC = () => {
                     <td align="left" className="tdTop1T"
                     // style={{ width: "8%", height: '36px', paddingLeft: '10px', backgroundColor: "#20699B",}}
                     >
-                      <a id="linkbtnExit" className="tdTop2T" 
+                      <a href="/AnswerSheet" id="linkbtnExit" className="tdTop2T" 
                       // style={{ width: '84px', height: '30px', backgroundColor: "white", textAlign: "center", borderRadius: '3px', color: "#1d6799", fontSize: '17px', paddingTop: '5px', cursor: "pointer", textDecoration: "none", paddingLeft: "12px", paddingRight: "11px", paddingBottom: "5px", fontWeight: "bold",}} 
                       
                       >
@@ -109,15 +111,15 @@ const AnswerSheet: React.FC = () => {
                     // style={{ width: "28%", backgroundColor: "#20699B" }} 
                     >
                         <div id="divATestNavigation" >
-                            <a id="btnATestPreviousQuestion" className="btnATestPreviousQuestionT" 
+                            <a href="/AnswerSheet" id="btnATestPreviousQuestion" className="btnATestPreviousQuestionT" 
                             // style={{cursor:'pointer', display:'inline-block'}}
-                            ><img src={nav_previous_n} /></a>
+                            ><img src={nav_previous_n} alt="src not found" /></a>
                             <div className="divATestQuestionNoListT"
                             // style={{ display: "inline-block", width: "20%" }}
                             ></div>
-                            <a id="btnATestNextQuestion" className="btnATestNextQuestionT" 
+                            <a href="/AnswerSheet" id="btnATestNextQuestion" className="btnATestNextQuestionT" 
                             // style={{cursor:'pointer', display:'inline-block', marginRight:'3%'}}
-                            ><img src={next_test} /></a>
+                            ><img src={next_test} alt="src" /></a>
                         </div>
                     </td>
                   </tr>
@@ -161,9 +163,7 @@ const AnswerSheet: React.FC = () => {
                   <div id="divFrame" className="divFrameT"
                   // style={{ backgroundColor: 'white' }}
                   ></div>
-                  <iframe id="iFrameQn" className="iFrameQnT" scrolling="yes" 
-                  // style={{ width: '100%' }}
-                  ></iframe>
+                  <iframe id="iFrameQn" className="iFrameQnT" scrolling="yes" title="Question Content Frame"></iframe>
               </td>
           </tr>
         </tbody>
@@ -192,7 +192,8 @@ const AnswerSheet: React.FC = () => {
             </tr>
             <tr className="CssTable">
               <td className="CssTable" colSpan={2} >
-                <iframe id="iFrameSolution" frameBorder="0" className="CssiFrm"></iframe>
+                {/* <iframe id="iFrameSolution" frameBorder="0" className="CssiFrm"></iframe> */}
+                <iframe id="iFrameSolution" frameBorder="0" className="CssiFrm" title="Solution Explanation Frame"></iframe>
               </td>
             </tr>
           </tbody>

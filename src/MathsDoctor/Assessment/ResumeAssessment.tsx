@@ -9,9 +9,9 @@ const ResumeAssessment: React.FC = () => {
               <button id='linkbtnLogout' className="sign_out" aria-label="Sign Out" //T
               // style={{border: 'none', color:'white', textDecoration: 'none', backgroundColor: 'transparent', cursor: 'pointer', textAlign: 'center'}}
               ></button>
-              <a href="#" className="sign_out" //T
+              <div className="sign_out" //T
               // style={{ display: 'none' }}
-              ></a>
+              ></div>
               <div id="divLoggedName"></div>
             </div>
 
@@ -34,18 +34,18 @@ const ResumeAssessment: React.FC = () => {
                       <button className="exit_btn" aria-label="Exit" 
                       // style={{border: 'none', color:'white', textDecoration: 'none', backgroundColor: 'transparent', cursor: 'pointer', textAlign: 'center'}}
                       ></button>
-                      <a href="#" id='exit_btn' className="exit_btn" 
+                      <div id='exit_btn' className="exit_btn" 
                       // style={{ display: 'none' }}
-                      ></a>
+                      ></div>
                     </div>
                     <div id="bok_doorway"></div>
                     <div className="button_div">
                       <button  className="resume_btn" aria-label="Resume" //T
                       // style={{border: 'none', color:'white', textDecoration: 'none', backgroundColor: 'transparent', cursor: 'pointer', textAlign: 'center'}}
                       ></button>
-                      <a href="#" className="resume_btn" //T
+                      <div className="resume_btn" //T
                       // style={{ display: 'none' }}
-                      ></a>
+                      ></div>
                     </div>
                   </div>
 
@@ -63,8 +63,8 @@ const ResumeAssessment: React.FC = () => {
   );
 };
 
-const LoadingScreen: React.FC = () => {
-  return <div id="loading-screen">Loading...</div>;
-};
+// const LoadingScreen: React.FC = () => {
+//   return <div id="loading-screen">Loading...</div>;
+// };
 
 export default ResumeAssessment;

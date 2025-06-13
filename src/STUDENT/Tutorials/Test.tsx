@@ -21,12 +21,12 @@ const Test: React.FC = () => {
 						>
 							<td width="1%"></td>
 							<td width="10%" align="left">
-                <a ><img src={exit_n} alt="Exit" /></a>
+                <a href='/Test'><img src={exit_n} alt="Exit" /></a>
 							</td>
 							<td width="5%" align="right" className='trow2T'
 							// style={{ paddingRight: "5px" }}
 							>
-								<img src={timer_icon}  alt="image not found" />
+								<img src={timer_icon}  alt="images not found" />
 							</td>
 							<td width='10%' id="tdTime">
 								<label id="lblTime" ></label>
@@ -45,12 +45,12 @@ const Test: React.FC = () => {
 							<td align="left" className='trow3T'
 							// style={{ width: "10%", paddingLeft: "5px" }}
 							>
-                <a ><img src={skip_n} alt="Skip" /></a>
+                <a href='/Test'><img src={skip_n} alt="Skip" /></a>
 							</td>
 							<td width='10%' align="right"  className='trow2T'
 							// style={{ paddingLeft: "5px" }}
 							>
-                <a ><img src={next_test} alt="Next" /></a>
+                <a href='/Test'><img src={next_test} alt="Next" /></a>
 							</td>
 							<td width="1%" align="right" id="tdOK"></td>
 						</tr>
@@ -59,7 +59,7 @@ const Test: React.FC = () => {
 			</tr>
 			<tr>
 				<td id="tdQn" valign="top">
-					<iframe id="iFrameQn" className='iFrameQnT'
+					<iframe id="iFrameQn" className='iFrameQnT' title='Qn'
 					// style={{ width: "100%" }}
 					></iframe>
 				</td>

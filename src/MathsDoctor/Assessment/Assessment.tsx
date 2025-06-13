@@ -1,6 +1,6 @@
 import React from 'react';
 import './Style/Assessment.css';
-import top_blue_panel from './Image/top_blue_panel.png';
+// import top_blue_panel from './Image/top_blue_panel.png';
 import signout_n from './Image/signout_n.png';
 import signout_d from './Image/signout_d.png';
 import skip_n from './Image/skip_n.png';
@@ -71,7 +71,7 @@ const Assessment: React.FC = () => {
                           </table>
                       </div>
                       <div id="divMDFrm" className="cssIfrmT">
-                          <iframe id="iFrameQn" frameBorder="0" 
+                          <iframe id="iFrameQn" frameBorder="0" title='iFrameQn'
                         //   style={{ overflow: 'auto', width: '100%', backgroundColor: '#f8fafc' }}
                           ></iframe>
                       </div>

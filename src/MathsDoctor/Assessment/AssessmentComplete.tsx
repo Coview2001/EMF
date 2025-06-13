@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Style/AssessmentComplete.css';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 
 const AssessmentComplete: React.FC = () => {

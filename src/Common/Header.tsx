@@ -86,7 +86,7 @@ import React, { useState, useEffect } from 'react';
 import '../Common/Style/Header.css';
 
 const Header: React.FC = () => {
-  const [userName, setUserName] = useState<string>("");
+  // const [userName, setUserName] = useState<string>("");
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
   const [pageName, setPageName] = useState<string>("");
 

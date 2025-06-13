@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import "./Style/common.css";
-import trophy_club_0 from './trophy_club/trophy_club_0.png';
-import trophy_club_10 from './trophy_club/trophy_club_10.png';
-import trophy_club_25 from './trophy_club/trophy_club_20.png';
-import trophy_club_50 from './trophy_club/trophy_club_50.png';
-import trophy_club_75 from './trophy_club/trophy_club_75.png';
-import trophy_club_100 from './trophy_club/trophy_club_100.png';
-import trophy_club_150 from './trophy_club/trophy_club_150.png';
-import trophy_club_200 from './trophy_club/trophy_club_200.png';
-import trophy_club_250 from './trophy_club/trophy_club_250.png';
-import trophy_club_300 from './trophy_club/trophy_club_300.png';
-import trophy_club_350 from './trophy_club/trophy_club_350.png';
-import trophy_club_400 from './trophy_club/trophy_club_400.png';
+// import trophy_club_0 from './trophy_club/trophy_club_0.png';
+// import trophy_club_10 from './trophy_club/trophy_club_10.png';
+// import trophy_club_25 from './trophy_club/trophy_club_20.png';
+// import trophy_club_50 from './trophy_club/trophy_club_50.png';
+// import trophy_club_75 from './trophy_club/trophy_club_75.png';
+// import trophy_club_100 from './trophy_club/trophy_club_100.png';
+// import trophy_club_150 from './trophy_club/trophy_club_150.png';
+// import trophy_club_200 from './trophy_club/trophy_club_200.png';
+// import trophy_club_250 from './trophy_club/trophy_club_250.png';
+// import trophy_club_300 from './trophy_club/trophy_club_300.png';
+// import trophy_club_350 from './trophy_club/trophy_club_350.png';
+// import trophy_club_400 from './trophy_club/trophy_club_400.png';
 
 interface TrophyRange {
   totalTrophyCount: number;
@@ -23,13 +23,19 @@ interface TrophyRange {
 
 
 const Section: React.FC = () => {
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string>("");
-  const [userName, setUserName] = useState<string>("");
-  const [purchases, setPurchases] = useState<string | null>(null);
-  const [totalTrophyCount, setTotalTrophyCount] = useState<number>(0);
+  // const [loading, setLoading] = useState<boolean>(true);
+  // const [error, setError] = useState<string>("");
+  const [
+    // userName
+    , setUserName] = useState<string>("");
+  const [
+    // purchases
+    , setPurchases] = useState<string | null>(null);
+  const [totalTrophyCount, 
+    // setTotalTrophyCount
+  ] = useState<number>(0);
   const [imageSrc, setImageSrc] = useState('');
-  const totalTrophy = Number(totalTrophyCount || 0);
+  // const totalTrophy = Number(totalTrophyCount || 0);
   const location = useLocation();
   const hiddenPaths = [
     "/MyStore",
@@ -43,7 +49,7 @@ const Section: React.FC = () => {
       useEffect(() => {
 
         const UserName = sessionStorage.getItem('FName');
-        const UserLogin = sessionStorage.getItem('login');
+        // const UserLogin = sessionStorage.getItem('login');
         const UserAvatar = sessionStorage.getItem('CurrentAvatar');
         // console.log("totalTrophyCount222", totalTrophyCount);
         setPurchases(sessionStorage.getItem("CurrentPoints"));
@@ -136,7 +142,7 @@ const Section: React.FC = () => {
 };
 
 const calculateRemainingTrophies = (): number => {
-    const currentRange = trophyRanges[selectedRangeIndex];
+    // const currentRange = trophyRanges[selectedRangeIndex];
     const nextRange = trophyRanges[selectedRangeIndex + 1];
     
     if (!nextRange || selectedRangeIndex === trophyRanges.length - 1) {
@@ -161,7 +167,7 @@ const calculateRemainingTrophies = (): number => {
     >
       <div className="section_div">
           <div id="achievements_btn">
-            <a href="#">ACHIEVEMENTS</a>
+            <a href="Section">ACHIEVEMENTS</a>
           </div>
           <div id="user_strip_right_container">
             <div id="divAvatarContainer" className="avatar_container">

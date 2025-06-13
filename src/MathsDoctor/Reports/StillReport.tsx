@@ -2,14 +2,28 @@ import React, { useState, useEffect } from 'react';
 import './Style/StillReport.css';
 
 const StillReport: React.FC = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [grade, setGrade] = useState('');
-  const [completionDate, setCompletionDate] = useState('');
-  const [summaryText, setSummaryText] = useState('');
-  const [recommendationText, setRecommendationText] = useState('');
-  const [knowledgeGaps, setKnowledgeGaps] = useState([]);
-  const [achievedLevels, setAchievedLevels] = useState(0);
+  const [firstName, 
+    // setFirstName
+  ] = useState('');
+  const [lastName, 
+    // setLastName
+  ] = useState('');
+  const [grade, 
+    // setGrade
+  ] = useState('');
+  const [completionDate, 
+    // setCompletionDate
+  ] = useState('');
+  const [summaryText, 
+    // setSummaryText
+  ] = useState('');
+  const [recommendationText, 
+    // setRecommendationText
+  ] = useState('');
+  const [knowledgeGaps, 
+    // setKnowledgeGaps
+  ] = useState([]);
+  // const [achievedLevels, setAchievedLevels] = useState(0);
 
   useEffect(() => {
   }, []);

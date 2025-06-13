@@ -41,7 +41,7 @@ useEffect(() => {
               <td align="left" className="tdButtonsT"
               // style={{ paddingLeft: "10px" }}
               >
-                <a id="imgbtnBack" className="imgbtnBackT"
+                <a href="/ConfirmTest" id="imgbtnBack" className="imgbtnBackT"
                 // style={{ cursor: "pointer" }}
                 >
                   <img 
@@ -57,7 +57,7 @@ useEffect(() => {
               <td align="right" className="tdButtons2T"
               // style={{ paddingRight: "10px" }}
               > 
-                <a id="imgbtnContinue" className="imgbtnContinueT"
+                <a href="/ConfirmTest" id="imgbtnContinue" className="imgbtnContinueT"
                 // style={{ cursor: "pointer" }}
                 >
                   <img 

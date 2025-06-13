@@ -2,14 +2,30 @@ import React, { useState, useEffect } from 'react';
 import './Style/MovingReport.css';
 
 const MovingReport: React.FC = () => {
-    const [firstName, setFirstName] = useState<string>('');
-    const [lastName, setLastName] = useState<string>('');
-    const [gradeText, setGradeText] = useState<string>('Year');
-    const [grade, setGrade] = useState<string>('');
-    const [completionDate, setCompletionDate] = useState<string>('');
-    const [summaryText, setSummaryText] = useState<string>('');
-    const [recommendationText, setRecommendationText] = useState<string>('');
-    const [knowledgeGaps, setKnowledgeGaps] = useState<Array<{ year: string, gaps: string }>>([]);
+    const [firstName, 
+        // setFirstName
+    ] = useState<string>('');
+    const [lastName, 
+        // setLastName
+    ] = useState<string>('');
+    const [gradeText, 
+        // setGradeText
+    ] = useState<string>('Year');
+    const [grade, 
+        // setGrade
+    ] = useState<string>('');
+    const [completionDate, 
+        // setCompletionDate
+    ] = useState<string>('');
+    const [summaryText, 
+        // setSummaryText
+    ] = useState<string>('');
+    const [recommendationText, 
+        // setRecommendationText
+    ] = useState<string>('');
+    const [knowledgeGaps, 
+        // setKnowledgeGaps
+    ] = useState<Array<{ year: string, gaps: string }>>([]);
 
     useEffect(() => {
     }, []);
@@ -94,7 +110,7 @@ const MovingReport: React.FC = () => {
                                 </div>
                             </div>
                             <div id="get_started_div">
-                                <a href="#" id="get_started_btn">
+                                <a href="/MovingReport" id="get_started_btn">
                                     <div id="plus"></div>
                                     <div id="plus_text">
                                         <p>GET STARTED</p>

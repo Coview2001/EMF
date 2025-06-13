@@ -61,13 +61,13 @@ const Result: React.FC = () => {
 
 				<div id="button_box">
 					<div id="continue_btn" className="general_btn">
-						<a id="linkbtnContinue" >
+						<a href='/Result' id="linkbtnContinue" >
                             Continue
 						</a>
 					</div>
 
 					<div className="custom_print_btn">
-						<a>Print</a>
+						<a href="/Result">Print</a>
 					</div>
 
 

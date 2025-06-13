@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Style/ConfirmAssessment.css';
-import $ from 'jquery';
+// import $ from 'jquery';
 
 
 const ConfirmAssessment: React.FC = () => {
@@ -56,9 +56,13 @@ const ConfirmAssessment: React.FC = () => {
                   <button onClick={handleReady} id='linkbtnReady' className="im_ready_btn" //T
                   // style={{border: 'none', backgroundColor: 'transparent', cursor: 'pointer'}} 
                   ></button>
-                  <a href="#" className="im_ready_btn" 
+
+                  
+                  <div className="im_ready_btn" 
                   // style={{ display: 'none' }}
-                  ></a>
+                  ></div>
+
+
                   <div id="divLogo" className='md_logo_scale'>
                   </div>
                 </div>
